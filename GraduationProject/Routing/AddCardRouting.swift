@@ -16,4 +16,14 @@ class AddCardRouting{
         let addNewCard = AddNewCardVC()
         VC.navigationController?.pushViewController(addNewCard, animated: true)
     }
+    static func goToConnectingProgress(VC:
+         UIViewController){
+             let connectingProgress = ConnectingProgressVC()
+             VC.navigationController?.pushViewController(connectingProgress, animated: true)
+    }
+    static func goToBankCardOTP(VC:
+         UIViewController){
+             let bankCardOTP = BankCardOTP()
+             VC.navigationController?.pushViewController(bankCardOTP, animated: true)
+    }
 }

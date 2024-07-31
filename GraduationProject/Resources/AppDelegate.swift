@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     private func setRootViewController() {
         window  = UIWindow(frame: UIScreen.main.bounds)
-        let rootController = SignUpVC()
+        let rootController = ConnectingProgressVC()
         let navigationController = UINavigationController(rootViewController: rootController)
     
         window?.makeKeyAndVisible()
@@ -37,9 +37,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 appearance.tintColor = UIColor.black // Set the color of the back button
 
                 // Remove the back button title
-                let backButtonAttributes: [NSAttributedString.Key: Any] = [
-                    .foregroundColor: UIColor.clear // Remove the back button title
-                ]
+//                let backButtonAttributes: [NSAttributedString.Key: Any] = [
+//                    .foregroundColor: UIColor.clear // Remove the back button title
+//                ]
 //                UIBarButtonItem.appearance().setTitleTextAttributes(backButtonAttributes, for: .normal)
         }
 }
