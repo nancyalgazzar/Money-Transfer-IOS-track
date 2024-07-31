@@ -97,7 +97,7 @@ extension SignUpUserDataEntryVC: UIGestureRecognizerDelegate{
         birthDayPicker.resignFirstResponder()
     }
 }
-//MARK: BirthDay TextField Delegate
+//MARK:  TextField Delegate
 extension SignUpUserDataEntryVC: UITextFieldDelegate {
     
     private func setTextFieldDelegates(){

@@ -57,7 +57,7 @@
                                                     <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#FBFBFB"/>
-                                                        <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="user"/>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="user 1"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                             </subviews>
@@ -206,7 +206,7 @@
         </designable>
     </designables>
     <resources>
-        <image name="user" width="24" height="24"/>
+        <image name="user 1" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

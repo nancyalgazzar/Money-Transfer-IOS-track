@@ -22,6 +22,8 @@
 		7C561AEF2C5A9FFE00DEAC2E /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C561AED2C5A9FFE00DEAC2E /* SettingsVC.xib */; };
 		7C561AF42C5AA08B00DEAC2E /* ChangeSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C561AF22C5AA08B00DEAC2E /* ChangeSettingVC.swift */; };
 		7C561AF52C5AA08B00DEAC2E /* ChangeSettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C561AF32C5AA08B00DEAC2E /* ChangeSettingVC.xib */; };
+		7C561AF82C5AAC7400DEAC2E /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C561AF62C5AAC7300DEAC2E /* EditProfileVC.swift */; };
+		7C561AF92C5AAC7400DEAC2E /* EditProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C561AF72C5AAC7300DEAC2E /* EditProfileVC.xib */; };
 		7C56CCFE2C5A1D7100C29FFD /* CountriesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56CCFC2C5A1D7100C29FFD /* CountriesTVC.swift */; };
 		7C56CCFF2C5A1D7100C29FFD /* CountriesTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C56CCFD2C5A1D7100C29FFD /* CountriesTVC.xib */; };
 		7C56CD062C5A1EEA00C29FFD /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56CD052C5A1EEA00C29FFD /* RoundedImage.swift */; };
@@ -59,6 +61,8 @@
 		7C561AED2C5A9FFE00DEAC2E /* SettingsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsVC.xib; sourceTree = "<group>"; };
 		7C561AF22C5AA08B00DEAC2E /* ChangeSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSettingVC.swift; sourceTree = "<group>"; };
 		7C561AF32C5AA08B00DEAC2E /* ChangeSettingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeSettingVC.xib; sourceTree = "<group>"; };
+		7C561AF62C5AAC7300DEAC2E /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
+		7C561AF72C5AAC7300DEAC2E /* EditProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileVC.xib; sourceTree = "<group>"; };
 		7C56CCFC2C5A1D7100C29FFD /* CountriesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTVC.swift; sourceTree = "<group>"; };
 		7C56CCFD2C5A1D7100C29FFD /* CountriesTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesTVC.xib; sourceTree = "<group>"; };
 		7C56CD052C5A1EEA00C29FFD /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
@@ -117,6 +121,7 @@
 		7C561AEB2C5A9FBE00DEAC2E /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				7C561AFA2C5AAC7C00DEAC2E /* EditProfile */,
 				7C561AF12C5AA06600DEAC2E /* ChangePassword */,
 				7C561AF02C5AA00500DEAC2E /* Settings */,
 			);
@@ -139,6 +144,15 @@
 				7C561AF32C5AA08B00DEAC2E /* ChangeSettingVC.xib */,
 			);
 			path = ChangePassword;
+			sourceTree = "<group>";
+		};
+		7C561AFA2C5AAC7C00DEAC2E /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				7C561AF62C5AAC7300DEAC2E /* EditProfileVC.swift */,
+				7C561AF72C5AAC7300DEAC2E /* EditProfileVC.xib */,
+			);
+			path = EditProfile;
 			sourceTree = "<group>";
 		};
 		7C56CD002C5A1D7B00C29FFD /* Views */ = {
@@ -402,6 +416,7 @@
 			files = (
 				7C56CCFF2C5A1D7100C29FFD /* CountriesTVC.xib in Resources */,
 				7C5DFC0A2C5A572100C25AED /* SelectCurrencyVC.xib in Resources */,
+				7C561AF92C5AAC7400DEAC2E /* EditProfileVC.xib in Resources */,
 				7C555BD72C5994CF00BDCAC2 /* SignUpVC.xib in Resources */,
 				7C5D7E6F2C592F9E00D60725 /* SignInVC.xib in Resources */,
 				7C60E7282C5A3F15009E06C6 /* CountryViewCell.xib in Resources */,
@@ -469,6 +484,7 @@
 				7C56CCFE2C5A1D7100C29FFD /* CountriesTVC.swift in Sources */,
 				7C555BDA2C59971300BDCAC2 /* SignUpUserDataEntryVC.swift in Sources */,
 				7C555BD62C5994CF00BDCAC2 /* SignUpVC.swift in Sources */,
+				7C561AF82C5AAC7400DEAC2E /* EditProfileVC.swift in Sources */,
 				7C59BF3C2C595FEA00AA97E9 /* UIView+HexColor.swift in Sources */,
 				7C59BF3A2C595E7300AA97E9 /* UIColor+Hex.swift in Sources */,
 				7C5DFC092C5A572100C25AED /* SelectCurrencyVC.swift in Sources */,
