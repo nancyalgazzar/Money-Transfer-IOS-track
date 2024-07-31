@@ -1,0 +1,16 @@
+PODS:
+  - FittedSheets (2.6.1)
+
+DEPENDENCIES:
+  - FittedSheets
+
+SPEC REPOS:
+  trunk:
+    - FittedSheets
+
+SPEC CHECKSUMS:
+  FittedSheets: 37e35f105c531f3845075f1788dd8517a35315c4
+
+PODFILE CHECKSUM: 823d69b2eb015a021588ff27f90593902b601f11
+
+COCOAPODS: 1.15.2

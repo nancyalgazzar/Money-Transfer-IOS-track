@@ -17,14 +17,164 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHl-vX-L5G">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zD7-wy-ytA">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rf-c6-iR9">
+                                    <rect key="frame" x="160" y="58" width="94" height="39"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speedo Transfer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcY-lv-yoQ">
+                                    <rect key="frame" x="96" y="138" width="222.5" height="39"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ngC-gc-Qav">
+                                    <rect key="frame" x="41.5" y="232" width="331" height="210"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EMe-FN-9at">
+                                            <rect key="frame" x="0.0" y="0.0" width="331" height="100"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wo-TA-zQk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dh4-AM-H2u" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="50" width="331" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#FBFBFB"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Kus-D8-hDB">
+                                            <rect key="frame" x="0.0" y="110" width="331" height="100"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYM-aq-FtA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="soP-u5-3SQ" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="50" width="331" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#FBFBFB"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akT-sD-nnk" customClass="CustomButton" customModule="GraduationProject" customModuleProvider="target">
+                                    <rect key="frame" x="41.5" y="477" width="331" height="61"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Sign In">
+                                        <backgroundConfiguration key="background"/>
+                                        <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#521220"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rbc-Lg-xjO">
+                                    <rect key="frame" x="89" y="546" width="236.5" height="29"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyC-si-WZK">
+                                            <rect key="frame" x="0.0" y="0.0" width="170.5" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDp-d7-lUW" customClass="CustomButton" customModule="GraduationProject" customModuleProvider="target">
+                                            <rect key="frame" x="178.5" y="0.0" width="58" height="29"/>
+                                            <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="17"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Sign Up">
+                                                <color key="titleColor" red="0.72333333330000005" green="0.0" blue="0.020309805390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                    <real key="value" value="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="textColorCode" value="#871E35"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="akT-sD-nnk" firstAttribute="height" secondItem="soP-u5-3SQ" secondAttribute="height" multiplier="1.22" id="0v1-Xq-PLn"/>
+                                <constraint firstItem="5rf-c6-iR9" firstAttribute="centerX" secondItem="zD7-wy-ytA" secondAttribute="centerX" id="DA7-yS-1jx"/>
+                                <constraint firstItem="akT-sD-nnk" firstAttribute="top" secondItem="soP-u5-3SQ" secondAttribute="bottom" constant="35" id="DXE-6R-sY4"/>
+                                <constraint firstItem="ngC-gc-Qav" firstAttribute="centerX" secondItem="zD7-wy-ytA" secondAttribute="centerX" id="J6B-8Z-aNc"/>
+                                <constraint firstItem="WcY-lv-yoQ" firstAttribute="top" secondItem="5rf-c6-iR9" secondAttribute="bottom" constant="41" id="LM2-mX-QOQ"/>
+                                <constraint firstItem="WcY-lv-yoQ" firstAttribute="centerX" secondItem="5rf-c6-iR9" secondAttribute="centerX" id="OS2-JL-dQv"/>
+                                <constraint firstItem="5rf-c6-iR9" firstAttribute="top" secondItem="zD7-wy-ytA" secondAttribute="top" constant="58" id="eXw-7d-F1I"/>
+                                <constraint firstItem="akT-sD-nnk" firstAttribute="centerX" secondItem="soP-u5-3SQ" secondAttribute="centerX" id="epj-Ic-4kd"/>
+                                <constraint firstItem="akT-sD-nnk" firstAttribute="width" secondItem="soP-u5-3SQ" secondAttribute="width" id="f7P-A7-0Gi"/>
+                                <constraint firstItem="ngC-gc-Qav" firstAttribute="top" secondItem="WcY-lv-yoQ" secondAttribute="bottom" constant="55" id="gPh-BU-MOM"/>
+                                <constraint firstItem="rbc-Lg-xjO" firstAttribute="centerX" secondItem="akT-sD-nnk" secondAttribute="centerX" id="hpj-0h-8N6"/>
+                                <constraint firstItem="rbc-Lg-xjO" firstAttribute="top" secondItem="akT-sD-nnk" secondAttribute="bottom" constant="8" symbolic="YES" id="iTo-RG-L4U"/>
+                                <constraint firstItem="ngC-gc-Qav" firstAttribute="width" secondItem="zD7-wy-ytA" secondAttribute="width" multiplier="0.8" id="kgK-bZ-ejM"/>
+                                <constraint firstItem="ngC-gc-Qav" firstAttribute="height" secondItem="zD7-wy-ytA" secondAttribute="height" multiplier="0.309291" constant="-43" id="nff-du-URU"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="zD7-wy-ytA" secondAttribute="bottom" id="F6r-2u-l0e"/>
+                        <constraint firstItem="zD7-wy-ytA" firstAttribute="leading" secondItem="FHl-vX-L5G" secondAttribute="leading" id="IwV-43-qgz"/>
+                        <constraint firstItem="zD7-wy-ytA" firstAttribute="width" secondItem="FHl-vX-L5G" secondAttribute="width" id="LMK-ZB-jFt"/>
+                        <constraint firstAttribute="trailing" secondItem="zD7-wy-ytA" secondAttribute="trailing" id="XaU-yX-sgu"/>
+                        <constraint firstItem="zD7-wy-ytA" firstAttribute="height" secondItem="FHl-vX-L5G" secondAttribute="height" priority="250" id="ggw-UR-OvG"/>
+                        <constraint firstItem="zD7-wy-ytA" firstAttribute="top" secondItem="FHl-vX-L5G" secondAttribute="top" id="xWU-Lx-IAU"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="0EM-yd-ROz"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="aPc-7O-hAA"/>
+                </scrollView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBrownColor"/>
-            <point key="canvasLocation" x="132" y="64"/>
+            <constraints>
+                <constraint firstItem="FHl-vX-L5G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="159-hK-u0K"/>
+                <constraint firstItem="FHl-vX-L5G" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="4ry-cG-rFV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="FHl-vX-L5G" secondAttribute="top" id="gVB-H2-gun"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FHl-vX-L5G" secondAttribute="trailing" id="wyy-ab-dKy"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="63.616071428571423"/>
         </view>
     </objects>
+    <designables>
+        <designable name="akT-sD-nnk">
+            <size key="intrinsicContentSize" width="118" height="53"/>
+        </designable>
+        <designable name="dh4-AM-H2u">
+            <size key="intrinsicContentSize" width="-1" height="50"/>
+        </designable>
+        <designable name="soP-u5-3SQ">
+            <size key="intrinsicContentSize" width="-1" height="50"/>
+        </designable>
+        <designable name="xDp-d7-lUW">
+            <size key="intrinsicContentSize" width="58" height="29"/>
+        </designable>
+    </designables>
     <resources>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

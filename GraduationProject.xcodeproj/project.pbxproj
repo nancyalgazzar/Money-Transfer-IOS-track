@@ -7,14 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7099C16AA95FDAB6654ABAD8 /* Pods_GraduationProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C319482BBD425217D0084764 /* Pods_GraduationProject.framework */; };
+		7C555BD32C59835500BDCAC2 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C555BD22C59835500BDCAC2 /* CustomButton.swift */; };
+		7C555BD62C5994CF00BDCAC2 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C555BD42C5994CF00BDCAC2 /* SignUpVC.swift */; };
+		7C555BD72C5994CF00BDCAC2 /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C555BD52C5994CF00BDCAC2 /* SignUpVC.xib */; };
+		7C555BDA2C59971300BDCAC2 /* SignUpUserDataEntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C555BD82C59971300BDCAC2 /* SignUpUserDataEntryVC.swift */; };
+		7C555BDB2C59971300BDCAC2 /* SignUpUserDataEntryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C555BD92C59971300BDCAC2 /* SignUpUserDataEntryVC.xib */; };
+		7C56CCFE2C5A1D7100C29FFD /* CountriesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56CCFC2C5A1D7100C29FFD /* CountriesTVC.swift */; };
+		7C56CCFF2C5A1D7100C29FFD /* CountriesTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C56CCFD2C5A1D7100C29FFD /* CountriesTVC.xib */; };
+		7C56CD062C5A1EEA00C29FFD /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56CD052C5A1EEA00C29FFD /* RoundedImage.swift */; };
+		7C59BF3A2C595E7300AA97E9 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C59BF392C595E7300AA97E9 /* UIColor+Hex.swift */; };
+		7C59BF3C2C595FEA00AA97E9 /* UIView+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C59BF3B2C595FEA00AA97E9 /* UIView+HexColor.swift */; };
+		7C59BF3F2C5963FE00AA97E9 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C59BF3E2C5963FD00AA97E9 /* CustomTextField.swift */; };
 		7C5D7E552C592B3300D60725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D7E542C592B3300D60725 /* AppDelegate.swift */; };
 		7C5D7E5E2C592B3400D60725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5D7E5D2C592B3400D60725 /* Assets.xcassets */; };
 		7C5D7E612C592B3400D60725 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5D7E5F2C592B3400D60725 /* LaunchScreen.storyboard */; };
 		7C5D7E6E2C592F9E00D60725 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D7E6C2C592F9E00D60725 /* SignInVC.swift */; };
 		7C5D7E6F2C592F9E00D60725 /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C5D7E6D2C592F9E00D60725 /* SignInVC.xib */; };
+		7C60E7272C5A3F15009E06C6 /* CountryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C60E7252C5A3F15009E06C6 /* CountryViewCell.swift */; };
+		7C60E7282C5A3F15009E06C6 /* CountryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C60E7262C5A3F15009E06C6 /* CountryViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EF063EC907CEBAFA6D7EC25 /* Pods-GraduationProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraduationProject.release.xcconfig"; path = "Target Support Files/Pods-GraduationProject/Pods-GraduationProject.release.xcconfig"; sourceTree = "<group>"; };
+		7C555BD22C59835500BDCAC2 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		7C555BD42C5994CF00BDCAC2 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		7C555BD52C5994CF00BDCAC2 /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
+		7C555BD82C59971300BDCAC2 /* SignUpUserDataEntryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUserDataEntryVC.swift; sourceTree = "<group>"; };
+		7C555BD92C59971300BDCAC2 /* SignUpUserDataEntryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpUserDataEntryVC.xib; sourceTree = "<group>"; };
+		7C56CCFC2C5A1D7100C29FFD /* CountriesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTVC.swift; sourceTree = "<group>"; };
+		7C56CCFD2C5A1D7100C29FFD /* CountriesTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesTVC.xib; sourceTree = "<group>"; };
+		7C56CD052C5A1EEA00C29FFD /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		7C59BF392C595E7300AA97E9 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		7C59BF3B2C595FEA00AA97E9 /* UIView+HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+HexColor.swift"; sourceTree = "<group>"; };
+		7C59BF3E2C5963FD00AA97E9 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		7C5D7E512C592B3300D60725 /* GraduationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraduationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5D7E542C592B3300D60725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C5D7E5D2C592B3400D60725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -22,6 +48,10 @@
 		7C5D7E622C592B3400D60725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C5D7E6C2C592F9E00D60725 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		7C5D7E6D2C592F9E00D60725 /* SignInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
+		7C60E7252C5A3F15009E06C6 /* CountryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryViewCell.swift; sourceTree = "<group>"; };
+		7C60E7262C5A3F15009E06C6 /* CountryViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryViewCell.xib; sourceTree = "<group>"; };
+		8F1D8EAD26E64F381BD4DD5A /* Pods-GraduationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraduationProject.debug.xcconfig"; path = "Target Support Files/Pods-GraduationProject/Pods-GraduationProject.debug.xcconfig"; sourceTree = "<group>"; };
+		C319482BBD425217D0084764 /* Pods_GraduationProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraduationProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +59,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7099C16AA95FDAB6654ABAD8 /* Pods_GraduationProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C56CD002C5A1D7B00C29FFD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C60E7252C5A3F15009E06C6 /* CountryViewCell.swift */,
+				7C60E7262C5A3F15009E06C6 /* CountryViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7C59BF382C595E5900AA97E9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7C59BF392C595E7300AA97E9 /* UIColor+Hex.swift */,
+				7C59BF3B2C595FEA00AA97E9 /* UIView+HexColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7C59BF3D2C5963B500AA97E9 /* SharedViews */ = {
+			isa = PBXGroup;
+			children = (
+				7C59BF3E2C5963FD00AA97E9 /* CustomTextField.swift */,
+				7C555BD22C59835500BDCAC2 /* CustomButton.swift */,
+				7C56CD052C5A1EEA00C29FFD /* RoundedImage.swift */,
+			);
+			path = SharedViews;
+			sourceTree = "<group>";
+		};
 		7C5D7E482C592B3200D60725 = {
 			isa = PBXGroup;
 			children = (
 				7C5D7E532C592B3300D60725 /* GraduationProject */,
 				7C5D7E522C592B3300D60725 /* Products */,
+				80EE8F760CBB170F200BA624 /* Pods */,
+				7E900848BFBBC2B9535E1931 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,10 +115,12 @@
 		7C5D7E532C592B3300D60725 /* GraduationProject */ = {
 			isa = PBXGroup;
 			children = (
+				7C60E7292C5A3FCB009E06C6 /* StoryBoard */,
+				7C56CD002C5A1D7B00C29FFD /* Views */,
+				7C59BF3D2C5963B500AA97E9 /* SharedViews */,
+				7C59BF382C595E5900AA97E9 /* Extensions */,
 				7C5D7E6B2C592F2700D60725 /* Resources */,
 				7C5D7E682C592EFD00D60725 /* Authentication */,
-				7C5D7E5D2C592B3400D60725 /* Assets.xcassets */,
-				7C5D7E5F2C592B3400D60725 /* LaunchScreen.storyboard */,
 			);
 			path = GraduationProject;
 			sourceTree = "<group>";
@@ -74,6 +137,12 @@
 		7C5D7E692C592F0F00D60725 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				7C555BD82C59971300BDCAC2 /* SignUpUserDataEntryVC.swift */,
+				7C555BD92C59971300BDCAC2 /* SignUpUserDataEntryVC.xib */,
+				7C555BD42C5994CF00BDCAC2 /* SignUpVC.swift */,
+				7C555BD52C5994CF00BDCAC2 /* SignUpVC.xib */,
+				7C56CCFC2C5A1D7100C29FFD /* CountriesTVC.swift */,
+				7C56CCFD2C5A1D7100C29FFD /* CountriesTVC.xib */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -90,10 +159,36 @@
 		7C5D7E6B2C592F2700D60725 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7C5D7E5D2C592B3400D60725 /* Assets.xcassets */,
 				7C5D7E542C592B3300D60725 /* AppDelegate.swift */,
 				7C5D7E622C592B3400D60725 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C60E7292C5A3FCB009E06C6 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				7C5D7E5F2C592B3400D60725 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		7E900848BFBBC2B9535E1931 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C319482BBD425217D0084764 /* Pods_GraduationProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80EE8F760CBB170F200BA624 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F1D8EAD26E64F381BD4DD5A /* Pods-GraduationProject.debug.xcconfig */,
+				2EF063EC907CEBAFA6D7EC25 /* Pods-GraduationProject.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,9 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C5D7E652C592B3400D60725 /* Build configuration list for PBXNativeTarget "GraduationProject" */;
 			buildPhases = (
+				51D55BB674C60D9CAF49C412 /* [CP] Check Pods Manifest.lock */,
 				7C5D7E4D2C592B3300D60725 /* Sources */,
 				7C5D7E4E2C592B3300D60725 /* Frameworks */,
 				7C5D7E4F2C592B3300D60725 /* Resources */,
+				18489AB21C2531869C76E277 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,21 +251,76 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C56CCFF2C5A1D7100C29FFD /* CountriesTVC.xib in Resources */,
+				7C555BD72C5994CF00BDCAC2 /* SignUpVC.xib in Resources */,
 				7C5D7E6F2C592F9E00D60725 /* SignInVC.xib in Resources */,
+				7C60E7282C5A3F15009E06C6 /* CountryViewCell.xib in Resources */,
 				7C5D7E612C592B3400D60725 /* LaunchScreen.storyboard in Resources */,
+				7C555BDB2C59971300BDCAC2 /* SignUpUserDataEntryVC.xib in Resources */,
 				7C5D7E5E2C592B3400D60725 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18489AB21C2531869C76E277 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GraduationProject/Pods-GraduationProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GraduationProject/Pods-GraduationProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GraduationProject/Pods-GraduationProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51D55BB674C60D9CAF49C412 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GraduationProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7C5D7E4D2C592B3300D60725 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C56CCFE2C5A1D7100C29FFD /* CountriesTVC.swift in Sources */,
+				7C555BDA2C59971300BDCAC2 /* SignUpUserDataEntryVC.swift in Sources */,
+				7C555BD62C5994CF00BDCAC2 /* SignUpVC.swift in Sources */,
+				7C59BF3C2C595FEA00AA97E9 /* UIView+HexColor.swift in Sources */,
+				7C59BF3A2C595E7300AA97E9 /* UIColor+Hex.swift in Sources */,
+				7C555BD32C59835500BDCAC2 /* CustomButton.swift in Sources */,
 				7C5D7E6E2C592F9E00D60725 /* SignInVC.swift in Sources */,
 				7C5D7E552C592B3300D60725 /* AppDelegate.swift in Sources */,
+				7C56CD062C5A1EEA00C29FFD /* RoundedImage.swift in Sources */,
+				7C59BF3F2C5963FE00AA97E9 /* CustomTextField.swift in Sources */,
+				7C60E7272C5A3F15009E06C6 /* CountryViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +456,7 @@
 		};
 		7C5D7E662C592B3400D60725 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F1D8EAD26E64F381BD4DD5A /* Pods-GraduationProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -330,6 +483,7 @@
 		};
 		7C5D7E672C592B3400D60725 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EF063EC907CEBAFA6D7EC25 /* Pods-GraduationProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

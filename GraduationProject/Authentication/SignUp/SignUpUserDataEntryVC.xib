@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpUserDataEntryVC" customModule="GraduationProject" customModuleProvider="target">
+            <connections>
+                <outlet property="birthDayPicker" destination="vd3-cT-R0n" id="LZK-QS-8cj"/>
+                <outlet property="countrySelectOutlet" destination="eyk-Og-sJw" id="uh7-GU-NiY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0qo-AV-t3f">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRv-4e-Sek">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speedo Transfer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ceu-8H-eNA">
+                                    <rect key="frame" x="96" y="83" width="222.5" height="39"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Bank Misr!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5O-E0-dC3">
+                                    <rect key="frame" x="48" y="181" width="318" height="39"/>
+                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's complete your Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0B3-2n-Hzp">
+                                    <rect key="frame" x="107.5" y="244" width="199.5" height="15"/>
+                                    <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="15"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0C4-d6-P2R">
+                                    <rect key="frame" x="41.5" y="299" width="331" height="210"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BaH-Rd-ApJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="331" height="100"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZAG-Gc-LwQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select your country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eyk-Og-sJw" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="50" width="331" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#FBFBFB"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="mYK-Gc-LAQ">
+                                            <rect key="frame" x="0.0" y="110" width="331" height="100"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BirthDate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beO-Hc-orV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="331" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DD/MM/YYYY" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vd3-cT-R0n" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="50" width="331" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#FBFBFB"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ghl-Xo-2bc" customClass="CustomButton" customModule="GraduationProject" customModuleProvider="target">
+                                    <rect key="frame" x="41.5" y="544" width="331" height="61"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Continue">
+                                        <backgroundConfiguration key="background"/>
+                                        <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#521220"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="I5O-E0-dC3" firstAttribute="centerX" secondItem="Ceu-8H-eNA" secondAttribute="centerX" id="2or-Vf-N10"/>
+                                <constraint firstItem="Ceu-8H-eNA" firstAttribute="top" secondItem="bRv-4e-Sek" secondAttribute="top" constant="83" id="63y-WT-d8z"/>
+                                <constraint firstItem="0B3-2n-Hzp" firstAttribute="top" secondItem="I5O-E0-dC3" secondAttribute="bottom" constant="24" id="8sE-9g-VlN"/>
+                                <constraint firstItem="0C4-d6-P2R" firstAttribute="width" secondItem="bRv-4e-Sek" secondAttribute="width" multiplier="0.799517" id="EKN-Bk-FBg"/>
+                                <constraint firstItem="ghl-Xo-2bc" firstAttribute="centerX" secondItem="0C4-d6-P2R" secondAttribute="centerX" id="Ieo-if-PCo"/>
+                                <constraint firstItem="0C4-d6-P2R" firstAttribute="height" secondItem="bRv-4e-Sek" secondAttribute="height" multiplier="0.256724" id="R3T-9c-K5x"/>
+                                <constraint firstItem="ghl-Xo-2bc" firstAttribute="width" secondItem="0C4-d6-P2R" secondAttribute="width" id="TTm-0c-lPO"/>
+                                <constraint firstItem="0C4-d6-P2R" firstAttribute="top" secondItem="0B3-2n-Hzp" secondAttribute="bottom" constant="40" id="UHd-b7-iMk"/>
+                                <constraint firstItem="Ceu-8H-eNA" firstAttribute="centerX" secondItem="bRv-4e-Sek" secondAttribute="centerX" id="VfF-7o-FaE"/>
+                                <constraint firstItem="0C4-d6-P2R" firstAttribute="centerX" secondItem="0B3-2n-Hzp" secondAttribute="centerX" id="chv-Vr-AgD"/>
+                                <constraint firstItem="I5O-E0-dC3" firstAttribute="top" secondItem="Ceu-8H-eNA" secondAttribute="bottom" constant="59" id="cpK-BO-uL6"/>
+                                <constraint firstItem="0B3-2n-Hzp" firstAttribute="centerX" secondItem="I5O-E0-dC3" secondAttribute="centerX" id="hbD-XI-NTR"/>
+                                <constraint firstItem="ghl-Xo-2bc" firstAttribute="height" secondItem="0C4-d6-P2R" secondAttribute="height" multiplier="0.290476" id="kcd-8t-d2A"/>
+                                <constraint firstItem="ghl-Xo-2bc" firstAttribute="top" secondItem="0C4-d6-P2R" secondAttribute="bottom" constant="35" id="php-bh-Ovd"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="bRv-4e-Sek" firstAttribute="width" secondItem="0qo-AV-t3f" secondAttribute="width" id="2c9-HS-Zth"/>
+                        <constraint firstItem="bRv-4e-Sek" firstAttribute="top" secondItem="0qo-AV-t3f" secondAttribute="top" id="7Iv-gO-yoA"/>
+                        <constraint firstItem="bRv-4e-Sek" firstAttribute="leading" secondItem="0qo-AV-t3f" secondAttribute="leading" id="E4j-tL-6hA"/>
+                        <constraint firstAttribute="trailing" secondItem="bRv-4e-Sek" secondAttribute="trailing" id="KQB-H7-ohM"/>
+                        <constraint firstItem="bRv-4e-Sek" firstAttribute="height" secondItem="0qo-AV-t3f" secondAttribute="height" priority="250" id="UVq-1a-faZ"/>
+                        <constraint firstAttribute="bottom" secondItem="bRv-4e-Sek" secondAttribute="bottom" constant="-24" id="Yjj-RK-eul"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="SuT-wf-Sxw"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="DXb-Rn-gzF"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="0qo-AV-t3f" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="O0K-EJ-VG4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="0qo-AV-t3f" secondAttribute="top" id="XCP-Do-afb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0qo-AV-t3f" secondAttribute="trailing" id="d2e-eM-94L"/>
+                <constraint firstItem="0qo-AV-t3f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nES-OQ-TDS"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="44.866071428571423"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="eyk-Og-sJw">
+            <size key="intrinsicContentSize" width="-1" height="50"/>
+        </designable>
+        <designable name="ghl-Xo-2bc">
+            <size key="intrinsicContentSize" width="145" height="53"/>
+        </designable>
+        <designable name="vd3-cT-R0n">
+            <size key="intrinsicContentSize" width="-1" height="50"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
