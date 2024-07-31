@@ -1,5 +1,5 @@
 //
-//  CountriesTVC.swift
+//  SettingsTVC.swift
 //  GraduationProject
 //
 //  Created by 1234 on 31/07/2024.
@@ -7,16 +7,18 @@
 
 import UIKit
 
-class CountriesTVC: UITableViewController {
+class SettingsTVC: UITableViewController {
         
-    var isCompleted: (( _ selectedCountry: String)->())? = nil
-    func didSelectCountry(completed: @escaping(_ selectedCountry: String)->() ){
-        self.isCompleted = completed
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.backgroundColor = .white
+        navigationItem.title = "Setting"
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
 
-        tableView.register(UINib(nibName: CellsNames.countryViewCell, bundle: nil), forCellReuseIdentifier: CellsNames.countryViewCell)
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        tableView.register(UINib(nibName: CellsNames.profileCell, bundle: nil ), forCellReuseIdentifier: CellsNames.profileCell)
     }
 
     // MARK: - Table view data source
@@ -28,24 +30,24 @@ class CountriesTVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return ProfileConstData().getSettingsListCount()
     }
 
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CellsNames.countryViewCell, for: indexPath) as! CountryViewCell
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellsNames.profileCell, for: indexPath) as! ProfileCell
+        
+        cell.configCell(cellData: ProfileConstData().getDataOfIndex(indexPath.row))
         // Configure the cell...
 
         return cell
     }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 55
-    }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let completed = isCompleted {
-            completed("Egypt")
-        }
+        let vc = ProfileConstData().getVCNameOfIndex(indexPath.row)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
     /*
     // Override to support conditional editing of the table view.

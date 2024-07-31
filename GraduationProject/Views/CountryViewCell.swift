@@ -14,6 +14,7 @@ class CountryViewCell: UITableViewCell {
     @IBOutlet weak var countryFlag: RoundedImage!
     override func awakeFromNib() {
         super.awakeFromNib()
+        backgroundColor = .clear
         // Initialization code
     }
 

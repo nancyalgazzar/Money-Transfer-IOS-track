@@ -1,22 +1,25 @@
 //
-//  CountriesTVC.swift
+//  ProfileInfoTVC.swift
 //  GraduationProject
 //
-//  Created by 1234 on 31/07/2024.
+//  Created by 1234 on 01/08/2024.
 //
 
 import UIKit
 
-class CountriesTVC: UITableViewController {
+class ProfileInfoTVC: UITableViewController {
         
-    var isCompleted: (( _ selectedCountry: String)->())? = nil
-    func didSelectCountry(completed: @escaping(_ selectedCountry: String)->() ){
-        self.isCompleted = completed
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.contentInset = UIEdgeInsets(top: 40, left: 0, bottom: 0, right: 0)
+        tableView.isUserInteractionEnabled = false
+        navigationItem.title = "Profile information"
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
 
-        tableView.register(UINib(nibName: CellsNames.countryViewCell, bundle: nil), forCellReuseIdentifier: CellsNames.countryViewCell)
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        tableView.register(UINib(nibName: CellsNames.profileInfoCell, bundle: nil), forCellReuseIdentifier: CellsNames.profileInfoCell)
     }
 
     // MARK: - Table view data source
@@ -28,32 +31,24 @@ class CountriesTVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return ProfileInfoConstData().getNamesCount()
     }
 
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CellsNames.countryViewCell, for: indexPath) as! CountryViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellsNames.profileInfoCell, for: indexPath) as! ProfileInfoCell
 
-        // Configure the cell...
-
+        cell.configCell(name: ProfileInfoConstData().getEntryOfIndex(indexPath.row), value: "dummy data")
         return cell
     }
-    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 55
+        return 70
     }
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let completed = isCompleted {
-            completed("Egypt")
-        }
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        return nil
     }
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
+   
+    
 
     /*
     // Override to support editing the table view.

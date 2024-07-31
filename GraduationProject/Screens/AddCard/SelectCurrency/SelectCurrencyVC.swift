@@ -30,7 +30,7 @@ extension SelectCurrencyVC: UITableViewDelegate,UITableViewDataSource {
     }
     private func registerCell(){
         
-        tableView.register(UINib(nibName: "CountryViewCell", bundle: nil), forCellReuseIdentifier: "CountryViewCell")
+        tableView.register(UINib(nibName: CellsNames.countryViewCell, bundle: nil), forCellReuseIdentifier: CellsNames.countryViewCell)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,7 +38,7 @@ extension SelectCurrencyVC: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CountryViewCell", for: indexPath) as! CountryViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellsNames.countryViewCell, for: indexPath) as! CountryViewCell
          // config cell
         return cell
     }

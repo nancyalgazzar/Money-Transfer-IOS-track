@@ -18,8 +18,6 @@
 		7C561AE52C5A745C00DEAC2E /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C561AE42C5A745C00DEAC2E /* CircularProgressView.swift */; };
 		7C561AE92C5A8ABF00DEAC2E /* BankCardOTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C561AE72C5A8ABF00DEAC2E /* BankCardOTP.swift */; };
 		7C561AEA2C5A8ABF00DEAC2E /* BankCardOTP.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C561AE82C5A8ABF00DEAC2E /* BankCardOTP.xib */; };
-		7C561AEE2C5A9FFE00DEAC2E /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C561AEC2C5A9FFE00DEAC2E /* SettingsVC.swift */; };
-		7C561AEF2C5A9FFE00DEAC2E /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C561AED2C5A9FFE00DEAC2E /* SettingsVC.xib */; };
 		7C561AF42C5AA08B00DEAC2E /* ChangeSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C561AF22C5AA08B00DEAC2E /* ChangeSettingVC.swift */; };
 		7C561AF52C5AA08B00DEAC2E /* ChangeSettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C561AF32C5AA08B00DEAC2E /* ChangeSettingVC.xib */; };
 		7C561AF82C5AAC7400DEAC2E /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C561AF62C5AAC7300DEAC2E /* EditProfileVC.swift */; };
@@ -30,6 +28,20 @@
 		7C59BF3A2C595E7300AA97E9 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C59BF392C595E7300AA97E9 /* UIColor+Hex.swift */; };
 		7C59BF3C2C595FEA00AA97E9 /* UIView+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C59BF3B2C595FEA00AA97E9 /* UIView+HexColor.swift */; };
 		7C59BF3F2C5963FE00AA97E9 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C59BF3E2C5963FD00AA97E9 /* CustomTextField.swift */; };
+		7C5C3BF12C5AC5B400BDD86A /* SettingsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C3BEF2C5AC5B400BDD86A /* SettingsTVC.swift */; };
+		7C5C3BF22C5AC5B400BDD86A /* SettingsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C5C3BF02C5AC5B400BDD86A /* SettingsTVC.xib */; };
+		7C5C3BF52C5AC60E00BDD86A /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C3BF32C5AC60E00BDD86A /* ProfileCell.swift */; };
+		7C5C3BF62C5AC60E00BDD86A /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C5C3BF42C5AC60E00BDD86A /* ProfileCell.xib */; };
+		7C5C3BF92C5ACAF100BDD86A /* ProfileCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C3BF82C5ACAF100BDD86A /* ProfileCellModel.swift */; };
+		7C5C3BFC2C5ACC6800BDD86A /* VCs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C3BFB2C5ACC6800BDD86A /* VCs.swift */; };
+		7C5C3BFE2C5ACE5100BDD86A /* ProfileConstData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C3BFD2C5ACE5100BDD86A /* ProfileConstData.swift */; };
+		7C5C3C002C5AD5CC00BDD86A /* CellsNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C3BFF2C5AD5CC00BDD86A /* CellsNames.swift */; };
+		7C5C3C032C5ADE5300BDD86A /* ProfileInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C3C012C5ADE5300BDD86A /* ProfileInfoCell.swift */; };
+		7C5C3C042C5ADE5300BDD86A /* ProfileInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C5C3C022C5ADE5300BDD86A /* ProfileInfoCell.xib */; };
+		7C5C3C082C5AE09800BDD86A /* ProfileInfoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C3C062C5AE09800BDD86A /* ProfileInfoTVC.swift */; };
+		7C5C3C092C5AE09800BDD86A /* ProfileInfoTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C5C3C072C5AE09800BDD86A /* ProfileInfoTVC.xib */; };
+		7C5C3C0D2C5AE65F00BDD86A /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5C3C0B2C5AE65F00BDD86A /* ProfileVC.swift */; };
+		7C5C3C0E2C5AE65F00BDD86A /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C5C3C0C2C5AE65F00BDD86A /* ProfileVC.xib */; };
 		7C5D7E552C592B3300D60725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D7E542C592B3300D60725 /* AppDelegate.swift */; };
 		7C5D7E5E2C592B3400D60725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5D7E5D2C592B3400D60725 /* Assets.xcassets */; };
 		7C5D7E612C592B3400D60725 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5D7E5F2C592B3400D60725 /* LaunchScreen.storyboard */; };
@@ -57,8 +69,6 @@
 		7C561AE42C5A745C00DEAC2E /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		7C561AE72C5A8ABF00DEAC2E /* BankCardOTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCardOTP.swift; sourceTree = "<group>"; };
 		7C561AE82C5A8ABF00DEAC2E /* BankCardOTP.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankCardOTP.xib; sourceTree = "<group>"; };
-		7C561AEC2C5A9FFE00DEAC2E /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
-		7C561AED2C5A9FFE00DEAC2E /* SettingsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsVC.xib; sourceTree = "<group>"; };
 		7C561AF22C5AA08B00DEAC2E /* ChangeSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSettingVC.swift; sourceTree = "<group>"; };
 		7C561AF32C5AA08B00DEAC2E /* ChangeSettingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeSettingVC.xib; sourceTree = "<group>"; };
 		7C561AF62C5AAC7300DEAC2E /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
@@ -69,6 +79,20 @@
 		7C59BF392C595E7300AA97E9 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		7C59BF3B2C595FEA00AA97E9 /* UIView+HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+HexColor.swift"; sourceTree = "<group>"; };
 		7C59BF3E2C5963FD00AA97E9 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		7C5C3BEF2C5AC5B400BDD86A /* SettingsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTVC.swift; sourceTree = "<group>"; };
+		7C5C3BF02C5AC5B400BDD86A /* SettingsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTVC.xib; sourceTree = "<group>"; };
+		7C5C3BF32C5AC60E00BDD86A /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		7C5C3BF42C5AC60E00BDD86A /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
+		7C5C3BF82C5ACAF100BDD86A /* ProfileCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCellModel.swift; sourceTree = "<group>"; };
+		7C5C3BFB2C5ACC6800BDD86A /* VCs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCs.swift; sourceTree = "<group>"; };
+		7C5C3BFD2C5ACE5100BDD86A /* ProfileConstData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileConstData.swift; sourceTree = "<group>"; };
+		7C5C3BFF2C5AD5CC00BDD86A /* CellsNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsNames.swift; sourceTree = "<group>"; };
+		7C5C3C012C5ADE5300BDD86A /* ProfileInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoCell.swift; sourceTree = "<group>"; };
+		7C5C3C022C5ADE5300BDD86A /* ProfileInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileInfoCell.xib; sourceTree = "<group>"; };
+		7C5C3C062C5AE09800BDD86A /* ProfileInfoTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoTVC.swift; sourceTree = "<group>"; };
+		7C5C3C072C5AE09800BDD86A /* ProfileInfoTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileInfoTVC.xib; sourceTree = "<group>"; };
+		7C5C3C0B2C5AE65F00BDD86A /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		7C5C3C0C2C5AE65F00BDD86A /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		7C5D7E512C592B3300D60725 /* GraduationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraduationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5D7E542C592B3300D60725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C5D7E5D2C592B3400D60725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +145,8 @@
 		7C561AEB2C5A9FBE00DEAC2E /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				7C5C3C0A2C5AE63B00BDD86A /* ProfileVC */,
+				7C5C3C052C5AE04C00BDD86A /* ProfileInfo */,
 				7C561AFA2C5AAC7C00DEAC2E /* EditProfile */,
 				7C561AF12C5AA06600DEAC2E /* ChangePassword */,
 				7C561AF02C5AA00500DEAC2E /* Settings */,
@@ -131,8 +157,8 @@
 		7C561AF02C5AA00500DEAC2E /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				7C561AEC2C5A9FFE00DEAC2E /* SettingsVC.swift */,
-				7C561AED2C5A9FFE00DEAC2E /* SettingsVC.xib */,
+				7C5C3BEF2C5AC5B400BDD86A /* SettingsTVC.swift */,
+				7C5C3BF02C5AC5B400BDD86A /* SettingsTVC.xib */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -161,6 +187,10 @@
 				7C60E7252C5A3F15009E06C6 /* CountryViewCell.swift */,
 				7C60E7262C5A3F15009E06C6 /* CountryViewCell.xib */,
 				7C561AE42C5A745C00DEAC2E /* CircularProgressView.swift */,
+				7C5C3BF32C5AC60E00BDD86A /* ProfileCell.swift */,
+				7C5C3BF42C5AC60E00BDD86A /* ProfileCell.xib */,
+				7C5C3C012C5ADE5300BDD86A /* ProfileInfoCell.swift */,
+				7C5C3C022C5ADE5300BDD86A /* ProfileInfoCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +214,42 @@
 			path = SharedViews;
 			sourceTree = "<group>";
 		};
+		7C5C3BF72C5ACA9600BDD86A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C5C3BF82C5ACAF100BDD86A /* ProfileCellModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7C5C3BFA2C5ACC5800BDD86A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				7C5C3BFB2C5ACC6800BDD86A /* VCs.swift */,
+				7C5C3BFD2C5ACE5100BDD86A /* ProfileConstData.swift */,
+				7C5C3BFF2C5AD5CC00BDD86A /* CellsNames.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		7C5C3C052C5AE04C00BDD86A /* ProfileInfo */ = {
+			isa = PBXGroup;
+			children = (
+				7C5C3C062C5AE09800BDD86A /* ProfileInfoTVC.swift */,
+				7C5C3C072C5AE09800BDD86A /* ProfileInfoTVC.xib */,
+			);
+			path = ProfileInfo;
+			sourceTree = "<group>";
+		};
+		7C5C3C0A2C5AE63B00BDD86A /* ProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				7C5C3C0B2C5AE65F00BDD86A /* ProfileVC.swift */,
+				7C5C3C0C2C5AE65F00BDD86A /* ProfileVC.xib */,
+			);
+			path = ProfileVC;
+			sourceTree = "<group>";
+		};
 		7C5D7E482C592B3200D60725 = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +271,8 @@
 		7C5D7E532C592B3300D60725 /* GraduationProject */ = {
 			isa = PBXGroup;
 			children = (
+				7C5C3BFA2C5ACC5800BDD86A /* Constants */,
+				7C5C3BF72C5ACA9600BDD86A /* Models */,
 				7C5DFC122C5A611700C25AED /* Screens */,
 				7C60E72A2C5A41F1009E06C6 /* Routing */,
 				7C60E7292C5A3FCB009E06C6 /* StoryBoard */,
@@ -415,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C56CCFF2C5A1D7100C29FFD /* CountriesTVC.xib in Resources */,
+				7C5C3C042C5ADE5300BDD86A /* ProfileInfoCell.xib in Resources */,
 				7C5DFC0A2C5A572100C25AED /* SelectCurrencyVC.xib in Resources */,
 				7C561AF92C5AAC7400DEAC2E /* EditProfileVC.xib in Resources */,
 				7C555BD72C5994CF00BDCAC2 /* SignUpVC.xib in Resources */,
@@ -422,10 +491,13 @@
 				7C60E7282C5A3F15009E06C6 /* CountryViewCell.xib in Resources */,
 				7C561AE32C5A742900DEAC2E /* ConnectingProgressVC.xib in Resources */,
 				7C561AEA2C5A8ABF00DEAC2E /* BankCardOTP.xib in Resources */,
+				7C5C3C092C5AE09800BDD86A /* ProfileInfoTVC.xib in Resources */,
+				7C5C3C0E2C5AE65F00BDD86A /* ProfileVC.xib in Resources */,
+				7C5C3BF22C5AC5B400BDD86A /* SettingsTVC.xib in Resources */,
+				7C5C3BF62C5AC60E00BDD86A /* ProfileCell.xib in Resources */,
 				7C561AF52C5AA08B00DEAC2E /* ChangeSettingVC.xib in Resources */,
 				7C5D7E612C592B3400D60725 /* LaunchScreen.storyboard in Resources */,
 				7C5DFC172C5A641900C25AED /* AddNewCardVC.xib in Resources */,
-				7C561AEF2C5A9FFE00DEAC2E /* SettingsVC.xib in Resources */,
 				7C555BDB2C59971300BDCAC2 /* SignUpUserDataEntryVC.xib in Resources */,
 				7C5D7E5E2C592B3400D60725 /* Assets.xcassets in Resources */,
 			);
@@ -480,13 +552,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C561AEE2C5A9FFE00DEAC2E /* SettingsVC.swift in Sources */,
 				7C56CCFE2C5A1D7100C29FFD /* CountriesTVC.swift in Sources */,
 				7C555BDA2C59971300BDCAC2 /* SignUpUserDataEntryVC.swift in Sources */,
+				7C5C3BF92C5ACAF100BDD86A /* ProfileCellModel.swift in Sources */,
+				7C5C3C0D2C5AE65F00BDD86A /* ProfileVC.swift in Sources */,
 				7C555BD62C5994CF00BDCAC2 /* SignUpVC.swift in Sources */,
+				7C5C3BF52C5AC60E00BDD86A /* ProfileCell.swift in Sources */,
+				7C5C3C082C5AE09800BDD86A /* ProfileInfoTVC.swift in Sources */,
 				7C561AF82C5AAC7400DEAC2E /* EditProfileVC.swift in Sources */,
 				7C59BF3C2C595FEA00AA97E9 /* UIView+HexColor.swift in Sources */,
 				7C59BF3A2C595E7300AA97E9 /* UIColor+Hex.swift in Sources */,
+				7C5C3BFC2C5ACC6800BDD86A /* VCs.swift in Sources */,
 				7C5DFC092C5A572100C25AED /* SelectCurrencyVC.swift in Sources */,
 				7C555BD32C59835500BDCAC2 /* CustomButton.swift in Sources */,
 				7C561AE92C5A8ABF00DEAC2E /* BankCardOTP.swift in Sources */,
@@ -497,10 +573,14 @@
 				7C561AF42C5AA08B00DEAC2E /* ChangeSettingVC.swift in Sources */,
 				7C56CD062C5A1EEA00C29FFD /* RoundedImage.swift in Sources */,
 				7C561AE22C5A742900DEAC2E /* ConnectingProgressVC.swift in Sources */,
+				7C5C3BF12C5AC5B400BDD86A /* SettingsTVC.swift in Sources */,
 				7C59BF3F2C5963FE00AA97E9 /* CustomTextField.swift in Sources */,
+				7C5C3BFE2C5ACE5100BDD86A /* ProfileConstData.swift in Sources */,
 				7C60E72C2C5A4209009E06C6 /* AuthenticationRouting.swift in Sources */,
+				7C5C3C002C5AD5CC00BDD86A /* CellsNames.swift in Sources */,
 				7C5DFC102C5A5FE300C25AED /* AddCardRouting.swift in Sources */,
 				7C60E7272C5A3F15009E06C6 /* CountryViewCell.swift in Sources */,
+				7C5C3C032C5ADE5300BDD86A /* ProfileInfoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

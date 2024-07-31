@@ -14,7 +14,10 @@ class EditProfileVC: UIViewController {
     var datePicker: UIDatePicker!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        initDatePicker()
+        setTextFieldDelegates()
+        setGestureForDatePicking()
+        setGestureForCountrySelect()
         // Do any additional setup after loading the view.
     }
 
