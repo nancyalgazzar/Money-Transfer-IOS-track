@@ -22,7 +22,11 @@ class SignUpUserDataEntryVC: UIViewController {
         setGestureForCountrySelect()
         // Do any additional setup after loading the view.
     }
-   
+    
+    @IBAction func continueBtn(_ sender: UIButton) {
+        AddCardRouting.goToSelectCurrency(VC: self)
+    }
+    
 }
 //MARK: gesture recognizer of BirthDay
 extension SignUpUserDataEntryVC{
@@ -59,7 +63,7 @@ extension SignUpUserDataEntryVC{
         return sheetController
      }
 }
-//MARK: private functions
+//MARK: DatePicker Setting
 extension SignUpUserDataEntryVC: UIGestureRecognizerDelegate{
   
     private func showDatePicker() {

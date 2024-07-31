@@ -32,7 +32,7 @@ class CountriesTVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CountryViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CountryViewCell", for: indexPath) as! CountryViewCell
 
         // Configure the cell...
 

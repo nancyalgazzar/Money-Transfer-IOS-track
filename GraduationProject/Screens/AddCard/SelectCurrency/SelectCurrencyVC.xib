@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectCurrencyVC" customModule="GraduationProject" customModuleProvider="target">
             <connections>
-                <outlet property="selectCurrencyBtn" destination="aOx-j1-ccC" id="QiV-p7-Put"/>
                 <outlet property="tableView" destination="Udr-yZ-Udp" id="2dr-Gl-JxI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,7 +22,7 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOx-j1-ccC" customClass="CustomButton" customModule="GraduationProject" customModuleProvider="target">
                     <rect key="frame" x="20" y="766" width="374" height="61"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Select Currency">
+                    <buttonConfiguration key="configuration" style="plain" title="Get Started">
                         <backgroundConfiguration key="background"/>
                         <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -31,6 +30,9 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#521220"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="getStartedBtn:" destination="-1" eventType="touchUpInside" id="8jq-xK-9GF"/>
+                    </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Udr-yZ-Udp">
                     <rect key="frame" x="0.0" y="44" width="414" height="625"/>
@@ -54,7 +56,7 @@
     </objects>
     <designables>
         <designable name="aOx-j1-ccC">
-            <size key="intrinsicContentSize" width="238" height="53"/>
+            <size key="intrinsicContentSize" width="183.5" height="53"/>
         </designable>
     </designables>
     <resources>
