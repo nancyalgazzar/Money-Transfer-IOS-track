@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpVC" customModule="GraduationProject" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="76b-7q-CW5" id="muk-u8-Y67"/>
+                <outlet property="nameTextField" destination="KuQ-NL-URJ" id="8n1-5m-7ih"/>
+                <outlet property="passwordTextField" destination="rf4-DO-lDf" id="xqI-wT-dye"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -51,7 +54,7 @@
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KuQ-NL-URJ" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="50" width="331" height="50"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#FBFBFB"/>
                                                         <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="user"/>
@@ -71,7 +74,7 @@
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="76b-7q-CW5" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="50" width="331" height="50"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#FBFBFB"/>
                                                     </userDefinedRuntimeAttributes>
@@ -90,7 +93,7 @@
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rf4-DO-lDf" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="50" width="331" height="50"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#FBFBFB"/>
                                                     </userDefinedRuntimeAttributes>
@@ -110,6 +113,9 @@
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#521220"/>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="signUpBtn:" destination="-1" eventType="touchUpInside" id="yrb-hj-wxG"/>
+                                    </connections>
                                 </button>
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0z0-DC-j7f">
                                     <rect key="frame" x="84.5" y="664" width="245" height="29"/>
@@ -133,6 +139,9 @@
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColorCode" value="#871E35"/>
                                             </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="goToSignIn:" destination="-1" eventType="touchUpInside" id="L64-tQ-yuz"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>

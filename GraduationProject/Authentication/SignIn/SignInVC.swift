@@ -9,13 +9,24 @@ import UIKit
 
 class SignInVC: UIViewController {
 
+    @IBOutlet weak var passwordTextField: CustomTextField!
+    @IBOutlet weak var emailTextField: CustomTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//        navigationItem.hidesBackButton = true
+//        let backButton = UIButton()
+//        backButton.setTitleColor(UIColor.black, for: .normal)
+//        backButton.titleLabel = ""
+//        navigationItem.leftBarButtonItem = UIButton()
         // Do any additional setup after loading the view.
     }
 
 
+    @IBAction func gotToSignUp(_ sender: UIButton) {
+        AuthenticationRouting.goToSignUp(VC: self)
+    }
+    @IBAction func signInBtn(_ sender: UIButton) {
+    }
     /*
     // MARK: - Navigation
 

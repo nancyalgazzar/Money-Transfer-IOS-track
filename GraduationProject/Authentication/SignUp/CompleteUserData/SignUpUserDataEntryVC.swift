@@ -16,6 +16,7 @@ class SignUpUserDataEntryVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        initDatePicker()
         setTextFieldDelegates()
         setGestureForDatePicking()
         setGestureForCountrySelect()
@@ -62,22 +63,24 @@ extension SignUpUserDataEntryVC{
 extension SignUpUserDataEntryVC: UIGestureRecognizerDelegate{
   
     private func showDatePicker() {
+        
+        birthDayPicker.inputView = datePicker
+
+    }
+    private func initDatePicker(){
         datePicker = UIDatePicker()
         datePicker.locale = .current
         datePicker.datePickerMode = .date
         datePicker.maximumDate = .now
         datePicker.preferredDatePickerStyle  = .wheels
-        datePicker.tintColor = UIColor(hex: "#521220")
         datePicker.addTarget(self, action: #selector(pickedDate(datePicker:)), for: .valueChanged)
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
         let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(finishedPicking))
+        doneButton.tintColor = .black
         toolbar.setItems([doneButton], animated: false)
         birthDayPicker.inputAccessoryView = toolbar
-        birthDayPicker.inputView = datePicker
-
     }
-    
     @objc private func pickedDate(datePicker: UIDatePicker){
         let formatter = DateFormatter()
         formatter.dateStyle = .medium

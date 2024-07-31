@@ -9,13 +9,23 @@ import UIKit
 
 class SignUpVC: UIViewController {
 
+    @IBOutlet weak var passwordTextField: CustomTextField!
+    @IBOutlet weak var emailTextField: CustomTextField!
+    @IBOutlet weak var nameTextField: CustomTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func goToSignIn(_ sender: UIButton){
+        AuthenticationRouting.goToSignIn(VC: self)
+    }
+    @IBAction func signUpBtn(_ sender: UIButton) {
+        
+        AuthenticationRouting.goToSignUpUserDataVC(VC: self)
+    }
+    
     /*
     // MARK: - Navigation
 

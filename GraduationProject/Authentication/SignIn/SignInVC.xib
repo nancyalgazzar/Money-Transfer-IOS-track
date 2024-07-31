@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInVC" customModule="GraduationProject" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="dh4-AM-H2u" id="jQR-Wa-bNm"/>
+                <outlet property="passwordTextField" destination="soP-u5-3SQ" id="mJ7-df-8Hb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,7 +24,7 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zD7-wy-ytA">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <rect key="frame" x="0.0" y="-21" width="414" height="839"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rf-c6-iR9">
                                     <rect key="frame" x="160" y="58" width="94" height="39"/>
@@ -90,6 +92,9 @@
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#521220"/>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="signInBtn:" destination="-1" eventType="touchUpInside" id="np9-4c-UKJ"/>
+                                    </connections>
                                 </button>
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="rbc-Lg-xjO">
                                     <rect key="frame" x="89" y="546" width="236.5" height="29"/>
@@ -113,6 +118,9 @@
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColorCode" value="#871E35"/>
                                             </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="gotToSignUp:" destination="-1" eventType="touchUpInside" id="NWd-d7-de5"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>
@@ -132,7 +140,7 @@
                                 <constraint firstItem="rbc-Lg-xjO" firstAttribute="centerX" secondItem="akT-sD-nnk" secondAttribute="centerX" id="hpj-0h-8N6"/>
                                 <constraint firstItem="rbc-Lg-xjO" firstAttribute="top" secondItem="akT-sD-nnk" secondAttribute="bottom" constant="8" symbolic="YES" id="iTo-RG-L4U"/>
                                 <constraint firstItem="ngC-gc-Qav" firstAttribute="width" secondItem="zD7-wy-ytA" secondAttribute="width" multiplier="0.8" id="kgK-bZ-ejM"/>
-                                <constraint firstItem="ngC-gc-Qav" firstAttribute="height" secondItem="zD7-wy-ytA" secondAttribute="height" multiplier="0.309291" constant="-43" id="nff-du-URU"/>
+                                <constraint firstItem="ngC-gc-Qav" firstAttribute="height" secondItem="zD7-wy-ytA" secondAttribute="height" multiplier="0.309291" constant="-49.495148999999969" id="nff-du-URU"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -141,14 +149,15 @@
                         <constraint firstItem="zD7-wy-ytA" firstAttribute="leading" secondItem="FHl-vX-L5G" secondAttribute="leading" id="IwV-43-qgz"/>
                         <constraint firstItem="zD7-wy-ytA" firstAttribute="width" secondItem="FHl-vX-L5G" secondAttribute="width" id="LMK-ZB-jFt"/>
                         <constraint firstAttribute="trailing" secondItem="zD7-wy-ytA" secondAttribute="trailing" id="XaU-yX-sgu"/>
-                        <constraint firstItem="zD7-wy-ytA" firstAttribute="height" secondItem="FHl-vX-L5G" secondAttribute="height" priority="250" id="ggw-UR-OvG"/>
-                        <constraint firstItem="zD7-wy-ytA" firstAttribute="top" secondItem="FHl-vX-L5G" secondAttribute="top" id="xWU-Lx-IAU"/>
+                        <constraint firstItem="zD7-wy-ytA" firstAttribute="height" secondItem="FHl-vX-L5G" secondAttribute="height" priority="250" constant="21" id="ggw-UR-OvG"/>
+                        <constraint firstItem="zD7-wy-ytA" firstAttribute="top" secondItem="FHl-vX-L5G" secondAttribute="top" constant="-21" id="xWU-Lx-IAU"/>
                     </constraints>
                     <viewLayoutGuide key="contentLayoutGuide" id="0EM-yd-ROz"/>
                     <viewLayoutGuide key="frameLayoutGuide" id="aPc-7O-hAA"/>
                 </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="FHl-vX-L5G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="159-hK-u0K"/>
                 <constraint firstItem="FHl-vX-L5G" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="4ry-cG-rFV"/>

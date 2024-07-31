@@ -24,8 +24,11 @@
 		7C5D7E612C592B3400D60725 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5D7E5F2C592B3400D60725 /* LaunchScreen.storyboard */; };
 		7C5D7E6E2C592F9E00D60725 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D7E6C2C592F9E00D60725 /* SignInVC.swift */; };
 		7C5D7E6F2C592F9E00D60725 /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C5D7E6D2C592F9E00D60725 /* SignInVC.xib */; };
+		7C5DFC092C5A572100C25AED /* SelectCurrencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DFC072C5A572100C25AED /* SelectCurrencyVC.swift */; };
+		7C5DFC0A2C5A572100C25AED /* SelectCurrencyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C5DFC082C5A572100C25AED /* SelectCurrencyVC.xib */; };
 		7C60E7272C5A3F15009E06C6 /* CountryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C60E7252C5A3F15009E06C6 /* CountryViewCell.swift */; };
 		7C60E7282C5A3F15009E06C6 /* CountryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C60E7262C5A3F15009E06C6 /* CountryViewCell.xib */; };
+		7C60E72C2C5A4209009E06C6 /* AuthenticationRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C60E72B2C5A4209009E06C6 /* AuthenticationRouting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,8 +51,11 @@
 		7C5D7E622C592B3400D60725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C5D7E6C2C592F9E00D60725 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		7C5D7E6D2C592F9E00D60725 /* SignInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
+		7C5DFC072C5A572100C25AED /* SelectCurrencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyVC.swift; sourceTree = "<group>"; };
+		7C5DFC082C5A572100C25AED /* SelectCurrencyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectCurrencyVC.xib; sourceTree = "<group>"; };
 		7C60E7252C5A3F15009E06C6 /* CountryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryViewCell.swift; sourceTree = "<group>"; };
 		7C60E7262C5A3F15009E06C6 /* CountryViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryViewCell.xib; sourceTree = "<group>"; };
+		7C60E72B2C5A4209009E06C6 /* AuthenticationRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRouting.swift; sourceTree = "<group>"; };
 		8F1D8EAD26E64F381BD4DD5A /* Pods-GraduationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraduationProject.debug.xcconfig"; path = "Target Support Files/Pods-GraduationProject/Pods-GraduationProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C319482BBD425217D0084764 /* Pods_GraduationProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraduationProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -115,6 +121,8 @@
 		7C5D7E532C592B3300D60725 /* GraduationProject */ = {
 			isa = PBXGroup;
 			children = (
+				7C5DFC062C5A4C9100C25AED /* AddCard */,
+				7C60E72A2C5A41F1009E06C6 /* Routing */,
 				7C60E7292C5A3FCB009E06C6 /* StoryBoard */,
 				7C56CD002C5A1D7B00C29FFD /* Views */,
 				7C59BF3D2C5963B500AA97E9 /* SharedViews */,
@@ -137,12 +145,9 @@
 		7C5D7E692C592F0F00D60725 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				7C555BD82C59971300BDCAC2 /* SignUpUserDataEntryVC.swift */,
-				7C555BD92C59971300BDCAC2 /* SignUpUserDataEntryVC.xib */,
-				7C555BD42C5994CF00BDCAC2 /* SignUpVC.swift */,
-				7C555BD52C5994CF00BDCAC2 /* SignUpVC.xib */,
-				7C56CCFC2C5A1D7100C29FFD /* CountriesTVC.swift */,
-				7C56CCFD2C5A1D7100C29FFD /* CountriesTVC.xib */,
+				7C5DFC0D2C5A5A1C00C25AED /* CompleteUserData */,
+				7C5DFC0C2C5A59AF00C25AED /* SignUp */,
+				7C5DFC0B2C5A599200C25AED /* CountrySelect */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -166,12 +171,56 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		7C5DFC062C5A4C9100C25AED /* AddCard */ = {
+			isa = PBXGroup;
+			children = (
+				7C5DFC072C5A572100C25AED /* SelectCurrencyVC.swift */,
+				7C5DFC082C5A572100C25AED /* SelectCurrencyVC.xib */,
+			);
+			path = AddCard;
+			sourceTree = "<group>";
+		};
+		7C5DFC0B2C5A599200C25AED /* CountrySelect */ = {
+			isa = PBXGroup;
+			children = (
+				7C56CCFC2C5A1D7100C29FFD /* CountriesTVC.swift */,
+				7C56CCFD2C5A1D7100C29FFD /* CountriesTVC.xib */,
+			);
+			path = CountrySelect;
+			sourceTree = "<group>";
+		};
+		7C5DFC0C2C5A59AF00C25AED /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				7C555BD42C5994CF00BDCAC2 /* SignUpVC.swift */,
+				7C555BD52C5994CF00BDCAC2 /* SignUpVC.xib */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		7C5DFC0D2C5A5A1C00C25AED /* CompleteUserData */ = {
+			isa = PBXGroup;
+			children = (
+				7C555BD82C59971300BDCAC2 /* SignUpUserDataEntryVC.swift */,
+				7C555BD92C59971300BDCAC2 /* SignUpUserDataEntryVC.xib */,
+			);
+			path = CompleteUserData;
+			sourceTree = "<group>";
+		};
 		7C60E7292C5A3FCB009E06C6 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
 				7C5D7E5F2C592B3400D60725 /* LaunchScreen.storyboard */,
 			);
 			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		7C60E72A2C5A41F1009E06C6 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				7C60E72B2C5A4209009E06C6 /* AuthenticationRouting.swift */,
+			);
+			path = Routing;
 			sourceTree = "<group>";
 		};
 		7E900848BFBBC2B9535E1931 /* Frameworks */ = {
@@ -252,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C56CCFF2C5A1D7100C29FFD /* CountriesTVC.xib in Resources */,
+				7C5DFC0A2C5A572100C25AED /* SelectCurrencyVC.xib in Resources */,
 				7C555BD72C5994CF00BDCAC2 /* SignUpVC.xib in Resources */,
 				7C5D7E6F2C592F9E00D60725 /* SignInVC.xib in Resources */,
 				7C60E7282C5A3F15009E06C6 /* CountryViewCell.xib in Resources */,
@@ -315,11 +365,13 @@
 				7C555BD62C5994CF00BDCAC2 /* SignUpVC.swift in Sources */,
 				7C59BF3C2C595FEA00AA97E9 /* UIView+HexColor.swift in Sources */,
 				7C59BF3A2C595E7300AA97E9 /* UIColor+Hex.swift in Sources */,
+				7C5DFC092C5A572100C25AED /* SelectCurrencyVC.swift in Sources */,
 				7C555BD32C59835500BDCAC2 /* CustomButton.swift in Sources */,
 				7C5D7E6E2C592F9E00D60725 /* SignInVC.swift in Sources */,
 				7C5D7E552C592B3300D60725 /* AppDelegate.swift in Sources */,
 				7C56CD062C5A1EEA00C29FFD /* RoundedImage.swift in Sources */,
 				7C59BF3F2C5963FE00AA97E9 /* CustomTextField.swift in Sources */,
+				7C60E72C2C5A4209009E06C6 /* AuthenticationRouting.swift in Sources */,
 				7C60E7272C5A3F15009E06C6 /* CountryViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
