@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ServerErrorVC" customModule="GraduationProject" customModuleProvider="target">
             <connections>
+                <outlet property="callUsBtnView" destination="8hV-ut-1u7" id="Mka-eP-bPp"/>
+                <outlet property="messageUsBtnView" destination="VVM-UF-WR6" id="Ajt-bk-vII"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -34,9 +36,16 @@
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVM-UF-WR6">
                     <rect key="frame" x="16" y="619" width="343" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="VdL-LN-ZgX"/>
+                        <constraint firstAttribute="width" constant="343" id="svl-E4-eF6"/>
+                    </constraints>
                     <color key="tintColor" red="0.52941176469999995" green="0.1176470588" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Message Us"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Message Us"/>
+                    <connections>
+                        <action selector="messageUsBtnPressed:" destination="-1" eventType="touchUpInside" id="xyL-Lg-lex"/>
+                    </connections>
                 </button>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="It seems like we’re haveing some diffculities , please don’t leave your aspirations, we are sending for help" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Jqi-Tu-OjZ">
                     <rect key="frame" x="16" y="460" width="343" height="72"/>
@@ -50,9 +59,16 @@
                 </textView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hV-ut-1u7">
                     <rect key="frame" x="16" y="564" width="343" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="2tx-3X-JIu"/>
+                        <constraint firstAttribute="width" constant="343" id="tS1-3V-eXR"/>
+                    </constraints>
                     <color key="tintColor" red="0.52941176470588236" green="0.11764705882352941" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" title="Call Us"/>
+                    <connections>
+                        <action selector="callUsBtnPressed:" destination="-1" eventType="touchUpInside" id="icZ-Nw-PAs"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -67,7 +83,6 @@
                 <constraint firstItem="Jqi-Tu-OjZ" firstAttribute="centerX" secondItem="sSO-QV-mc0" secondAttribute="centerX" id="Rla-Dw-fHO"/>
                 <constraint firstItem="VVM-UF-WR6" firstAttribute="trailing" secondItem="8hV-ut-1u7" secondAttribute="trailing" id="ZzC-FU-UZV"/>
                 <constraint firstItem="VVM-UF-WR6" firstAttribute="top" secondItem="8hV-ut-1u7" secondAttribute="bottom" constant="16" id="fH6-XC-FNC"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="VVM-UF-WR6" secondAttribute="bottom" constant="120" id="hzA-q3-AuV"/>
                 <constraint firstItem="sSO-QV-mc0" firstAttribute="top" secondItem="gzZ-7r-hMZ" secondAttribute="bottom" constant="50" id="lkR-zh-LP9"/>
                 <constraint firstItem="VVM-UF-WR6" firstAttribute="leading" secondItem="8hV-ut-1u7" secondAttribute="leading" id="qdN-eH-R0A"/>
                 <constraint firstItem="gzZ-7r-hMZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="51" id="s8O-RO-cNR"/>

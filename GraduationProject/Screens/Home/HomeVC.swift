@@ -15,26 +15,17 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpScreen()
         
+    }
+}
+
+extension HomeVC {
+    private func setUpScreen() {
         profilePicView.backgroundColor = .gray
-        
-        profilePicView.layer.cornerRadius = 25
-        
-        curruntBalanceView.layer.cornerRadius = 8
-        servicesView.layer.cornerRadius = 8
+        toCircle(view: &profilePicView)
+        roundedCorners(view: &curruntBalanceView, radius: 8)
+        roundedCorners(view: &servicesView, radius: 8)
         recentTransactionsTableView.layer.cornerRadius = 8
-        
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

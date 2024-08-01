@@ -9,21 +9,31 @@ import UIKit
 
 class ServerErrorVC: UIViewController {
 
+    @IBOutlet weak var messageUsBtnView: UIButton!
+    @IBOutlet weak var callUsBtnView: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setUpScreen()
+        
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func callUsBtnPressed(_ sender: UIButton) {
+        print("callUsBtnPressed")
     }
-    */
+    
+    @IBAction func messageUsBtnPressed(_ sender: UIButton) {
+        print("messageUsBtnPressed")
+    }
+}
 
+extension ServerErrorVC {
+    private func setUpScreen() {
+        messageUsBtnView.layer.borderWidth = 3
+        messageUsBtnView.layer.borderColor = #colorLiteral(red: 0.6062087417, green: 0.1836366951, blue: 0.2688316107, alpha: 1)
+        messageUsBtnView.layer.cornerRadius = 8
+        
+        callUsBtnView.layer.cornerRadius = 8
+        callUsBtnView.tintColor = #colorLiteral(red: 0.6062087417, green: 0.1836366951, blue: 0.2688316107, alpha: 1)
+    }
 }

@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.makeKeyAndVisible()
 //        window?.rootViewController = SignIn
         
-        let homeVC = HomeVC()
+        let homeVC = ServerErrorVC()
         window?.makeKeyAndVisible()
         window?.rootViewController = homeVC
         return true

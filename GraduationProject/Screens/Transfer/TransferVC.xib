@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,6 +12,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransferVC" customModule="GraduationProject" customModuleProvider="target">
             <connections>
+                <outlet property="changeRateFrameView" destination="HBG-BB-lmD" id="MN4-dJ-pOh"/>
+                <outlet property="changeRateLabel" destination="8UX-EY-lPg" id="l7A-af-pFe"/>
+                <outlet property="continueBtnView" destination="jNe-4c-yHb" id="QhD-qB-Rmf"/>
+                <outlet property="getsAmountTextFilled" destination="OUB-sU-bzw" id="Whn-9S-Q7g"/>
+                <outlet property="recepentAccountTextFilled" destination="PAe-jB-Rlw" id="LpI-Bl-C2F"/>
+                <outlet property="recepentNameTextFilled" destination="s26-cP-s2x" id="hcI-fY-sX3"/>
+                <outlet property="sendAmountTextFilled" destination="F6b-D3-CDs" id="I7f-w2-Wnd"/>
+                <outlet property="stepThreeView" destination="ho0-M1-wV2" id="8ZU-15-6er"/>
                 <outlet property="view" destination="HQe-MF-oGr" id="9LR-iJ-nc1"/>
             </connections>
         </placeholder>
@@ -224,7 +233,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="35" id="23N-8X-TEf"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="EwP-LJ-Yfc"/>
@@ -446,6 +455,10 @@
                 </constraints>
             </view>
             <size key="freeformSize" width="375" height="1029"/>
+            <connections>
+                <outlet property="stepOneView" destination="Aqp-Zm-PUm" id="krw-FX-GTX"/>
+                <outlet property="stepTwoView" destination="EGq-Ec-h0B" id="RD6-9O-tZN"/>
+            </connections>
             <point key="canvasLocation" x="-692" y="113.42364532019705"/>
         </viewController>
     </objects>
@@ -459,6 +472,9 @@
         <image name="egypt" width="24" height="24"/>
         <image name="home 1" width="24" height="24"/>
         <image name="united states" width="24" height="24"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
