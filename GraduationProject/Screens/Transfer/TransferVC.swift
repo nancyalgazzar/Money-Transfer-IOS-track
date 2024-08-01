@@ -29,16 +29,35 @@ class TransferVC: UIViewController {
 
 extension TransferVC {
     private func setUpScreen() {
-        stepThreeView = setUpStepView(stepThreeView)
+        guard let stepOneView = stepOneView else {return}
+        setUpStepOneView()
+        
+        guard let stepThreeView = stepThreeView else {return}
+        guard let stepTwoView = stepTwoView else {return}
+        setUpStepViews()
+        
+        guard changeRateFrameView != nil else {return}
+        roundedCorners(view: &changeRateFrameView, radius: 8)
+        
+        continueBtnView.tintColor = #colorLiteral(red: 0.6062087417, green: 0.1836366951, blue: 0.2688316107, alpha: 1)
     }
     
-    private func setUpStepView(_ view: UIView) -> UIView{
+    private func setUpStepOneView() {
+        stepOneView.layer.borderWidth = 3
+        stepOneView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        stepOneView.layer.borderColor = #colorLiteral(red: 0.6062087417, green: 0.1836366951, blue: 0.2688316107, alpha: 1)
+        toCircle(view: &stepOneView)
+    }
+    
+    private func setUpStepViews() {
+        stepTwoView.layer.borderWidth = 3
+        stepTwoView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        stepTwoView.layer.borderColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
+        toCircle(view: &stepTwoView)
         
-        var stepView = view
-        stepView.layer.borderWidth = 3
-        stepView.layer.borderColor = #colorLiteral(red: 0.6062087417, green: 0.1836366951, blue: 0.2688316107, alpha: 1)
-        toCircle(view: &stepView)
-        
-        return stepView
+        stepThreeView.layer.borderWidth = 3
+        stepThreeView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        stepThreeView.layer.borderColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
+        toCircle(view: &stepThreeView)
     }
 }

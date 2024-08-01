@@ -187,7 +187,7 @@
                                         </view>
                                     </subviews>
                                 </stackView>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Check mark" translatesAutoresizingMaskIntoConstraints="NO" id="7lV-Qo-ibd">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Check mark" translatesAutoresizingMaskIntoConstraints="NO" id="7lV-Qo-ibd">
                                     <rect key="frame" x="174.66666666666666" y="454" width="44" height="44"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="44" id="p4a-AX-BU3"/>
@@ -202,8 +202,10 @@
                                 <constraint firstAttribute="trailing" secondItem="8Dp-r0-JLR" secondAttribute="trailing" constant="135" id="8IX-fp-LlP"/>
                                 <constraint firstItem="AoT-hb-Tdc" firstAttribute="top" secondItem="iLR-U4-9wT" secondAttribute="bottom" constant="1" id="8jX-5M-tx2"/>
                                 <constraint firstItem="7lV-Qo-ibd" firstAttribute="centerX" secondItem="Ivn-Fy-Rge" secondAttribute="centerX" id="CjF-Wp-5Fu"/>
+                                <constraint firstItem="DqM-0L-qSz" firstAttribute="top" secondItem="7lV-Qo-ibd" secondAttribute="bottom" constant="4" id="O0O-cE-8nZ"/>
                                 <constraint firstItem="7HA-cc-SHT" firstAttribute="centerX" secondItem="8Dp-r0-JLR" secondAttribute="centerX" id="Qd7-1h-X4n"/>
                                 <constraint firstItem="SIh-o4-DXb" firstAttribute="top" secondItem="AoT-hb-Tdc" secondAttribute="bottom" constant="16" id="Yi9-Pm-dMX"/>
+                                <constraint firstItem="7lV-Qo-ibd" firstAttribute="top" secondItem="fcF-Uz-fl0" secondAttribute="bottom" constant="5.6666666666666856" id="bgc-4y-GPd"/>
                                 <constraint firstItem="8Dp-r0-JLR" firstAttribute="leading" secondItem="Ivn-Fy-Rge" secondAttribute="leading" constant="134" id="bpF-xA-2kP"/>
                                 <constraint firstItem="AoT-hb-Tdc" firstAttribute="centerX" secondItem="iLR-U4-9wT" secondAttribute="centerX" id="bs6-ly-qfF"/>
                                 <constraint firstItem="iLR-U4-9wT" firstAttribute="top" secondItem="7HA-cc-SHT" secondAttribute="bottom" constant="1" id="g7A-ed-uIP"/>
