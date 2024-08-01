@@ -12,6 +12,21 @@
 		7C5D7E612C592B3400D60725 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5D7E5F2C592B3400D60725 /* LaunchScreen.storyboard */; };
 		7C5D7E6E2C592F9E00D60725 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D7E6C2C592F9E00D60725 /* SignInVC.swift */; };
 		7C5D7E6F2C592F9E00D60725 /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C5D7E6D2C592F9E00D60725 /* SignInVC.xib */; };
+		9C01E3682C593EFB000F416E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C01E3662C593EFB000F416E /* HomeVC.swift */; };
+		9C01E3692C593EFB000F416E /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C01E3672C593EFB000F416E /* HomeVC.xib */; };
+		9C01E36B2C594223000F416E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C01E36A2C594223000F416E /* GradientView.swift */; };
+		9C140EC92C5AC7A900705314 /* InternetConnectionErrorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C140EC72C5AC7A900705314 /* InternetConnectionErrorVC.swift */; };
+		9C140ECA2C5AC7A900705314 /* InternetConnectionErrorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C140EC82C5AC7A900705314 /* InternetConnectionErrorVC.xib */; };
+		9C45EC8B2C5A9A4D001EBD24 /* TransactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C45EC892C5A9A4D001EBD24 /* TransactionVC.swift */; };
+		9C45EC8C2C5A9A4D001EBD24 /* TransactionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C45EC8A2C5A9A4D001EBD24 /* TransactionVC.xib */; };
+		9C45EC902C5AA1BA001EBD24 /* TransactionDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C45EC8E2C5AA1BA001EBD24 /* TransactionDetailsVC.swift */; };
+		9C45EC912C5AA1BA001EBD24 /* TransactionDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C45EC8F2C5AA1BA001EBD24 /* TransactionDetailsVC.xib */; };
+		9C45EC952C5AC331001EBD24 /* ServerErrorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C45EC942C5AC331001EBD24 /* ServerErrorVC.xib */; };
+		9C45EC962C5AC331001EBD24 /* ServerErrorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C45EC932C5AC331001EBD24 /* ServerErrorVC.swift */; };
+		9CCA28002C5AF86B0036DD9A /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCA27FE2C5AF86B0036DD9A /* NotificationsVC.swift */; };
+		9CCA28012C5AF86B0036DD9A /* NotificationsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CCA27FF2C5AF86B0036DD9A /* NotificationsVC.xib */; };
+		9CCB4E9C2C59BA31000F942F /* TransferVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CCB4E9B2C59BA31000F942F /* TransferVC.xib */; };
+		9CCB4E9D2C59BA31000F942F /* TransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB4E9A2C59BA31000F942F /* TransferVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +37,21 @@
 		7C5D7E622C592B3400D60725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C5D7E6C2C592F9E00D60725 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		7C5D7E6D2C592F9E00D60725 /* SignInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
+		9C01E3662C593EFB000F416E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		9C01E3672C593EFB000F416E /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		9C01E36A2C594223000F416E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		9C140EC72C5AC7A900705314 /* InternetConnectionErrorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectionErrorVC.swift; sourceTree = "<group>"; };
+		9C140EC82C5AC7A900705314 /* InternetConnectionErrorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InternetConnectionErrorVC.xib; sourceTree = "<group>"; };
+		9C45EC892C5A9A4D001EBD24 /* TransactionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionVC.swift; sourceTree = "<group>"; };
+		9C45EC8A2C5A9A4D001EBD24 /* TransactionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionVC.xib; sourceTree = "<group>"; };
+		9C45EC8E2C5AA1BA001EBD24 /* TransactionDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsVC.swift; sourceTree = "<group>"; };
+		9C45EC8F2C5AA1BA001EBD24 /* TransactionDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionDetailsVC.xib; sourceTree = "<group>"; };
+		9C45EC932C5AC331001EBD24 /* ServerErrorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerErrorVC.swift; sourceTree = "<group>"; };
+		9C45EC942C5AC331001EBD24 /* ServerErrorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServerErrorVC.xib; sourceTree = "<group>"; };
+		9CCA27FE2C5AF86B0036DD9A /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
+		9CCA27FF2C5AF86B0036DD9A /* NotificationsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsVC.xib; sourceTree = "<group>"; };
+		9CCB4E9A2C59BA31000F942F /* TransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferVC.swift; sourceTree = "<group>"; };
+		9CCB4E9B2C59BA31000F942F /* TransferVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +84,8 @@
 		7C5D7E532C592B3300D60725 /* GraduationProject */ = {
 			isa = PBXGroup;
 			children = (
+				9C01E36A2C594223000F416E /* GradientView.swift */,
+				9C01E3642C593E9F000F416E /* Screens */,
 				7C5D7E6B2C592F2700D60725 /* Resources */,
 				7C5D7E682C592EFD00D60725 /* Authentication */,
 				7C5D7E5D2C592B3400D60725 /* Assets.xcassets */,
@@ -94,6 +126,67 @@
 				7C5D7E622C592B3400D60725 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		9C01E3642C593E9F000F416E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				9CCA27FD2C5AF80B0036DD9A /* Notifications */,
+				9C45EC922C5AC310001EBD24 /* Error */,
+				9C45EC882C5A9A1B001EBD24 /* Transaction */,
+				9CCB4E992C59B9FE000F942F /* Transfer */,
+				9C01E3652C593EDD000F416E /* Home */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		9C01E3652C593EDD000F416E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9C01E3662C593EFB000F416E /* HomeVC.swift */,
+				9C01E3672C593EFB000F416E /* HomeVC.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9C45EC882C5A9A1B001EBD24 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				9C45EC892C5A9A4D001EBD24 /* TransactionVC.swift */,
+				9C45EC8A2C5A9A4D001EBD24 /* TransactionVC.xib */,
+				9C45EC8E2C5AA1BA001EBD24 /* TransactionDetailsVC.swift */,
+				9C45EC8F2C5AA1BA001EBD24 /* TransactionDetailsVC.xib */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		9C45EC922C5AC310001EBD24 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				9C45EC932C5AC331001EBD24 /* ServerErrorVC.swift */,
+				9C45EC942C5AC331001EBD24 /* ServerErrorVC.xib */,
+				9C140EC72C5AC7A900705314 /* InternetConnectionErrorVC.swift */,
+				9C140EC82C5AC7A900705314 /* InternetConnectionErrorVC.xib */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		9CCA27FD2C5AF80B0036DD9A /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				9CCA27FE2C5AF86B0036DD9A /* NotificationsVC.swift */,
+				9CCA27FF2C5AF86B0036DD9A /* NotificationsVC.xib */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		9CCB4E992C59B9FE000F942F /* Transfer */ = {
+			isa = PBXGroup;
+			children = (
+				9CCB4E9A2C59BA31000F942F /* TransferVC.swift */,
+				9CCB4E9B2C59BA31000F942F /* TransferVC.xib */,
+			);
+			path = Transfer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,8 +248,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C5D7E6F2C592F9E00D60725 /* SignInVC.xib in Resources */,
+				9C45EC912C5AA1BA001EBD24 /* TransactionDetailsVC.xib in Resources */,
+				9CCB4E9C2C59BA31000F942F /* TransferVC.xib in Resources */,
+				9CCA28012C5AF86B0036DD9A /* NotificationsVC.xib in Resources */,
+				9C140ECA2C5AC7A900705314 /* InternetConnectionErrorVC.xib in Resources */,
+				9C01E3692C593EFB000F416E /* HomeVC.xib in Resources */,
+				9C45EC952C5AC331001EBD24 /* ServerErrorVC.xib in Resources */,
 				7C5D7E612C592B3400D60725 /* LaunchScreen.storyboard in Resources */,
 				7C5D7E5E2C592B3400D60725 /* Assets.xcassets in Resources */,
+				9C45EC8C2C5A9A4D001EBD24 /* TransactionVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,8 +267,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C45EC962C5AC331001EBD24 /* ServerErrorVC.swift in Sources */,
+				9CCA28002C5AF86B0036DD9A /* NotificationsVC.swift in Sources */,
+				9C01E3682C593EFB000F416E /* HomeVC.swift in Sources */,
 				7C5D7E6E2C592F9E00D60725 /* SignInVC.swift in Sources */,
+				9C01E36B2C594223000F416E /* GradientView.swift in Sources */,
+				9C45EC8B2C5A9A4D001EBD24 /* TransactionVC.swift in Sources */,
+				9C140EC92C5AC7A900705314 /* InternetConnectionErrorVC.swift in Sources */,
 				7C5D7E552C592B3300D60725 /* AppDelegate.swift in Sources */,
+				9C45EC902C5AA1BA001EBD24 /* TransactionDetailsVC.swift in Sources */,
+				9CCB4E9D2C59BA31000F942F /* TransferVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
