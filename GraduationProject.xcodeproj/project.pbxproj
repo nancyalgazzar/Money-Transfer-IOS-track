@@ -302,7 +302,6 @@
 		7C5D7E532C592B3300D60725 /* GraduationProject */ = {
 			isa = PBXGroup;
 			children = (
-				7C88C3D12C5CFFB600BE6622 /* ViewModel */,
 				7C88C3D02C5CFF9000BE6622 /* Utilities */,
 				7C5C3BFA2C5ACC5800BDD86A /* Constants */,
 				7C5C3BF72C5ACA9600BDD86A /* Models */,
@@ -329,6 +328,7 @@
 		7C5D7E692C592F0F00D60725 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				7C88C3D12C5CFFB600BE6622 /* ViewModel */,
 				7C5DFC0D2C5A5A1C00C25AED /* CompleteUserData */,
 				7C5DFC0C2C5A59AF00C25AED /* SignUp */,
 				7C5DFC0B2C5A599200C25AED /* CountrySelect */,
