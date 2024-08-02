@@ -12,8 +12,8 @@ class SignUpUserDataEntryVC: UIViewController {
 
     @IBOutlet weak var birthDayPicker: CustomTextField!
     @IBOutlet weak var countrySelectOutlet: CustomTextField!
+    
     var datePicker: UIDatePicker!
-
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
