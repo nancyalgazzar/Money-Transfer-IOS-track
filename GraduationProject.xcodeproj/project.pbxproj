@@ -66,6 +66,7 @@
 		7C88C3C82C5CFA2F00BE6622 /* UIView+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3C42C5CFA2F00BE6622 /* UIView+Loader.swift */; };
 		7C88C3C92C5CFA2F00BE6622 /* UserDefaults+contains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3C52C5CFA2F00BE6622 /* UserDefaults+contains.swift */; };
 		7C88C3CB2C5CFA4000BE6622 /* ValidateUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3CA2C5CFA4000BE6622 /* ValidateUserData.swift */; };
+		7C88C3D32C5D050700BE6622 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3D22C5D050700BE6622 /* SignUpViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +131,7 @@
 		7C88C3C42C5CFA2F00BE6622 /* UIView+Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Loader.swift"; sourceTree = "<group>"; };
 		7C88C3C52C5CFA2F00BE6622 /* UserDefaults+contains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+contains.swift"; sourceTree = "<group>"; };
 		7C88C3CA2C5CFA4000BE6622 /* ValidateUserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateUserData.swift; sourceTree = "<group>"; };
+		7C88C3D22C5D050700BE6622 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		8F1D8EAD26E64F381BD4DD5A /* Pods-GraduationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraduationProject.debug.xcconfig"; path = "Target Support Files/Pods-GraduationProject/Pods-GraduationProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C319482BBD425217D0084764 /* Pods_GraduationProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraduationProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -300,7 +302,8 @@
 		7C5D7E532C592B3300D60725 /* GraduationProject */ = {
 			isa = PBXGroup;
 			children = (
-				7C88C3CA2C5CFA4000BE6622 /* ValidateUserData.swift */,
+				7C88C3D12C5CFFB600BE6622 /* ViewModel */,
+				7C88C3D02C5CFF9000BE6622 /* Utilities */,
 				7C5C3BFA2C5ACC5800BDD86A /* Constants */,
 				7C5C3BF72C5ACA9600BDD86A /* Models */,
 				7C5DFC122C5A611700C25AED /* Screens */,
@@ -454,6 +457,22 @@
 			path = MyCards;
 			sourceTree = "<group>";
 		};
+		7C88C3D02C5CFF9000BE6622 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7C88C3CA2C5CFA4000BE6622 /* ValidateUserData.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7C88C3D12C5CFFB600BE6622 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7C88C3D22C5D050700BE6622 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		7E900848BFBBC2B9535E1931 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -604,6 +623,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C56CCFE2C5A1D7100C29FFD /* CountriesTVC.swift in Sources */,
+				7C88C3D32C5D050700BE6622 /* SignUpViewModel.swift in Sources */,
 				7C555BDA2C59971300BDCAC2 /* SignUpUserDataEntryVC.swift in Sources */,
 				7C5C3BF92C5ACAF100BDD86A /* ProfileCellModel.swift in Sources */,
 				7C5C3C0D2C5AE65F00BDD86A /* ProfileVC.swift in Sources */,

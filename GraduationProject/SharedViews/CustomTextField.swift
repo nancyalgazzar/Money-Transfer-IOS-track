@@ -36,21 +36,27 @@ class CustomTextField: UITextField {
        
     }
     private func setupRightView() {
-            guard let image = rightImage else {
-                rightView = nil
-                rightViewMode = .never
-                return
-            }
-            
+        guard let image = rightImage else {
+            rightView = nil
+            rightViewMode = .never
+            return
+        }
         
-        let imageView = UIImageView(image: image)
-        imageView.contentMode = .scaleAspectFill
+        
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = image
         self.rightView = imageView
         self.rightViewMode = .always
-        }
+    }
     
         
-        override var intrinsicContentSize: CGSize {
-            return CGSize(width: UIView.noIntrinsicMetric, height: customHeight)
-        }
+    override var intrinsicContentSize: CGSize {
+        return CGSize(width: UIView.noIntrinsicMetric, height: customHeight)
+    }
+    override func rightViewRect(forBounds bounds: CGRect) ->CGRect{
+        var textRect = super.rightViewRect(forBounds: bounds)
+        textRect.origin.x -= 10
+        return textRect
+    }
 }

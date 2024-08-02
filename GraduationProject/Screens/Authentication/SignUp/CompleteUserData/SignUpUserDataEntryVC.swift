@@ -16,6 +16,7 @@ class SignUpUserDataEntryVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
         initDatePicker()
         setTextFieldDelegates()
         setGestureForDatePicking()

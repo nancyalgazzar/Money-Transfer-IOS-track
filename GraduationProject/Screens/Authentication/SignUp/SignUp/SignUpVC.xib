@@ -13,6 +13,7 @@
                 <outlet property="emailTextField" destination="76b-7q-CW5" id="muk-u8-Y67"/>
                 <outlet property="nameTextField" destination="KuQ-NL-URJ" id="8n1-5m-7ih"/>
                 <outlet property="passwordTextField" destination="rf4-DO-lDf" id="xqI-wT-dye"/>
+                <outlet property="signUpBtn" destination="NOh-KP-h5e" id="0HC-Fw-SGi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -77,6 +78,7 @@
                                                     <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#FBFBFB"/>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="email 1"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                             </subviews>
@@ -92,10 +94,11 @@
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rf4-DO-lDf" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="50" width="331" height="50"/>
+                                                    <color key="backgroundColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#FBFBFB"/>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="close-eye"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                             </subviews>
@@ -104,15 +107,13 @@
                                 </stackView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOh-KP-h5e" customClass="CustomButton" customModule="GraduationProject" customModuleProvider="target">
                                     <rect key="frame" x="41.5" y="603" width="331" height="53"/>
+                                    <color key="backgroundColor" red="0.32156862745098036" green="0.070588235294117646" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Sign Up">
                                         <backgroundConfiguration key="background"/>
                                         <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </buttonConfiguration>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#521220"/>
-                                    </userDefinedRuntimeAttributes>
                                     <connections>
                                         <action selector="signUpBtn:" destination="-1" eventType="touchUpInside" id="yrb-hj-wxG"/>
                                     </connections>
@@ -190,10 +191,10 @@
     </objects>
     <designables>
         <designable name="76b-7q-CW5">
-            <size key="intrinsicContentSize" width="-1" height="50"/>
+            <size key="intrinsicContentSize" width="132.5" height="34"/>
         </designable>
         <designable name="KuQ-NL-URJ">
-            <size key="intrinsicContentSize" width="-1" height="50"/>
+            <size key="intrinsicContentSize" width="162.5" height="34"/>
         </designable>
         <designable name="NOh-KP-h5e">
             <size key="intrinsicContentSize" width="133.5" height="53"/>
@@ -202,10 +203,12 @@
             <size key="intrinsicContentSize" width="50" height="29"/>
         </designable>
         <designable name="rf4-DO-lDf">
-            <size key="intrinsicContentSize" width="-1" height="50"/>
+            <size key="intrinsicContentSize" width="160.5" height="34"/>
         </designable>
     </designables>
     <resources>
+        <image name="close-eye" width="24" height="24"/>
+        <image name="email 1" width="24" height="24"/>
         <image name="user 1" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
