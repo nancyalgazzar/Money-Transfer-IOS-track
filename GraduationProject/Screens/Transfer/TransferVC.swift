@@ -29,11 +29,11 @@ class TransferVC: UIViewController {
 
 extension TransferVC {
     private func setUpScreen() {
-        guard let stepOneView = stepOneView else {return}
+        guard stepOneView != nil else {return}
         setUpStepOneView()
         
-        guard let stepThreeView = stepThreeView else {return}
-        guard let stepTwoView = stepTwoView else {return}
+        guard stepThreeView != nil else {return}
+        guard stepTwoView != nil else {return}
         setUpStepViews()
         
         guard changeRateFrameView != nil else {return}
