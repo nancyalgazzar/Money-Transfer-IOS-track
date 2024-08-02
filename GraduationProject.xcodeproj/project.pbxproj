@@ -60,6 +60,12 @@
 		7C88C3BB2C5CDFE400BE6622 /* SuccessConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3B92C5CDFE400BE6622 /* SuccessConnect.swift */; };
 		7C88C3BC2C5CDFE400BE6622 /* SuccessConnect.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C88C3BA2C5CDFE400BE6622 /* SuccessConnect.xib */; };
 		7C88C3BF2C5CEF9300BE6622 /* MyCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3BE2C5CEF9300BE6622 /* MyCardsVC.swift */; };
+		7C88C3C12C5CF02C00BE6622 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3C02C5CF02C00BE6622 /* UserModel.swift */; };
+		7C88C3C62C5CFA2F00BE6622 /* String+Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3C22C5CFA2F00BE6622 /* String+Trim.swift */; };
+		7C88C3C72C5CFA2F00BE6622 /* VC+AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3C32C5CFA2F00BE6622 /* VC+AlertMessage.swift */; };
+		7C88C3C82C5CFA2F00BE6622 /* UIView+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3C42C5CFA2F00BE6622 /* UIView+Loader.swift */; };
+		7C88C3C92C5CFA2F00BE6622 /* UserDefaults+contains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3C52C5CFA2F00BE6622 /* UserDefaults+contains.swift */; };
+		7C88C3CB2C5CFA4000BE6622 /* ValidateUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3CA2C5CFA4000BE6622 /* ValidateUserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +124,12 @@
 		7C88C3B92C5CDFE400BE6622 /* SuccessConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessConnect.swift; sourceTree = "<group>"; };
 		7C88C3BA2C5CDFE400BE6622 /* SuccessConnect.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessConnect.xib; sourceTree = "<group>"; };
 		7C88C3BE2C5CEF9300BE6622 /* MyCardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardsVC.swift; sourceTree = "<group>"; };
+		7C88C3C02C5CF02C00BE6622 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		7C88C3C22C5CFA2F00BE6622 /* String+Trim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Trim.swift"; sourceTree = "<group>"; };
+		7C88C3C32C5CFA2F00BE6622 /* VC+AlertMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VC+AlertMessage.swift"; sourceTree = "<group>"; };
+		7C88C3C42C5CFA2F00BE6622 /* UIView+Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Loader.swift"; sourceTree = "<group>"; };
+		7C88C3C52C5CFA2F00BE6622 /* UserDefaults+contains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+contains.swift"; sourceTree = "<group>"; };
+		7C88C3CA2C5CFA4000BE6622 /* ValidateUserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateUserData.swift; sourceTree = "<group>"; };
 		8F1D8EAD26E64F381BD4DD5A /* Pods-GraduationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraduationProject.debug.xcconfig"; path = "Target Support Files/Pods-GraduationProject/Pods-GraduationProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C319482BBD425217D0084764 /* Pods_GraduationProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraduationProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -210,6 +222,10 @@
 		7C59BF382C595E5900AA97E9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				7C88C3C32C5CFA2F00BE6622 /* VC+AlertMessage.swift */,
+				7C88C3C22C5CFA2F00BE6622 /* String+Trim.swift */,
+				7C88C3C42C5CFA2F00BE6622 /* UIView+Loader.swift */,
+				7C88C3C52C5CFA2F00BE6622 /* UserDefaults+contains.swift */,
 				7C59BF392C595E7300AA97E9 /* UIColor+Hex.swift */,
 				7C59BF3B2C595FEA00AA97E9 /* UIView+HexColor.swift */,
 			);
@@ -230,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				7C5C3BF82C5ACAF100BDD86A /* ProfileCellModel.swift */,
+				7C88C3C02C5CF02C00BE6622 /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -283,6 +300,7 @@
 		7C5D7E532C592B3300D60725 /* GraduationProject */ = {
 			isa = PBXGroup;
 			children = (
+				7C88C3CA2C5CFA4000BE6622 /* ValidateUserData.swift */,
 				7C5C3BFA2C5ACC5800BDD86A /* Constants */,
 				7C5C3BF72C5ACA9600BDD86A /* Models */,
 				7C5DFC122C5A611700C25AED /* Screens */,
@@ -591,15 +609,19 @@
 				7C5C3C0D2C5AE65F00BDD86A /* ProfileVC.swift in Sources */,
 				7C555BD62C5994CF00BDCAC2 /* SignUpVC.swift in Sources */,
 				7C5C3BF52C5AC60E00BDD86A /* ProfileCell.swift in Sources */,
+				7C88C3C62C5CFA2F00BE6622 /* String+Trim.swift in Sources */,
+				7C88C3C92C5CFA2F00BE6622 /* UserDefaults+contains.swift in Sources */,
 				7C5C3C082C5AE09800BDD86A /* ProfileInfoTVC.swift in Sources */,
 				7C561AF82C5AAC7400DEAC2E /* EditProfileVC.swift in Sources */,
 				7C59BF3C2C595FEA00AA97E9 /* UIView+HexColor.swift in Sources */,
 				7C59BF3A2C595E7300AA97E9 /* UIColor+Hex.swift in Sources */,
+				7C88C3C12C5CF02C00BE6622 /* UserModel.swift in Sources */,
 				7C5C3BFC2C5ACC6800BDD86A /* VCs.swift in Sources */,
 				7C5DFC092C5A572100C25AED /* SelectCurrencyVC.swift in Sources */,
 				7C555BD32C59835500BDCAC2 /* CustomButton.swift in Sources */,
 				7C561AE92C5A8ABF00DEAC2E /* BankCardOTP.swift in Sources */,
 				7C561AE52C5A745C00DEAC2E /* CircularProgressView.swift in Sources */,
+				7C88C3C72C5CFA2F00BE6622 /* VC+AlertMessage.swift in Sources */,
 				7C5DFC162C5A641900C25AED /* AddNewCardVC.swift in Sources */,
 				7C5D7E6E2C592F9E00D60725 /* SignInVC.swift in Sources */,
 				7C5D7E552C592B3300D60725 /* AppDelegate.swift in Sources */,
@@ -609,8 +631,10 @@
 				7C5C3BF12C5AC5B400BDD86A /* SettingsTVC.swift in Sources */,
 				7C88C3BF2C5CEF9300BE6622 /* MyCardsVC.swift in Sources */,
 				7C59BF3F2C5963FE00AA97E9 /* CustomTextField.swift in Sources */,
+				7C88C3CB2C5CFA4000BE6622 /* ValidateUserData.swift in Sources */,
 				7C5C3BFE2C5ACE5100BDD86A /* ProfileConstData.swift in Sources */,
 				7C88C3BB2C5CDFE400BE6622 /* SuccessConnect.swift in Sources */,
+				7C88C3C82C5CFA2F00BE6622 /* UIView+Loader.swift in Sources */,
 				7C60E72C2C5A4209009E06C6 /* AuthenticationRouting.swift in Sources */,
 				7C5C3C002C5AD5CC00BDD86A /* CellsNames.swift in Sources */,
 				7C5DFC102C5A5FE300C25AED /* AddCardRouting.swift in Sources */,
