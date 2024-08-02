@@ -36,18 +36,21 @@ extension TabBarVC {
     private func setHomeTab() {
         let homeVC = HomeVC()
         homeVC.tabBarItem.image = #imageLiteral(resourceName: "home 1")
+        homeVC.tabBarItem.title = "Home"
         homeNavigation.viewControllers = [homeVC]
     }
     
     private func setTransferTab() {
         let transferVC = TransferVC()
         transferVC.tabBarItem.image = #imageLiteral(resourceName: "Transfer 1")
+        transferVC.tabBarItem.title = "Transfer"
         transferNavigation.viewControllers = [transferVC]
     }
     
     private func setTransactionTab() {
         let transactionVC = TransactionVC()
         transactionVC.tabBarItem.image = #imageLiteral(resourceName: "History 1")
+        transactionVC.tabBarItem.title = "Transaction"
         transactionNavigation.viewControllers = [transactionVC]
     }
 
