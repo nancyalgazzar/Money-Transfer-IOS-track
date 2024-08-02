@@ -8,21 +8,24 @@
 import UIKit
 
 class HomeVC: UIViewController {
+    
+    //MARK: - IB Outlets
     @IBOutlet weak var profilePicView: UIView!
     @IBOutlet weak var curruntBalanceView: UIView!
     @IBOutlet weak var servicesView: UIView!
     @IBOutlet weak var recentTransactionsTableView: UITableView!
     
-    var recentTransactionArr: [HomeRecentTransactionCellModel] = []
+    var recentTransactionArr: [TransactionCellModel] = []
     
+    //MARK: - lifeCycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
         getData()
         recentTransactionsTableView.layer.cornerRadius = 8
-        
     }
     
+    //MARK: - private functions
     private func setupTableView() {
         recentTransactionsTableView.delegate = self
         recentTransactionsTableView.dataSource = self
@@ -30,19 +33,10 @@ class HomeVC: UIViewController {
     }
     
     private func getData() {
-        let recentTransactionArr: [HomeRecentTransactionCellModel] = [
-            HomeRecentTransactionCellModel(cardTypeImage: UIImage(named: "visa")!, name: "Ahmed", cardTypeName: "MasterCard", lastFourNumbers: "0012", date: "Today 11:00", transactionType: "Recived", amount: "$ 1000"),
-            
-            HomeRecentTransactionCellModel(cardTypeImage: UIImage(named: "visa")!, name: "Hany Shouman", cardTypeName: "MasterCard", lastFourNumbers: "8452", date: "Today 12:00", transactionType: "Recived", amount: "$ 5000"),
-            
-            HomeRecentTransactionCellModel(cardTypeImage: UIImage(named: "visa")!, name: "Ahmed", cardTypeName: "MasterCard", lastFourNumbers: "0012", date: "Today 11:00", transactionType: "Recived", amount: "$ 1000"),
-            HomeRecentTransactionCellModel(cardTypeImage: UIImage(named: "visa")!, name: "Ahmed", cardTypeName: "MasterCard", lastFourNumbers: "0012", date: "Today 11:00", transactionType: "Recived", amount: "$ 1000"),
-            HomeRecentTransactionCellModel(cardTypeImage: UIImage(named: "visa")!, name: "Ahmed", cardTypeName: "MasterCard", lastFourNumbers: "0012", date: "Today 11:00", transactionType: "Recived", amount: "$ 1000")
-        ]
-        
-        self.recentTransactionArr = recentTransactionArr
+        self.recentTransactionArr = DummyTransactionData.recentTransactionArr
     }
     
+    //MARK: - IB Actions
     @IBAction func notificationBtnPressed(_ sender: UIButton) {
         print("Open Notification")
     }
@@ -91,6 +85,7 @@ class HomeVC: UIViewController {
 }
 
 
+//MARK: - tableView functions
 extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recentTransactionArr.count
@@ -106,6 +101,4 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
-    
-    
 }

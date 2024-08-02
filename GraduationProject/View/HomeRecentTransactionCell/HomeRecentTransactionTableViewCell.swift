@@ -29,7 +29,7 @@ class HomeRecentTransactionTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func configureCell(_ transaction: HomeRecentTransactionCellModel) {
+    func configureCell(_ transaction: TransactionCellModel) {
         cardTypeImage.image = transaction.cardTypeImage
         nameTextLabel.text = transaction.name
         cardTypeTextLabel.text = transaction.cardTypeName
