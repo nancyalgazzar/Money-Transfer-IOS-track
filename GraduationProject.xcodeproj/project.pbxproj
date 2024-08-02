@@ -27,6 +27,7 @@
 		9CCA28012C5AF86B0036DD9A /* NotificationsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CCA27FF2C5AF86B0036DD9A /* NotificationsVC.xib */; };
 		9CCB4E9C2C59BA31000F942F /* TransferVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CCB4E9B2C59BA31000F942F /* TransferVC.xib */; };
 		9CCB4E9D2C59BA31000F942F /* TransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB4E9A2C59BA31000F942F /* TransferVC.swift */; };
+		9CD3E16A2C5CFB0600801453 /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD3E1692C5CFB0600801453 /* CircularView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		9CCA27FF2C5AF86B0036DD9A /* NotificationsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsVC.xib; sourceTree = "<group>"; };
 		9CCB4E9A2C59BA31000F942F /* TransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferVC.swift; sourceTree = "<group>"; };
 		9CCB4E9B2C59BA31000F942F /* TransferVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferVC.xib; sourceTree = "<group>"; };
+		9CD3E1692C5CFB0600801453 /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,13 +86,13 @@
 		7C5D7E532C592B3300D60725 /* GraduationProject */ = {
 			isa = PBXGroup;
 			children = (
+				9CD3E1682C5CFAD800801453 /* Shared View */,
 				9C6FA79A2C5C6B81006CA2F9 /* Routing */,
 				9C6FA7952C5BCFD0006CA2F9 /* Extensions */,
 				9C01E3642C593E9F000F416E /* Screens */,
 				7C5D7E6B2C592F2700D60725 /* Resources */,
 				7C5D7E5D2C592B3400D60725 /* Assets.xcassets */,
 				7C5D7E5F2C592B3400D60725 /* LaunchScreen.storyboard */,
-				9C01E36A2C594223000F416E /* GradientView.swift */,
 			);
 			path = GraduationProject;
 			sourceTree = "<group>";
@@ -181,6 +183,15 @@
 			path = Transfer;
 			sourceTree = "<group>";
 		};
+		9CD3E1682C5CFAD800801453 /* Shared View */ = {
+			isa = PBXGroup;
+			children = (
+				9C01E36A2C594223000F416E /* GradientView.swift */,
+				9CD3E1692C5CFB0600801453 /* CircularView.swift */,
+			);
+			path = "Shared View";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -267,6 +278,7 @@
 				9C140EC92C5AC7A900705314 /* InternetConnectionErrorVC.swift in Sources */,
 				7C5D7E552C592B3300D60725 /* AppDelegate.swift in Sources */,
 				9C6FA7992C5C5569006CA2F9 /* TabBarVC.swift in Sources */,
+				9CD3E16A2C5CFB0600801453 /* CircularView.swift in Sources */,
 				9C45EC902C5AA1BA001EBD24 /* TransactionDetailsVC.swift in Sources */,
 				9CCB4E9D2C59BA31000F942F /* TransferVC.swift in Sources */,
 			);
