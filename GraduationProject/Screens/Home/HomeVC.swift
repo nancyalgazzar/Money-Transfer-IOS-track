@@ -13,9 +13,34 @@ class HomeVC: UIViewController {
     @IBOutlet weak var servicesView: UIView!
     @IBOutlet weak var recentTransactionsTableView: UITableView!
     
+    var recentTransactionArr: [HomeRecentTransactionCellModel] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTableView()
+        getData()
+        recentTransactionsTableView.layer.cornerRadius = 8
         
+    }
+    
+    private func setupTableView() {
+        recentTransactionsTableView.delegate = self
+        recentTransactionsTableView.dataSource = self
+        recentTransactionsTableView.register(UINib(nibName: "HomeRecentTransactionTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeRecentTransactionTableViewCell")
+    }
+    
+    private func getData() {
+        let recentTransactionArr: [HomeRecentTransactionCellModel] = [
+            HomeRecentTransactionCellModel(cardTypeImage: UIImage(named: "visa")!, name: "Ahmed", cardTypeName: "MasterCard", lastFourNumbers: "0012", date: "Today 11:00", transactionType: "Recived", amount: "$ 1000"),
+            
+            HomeRecentTransactionCellModel(cardTypeImage: UIImage(named: "visa")!, name: "Hany Shouman", cardTypeName: "MasterCard", lastFourNumbers: "8452", date: "Today 12:00", transactionType: "Recived", amount: "$ 5000"),
+            
+            HomeRecentTransactionCellModel(cardTypeImage: UIImage(named: "visa")!, name: "Ahmed", cardTypeName: "MasterCard", lastFourNumbers: "0012", date: "Today 11:00", transactionType: "Recived", amount: "$ 1000"),
+            HomeRecentTransactionCellModel(cardTypeImage: UIImage(named: "visa")!, name: "Ahmed", cardTypeName: "MasterCard", lastFourNumbers: "0012", date: "Today 11:00", transactionType: "Recived", amount: "$ 1000"),
+            HomeRecentTransactionCellModel(cardTypeImage: UIImage(named: "visa")!, name: "Ahmed", cardTypeName: "MasterCard", lastFourNumbers: "0012", date: "Today 11:00", transactionType: "Recived", amount: "$ 1000")
+        ]
+        
+        self.recentTransactionArr = recentTransactionArr
     }
     
     @IBAction func notificationBtnPressed(_ sender: UIButton) {
@@ -63,4 +88,24 @@ class HomeVC: UIViewController {
             }
         }
     }
+}
+
+
+extension HomeVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return recentTransactionArr.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = recentTransactionsTableView.dequeueReusableCell(withIdentifier: "HomeRecentTransactionTableViewCell", for: indexPath) as? HomeRecentTransactionTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        let transaction = recentTransactionArr[indexPath.row]
+        cell.configureCell(transaction)
+        
+        return cell
+    }
+    
+    
 }

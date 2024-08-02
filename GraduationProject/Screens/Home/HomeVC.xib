@@ -258,8 +258,8 @@
                                         </button>
                                     </subviews>
                                 </stackView>
-                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yN4-0Y-kP5">
-                                    <rect key="frame" x="16" y="464.33333333333326" width="342.66666666666669" height="317.66666666666674"/>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="4" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yN4-0Y-kP5">
+                                    <rect key="frame" x="16" y="464.33333333333326" width="342.66666666666669" height="302.66666666666674"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 </tableView>
                             </subviews>
@@ -278,7 +278,7 @@
                                 <constraint firstItem="30w-NQ-VFr" firstAttribute="leading" secondItem="YSH-wr-4gB" secondAttribute="leading" id="cf5-2h-eRY"/>
                                 <constraint firstItem="YSH-wr-4gB" firstAttribute="top" secondItem="6KM-3T-962" secondAttribute="top" constant="30" id="ctM-tb-pgr"/>
                                 <constraint firstItem="IhK-1X-Iiz" firstAttribute="top" secondItem="EZn-4B-MH3" secondAttribute="bottom" constant="16" id="i2s-gG-VLZ"/>
-                                <constraint firstAttribute="bottom" secondItem="yN4-0Y-kP5" secondAttribute="bottom" constant="30" id="jfn-0M-rhi"/>
+                                <constraint firstAttribute="bottom" secondItem="yN4-0Y-kP5" secondAttribute="bottom" constant="45" id="jfn-0M-rhi"/>
                                 <constraint firstItem="yN4-0Y-kP5" firstAttribute="trailing" secondItem="IhK-1X-Iiz" secondAttribute="trailing" id="oGY-WE-jyZ"/>
                                 <constraint firstItem="YSH-wr-4gB" firstAttribute="leading" secondItem="6KM-3T-962" secondAttribute="leading" constant="16" id="uKc-bj-LSU"/>
                             </constraints>
