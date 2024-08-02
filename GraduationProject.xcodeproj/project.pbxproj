@@ -22,12 +22,14 @@
 		9C45EC952C5AC331001EBD24 /* ServerErrorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C45EC942C5AC331001EBD24 /* ServerErrorVC.xib */; };
 		9C45EC962C5AC331001EBD24 /* ServerErrorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C45EC932C5AC331001EBD24 /* ServerErrorVC.swift */; };
 		9C6FA7972C5BD037006CA2F9 /* UIViewController + roundedCorners + toCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FA7962C5BD037006CA2F9 /* UIViewController + roundedCorners + toCircle.swift */; };
-		9C6FA7992C5C5569006CA2F9 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FA7982C5C5569006CA2F9 /* TabBarVC.swift */; };
+		9C6FA7992C5C5569006CA2F9 /* TapBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FA7982C5C5569006CA2F9 /* TapBarVC.swift */; };
 		9CCA28002C5AF86B0036DD9A /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCA27FE2C5AF86B0036DD9A /* NotificationsVC.swift */; };
 		9CCA28012C5AF86B0036DD9A /* NotificationsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CCA27FF2C5AF86B0036DD9A /* NotificationsVC.xib */; };
 		9CCB4E9C2C59BA31000F942F /* TransferVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CCB4E9B2C59BA31000F942F /* TransferVC.xib */; };
 		9CCB4E9D2C59BA31000F942F /* TransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCB4E9A2C59BA31000F942F /* TransferVC.swift */; };
 		9CD3E16A2C5CFB0600801453 /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD3E1692C5CFB0600801453 /* CircularView.swift */; };
+		9CD3E16C2C5CFCCF00801453 /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD3E16B2C5CFCCF00801453 /* RoundedCornerView.swift */; };
+		9CD3E16E2C5CFDBC00801453 /* StepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD3E16D2C5CFDBC00801453 /* StepView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,12 +50,14 @@
 		9C45EC932C5AC331001EBD24 /* ServerErrorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerErrorVC.swift; sourceTree = "<group>"; };
 		9C45EC942C5AC331001EBD24 /* ServerErrorVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServerErrorVC.xib; sourceTree = "<group>"; };
 		9C6FA7962C5BD037006CA2F9 /* UIViewController + roundedCorners + toCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + roundedCorners + toCircle.swift"; sourceTree = "<group>"; };
-		9C6FA7982C5C5569006CA2F9 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		9C6FA7982C5C5569006CA2F9 /* TapBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarVC.swift; sourceTree = "<group>"; };
 		9CCA27FE2C5AF86B0036DD9A /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
 		9CCA27FF2C5AF86B0036DD9A /* NotificationsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsVC.xib; sourceTree = "<group>"; };
 		9CCB4E9A2C59BA31000F942F /* TransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferVC.swift; sourceTree = "<group>"; };
 		9CCB4E9B2C59BA31000F942F /* TransferVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferVC.xib; sourceTree = "<group>"; };
 		9CD3E1692C5CFB0600801453 /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
+		9CD3E16B2C5CFCCF00801453 /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
+		9CD3E16D2C5CFDBC00801453 /* StepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +164,7 @@
 		9C6FA79A2C5C6B81006CA2F9 /* Routing */ = {
 			isa = PBXGroup;
 			children = (
-				9C6FA7982C5C5569006CA2F9 /* TabBarVC.swift */,
+				9C6FA7982C5C5569006CA2F9 /* TapBarVC.swift */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -188,6 +192,8 @@
 			children = (
 				9C01E36A2C594223000F416E /* GradientView.swift */,
 				9CD3E1692C5CFB0600801453 /* CircularView.swift */,
+				9CD3E16B2C5CFCCF00801453 /* RoundedCornerView.swift */,
+				9CD3E16D2C5CFDBC00801453 /* StepView.swift */,
 			);
 			path = "Shared View";
 			sourceTree = "<group>";
@@ -274,12 +280,14 @@
 				9CCA28002C5AF86B0036DD9A /* NotificationsVC.swift in Sources */,
 				9C01E3682C593EFB000F416E /* HomeVC.swift in Sources */,
 				9C01E36B2C594223000F416E /* GradientView.swift in Sources */,
+				9CD3E16C2C5CFCCF00801453 /* RoundedCornerView.swift in Sources */,
 				9C45EC8B2C5A9A4D001EBD24 /* TransactionVC.swift in Sources */,
 				9C140EC92C5AC7A900705314 /* InternetConnectionErrorVC.swift in Sources */,
 				7C5D7E552C592B3300D60725 /* AppDelegate.swift in Sources */,
-				9C6FA7992C5C5569006CA2F9 /* TabBarVC.swift in Sources */,
+				9C6FA7992C5C5569006CA2F9 /* TapBarVC.swift in Sources */,
 				9CD3E16A2C5CFB0600801453 /* CircularView.swift in Sources */,
 				9C45EC902C5AA1BA001EBD24 /* TransactionDetailsVC.swift in Sources */,
+				9CD3E16E2C5CFDBC00801453 /* StepView.swift in Sources */,
 				9CCB4E9D2C59BA31000F942F /* TransferVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

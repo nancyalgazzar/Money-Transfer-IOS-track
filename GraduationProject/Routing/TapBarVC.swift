@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TabBarVC: UITabBarController {
+class TapBarVC: UITabBarController {
     
     //MARK: - Properties
     let homeNavigation = UINavigationController()
@@ -24,7 +24,7 @@ class TabBarVC: UITabBarController {
 
 
 //MARK: - Private Methods
-extension TabBarVC {
+extension TapBarVC {
     private func setupTabBarView() {
         tabBar.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         tabBar.layer.shadowOffset = CGSize(width: 0, height: 0)

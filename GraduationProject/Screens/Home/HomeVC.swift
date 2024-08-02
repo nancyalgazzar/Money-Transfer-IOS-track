@@ -15,17 +15,52 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpScreen()
         
     }
-}
-
-extension HomeVC {
-    private func setUpScreen() {
-        profilePicView.backgroundColor = .gray
-        toCircle(view: &profilePicView)
-        roundedCorners(view: &curruntBalanceView, radius: 8)
-        roundedCorners(view: &servicesView, radius: 8)
-        recentTransactionsTableView.layer.cornerRadius = 8
+    
+    @IBAction func notificationBtnPressed(_ sender: UIButton) {
+        print("Open Notification")
+    }
+    
+    @IBAction func transferBtnPressed(_ sender: UIButton) {
+        if let tabBarController = self.tabBarController {
+            tabBarController.selectedIndex = 1
+        } else {
+            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+            let rootViewController = windowScene.windows.first?.rootViewController as? UITabBarController {
+                rootViewController.selectedIndex = 1
+            }
+        }
+    }
+    
+    @IBAction func transactionBtnPressed(_ sender: UIButton) {
+        if let tabBarController = self.tabBarController {
+            tabBarController.selectedIndex = 2
+        } else {
+            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+            let rootViewController = windowScene.windows.first?.rootViewController as? UITabBarController {
+                rootViewController.selectedIndex = 2
+            }
+        }
+    }
+    
+    @IBAction func cardsBtnPressed(_ sender: UIButton) {
+        print("Open Cards")
+    }
+    
+    @IBAction func accountBtnPressed(_ sender: UIButton) {
+        print("Open Accounts")
+        
+    }
+    
+    @IBAction func viewAllBtnPressed(_ sender: UIButton) {
+        if let tabBarController = self.tabBarController {
+            tabBarController.selectedIndex = 2
+        } else {
+            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+            let rootViewController = windowScene.windows.first?.rootViewController as? UITabBarController {
+                rootViewController.selectedIndex = 2
+            }
+        }
     }
 }
