@@ -137,7 +137,7 @@
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="qQ2-1z-UtK" secondAttribute="trailing" id="0Zo-y9-Tfk"/>
                         <constraint firstItem="qQ2-1z-UtK" firstAttribute="leading" secondItem="yrh-j8-otT" secondAttribute="leading" id="0eM-2d-tsm"/>
-                        <constraint firstItem="qQ2-1z-UtK" firstAttribute="height" secondItem="yrh-j8-otT" secondAttribute="height" id="8Gi-Cv-hKE"/>
+                        <constraint firstItem="qQ2-1z-UtK" firstAttribute="height" secondItem="yrh-j8-otT" secondAttribute="height" priority="250" id="8Gi-Cv-hKE"/>
                         <constraint firstAttribute="bottom" secondItem="qQ2-1z-UtK" secondAttribute="bottom" id="Lyl-na-KqY"/>
                         <constraint firstItem="qQ2-1z-UtK" firstAttribute="width" secondItem="yrh-j8-otT" secondAttribute="width" id="Zm3-51-Sac"/>
                         <constraint firstItem="qQ2-1z-UtK" firstAttribute="top" secondItem="yrh-j8-otT" secondAttribute="top" id="fjl-rR-MCf"/>

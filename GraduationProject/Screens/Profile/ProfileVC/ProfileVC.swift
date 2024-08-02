@@ -9,10 +9,18 @@ import UIKit
 
 class ProfileVC: UIViewController {
 
+    
+    @IBOutlet weak var avatarLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         initTableView()
+        navigationItem.title = "Profile"
+        avatarLabel.layer.cornerRadius = avatarLabel.frame.size.height / 2
+        avatarLabel.clipsToBounds = true
+        avatarLabel.text = "AD"
         tableView.register(UINib(nibName: CellsNames.profileCell, bundle: nil ), forCellReuseIdentifier: CellsNames.profileCell)
         // Do any additional setup after loading the view.
     }

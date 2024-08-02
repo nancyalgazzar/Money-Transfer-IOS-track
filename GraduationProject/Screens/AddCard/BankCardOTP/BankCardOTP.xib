@@ -11,6 +11,12 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BankCardOTP" customModule="GraduationProject" customModuleProvider="target">
             <connections>
                 <outlet property="emailMessageLabel" destination="tcU-5h-h7s" id="yM1-UF-mx3"/>
+                <outlet property="fifthNumberTF" destination="xEE-Av-ydA" id="pPe-c7-yyM"/>
+                <outlet property="firstNumberTF" destination="PN6-He-zZa" id="bgi-5v-51b"/>
+                <outlet property="fourthNumberTF" destination="PL7-zV-hVs" id="5ju-X2-jgM"/>
+                <outlet property="secondNumberTF" destination="yjJ-oD-GQH" id="O6b-7e-VTR"/>
+                <outlet property="sixthNumberTF" destination="PoD-KO-IIg" id="svm-b3-hQn"/>
+                <outlet property="thirdNumberTF" destination="c5E-SU-d1G" id="YLm-FX-yrr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -28,38 +34,39 @@
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="DuE-pi-uxn">
                     <rect key="frame" x="43.5" y="193" width="327" height="58"/>
                     <subviews>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PN6-He-zZa">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PN6-He-zZa" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="37" height="58"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yjJ-oD-GQH">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yjJ-oD-GQH" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
                             <rect key="frame" x="58" y="0.0" width="37" height="58"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5E-SU-d1G">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5E-SU-d1G" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
                             <rect key="frame" x="116" y="0.0" width="37" height="58"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PL7-zV-hVs">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PL7-zV-hVs" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
                             <rect key="frame" x="174" y="0.0" width="37" height="58"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xEE-Av-ydA">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xEE-Av-ydA" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
                             <rect key="frame" x="232" y="0.0" width="37" height="58"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                         </textField>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="PoD-KO-IIg">
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="PoD-KO-IIg" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
                             <rect key="frame" x="290" y="0.0" width="37" height="58"/>
                             <color key="tintColor" red="0.72333333330000005" green="0.0" blue="0.020309805390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                         </textField>
                     </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="qSh-He-X0Y">
                     <rect key="frame" x="52" y="299" width="310.5" height="29"/>

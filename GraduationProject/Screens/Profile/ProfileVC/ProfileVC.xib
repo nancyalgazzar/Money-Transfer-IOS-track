@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileVC" customModule="GraduationProject" customModuleProvider="target">
             <connections>
+                <outlet property="avatarLabel" destination="kNQ-q0-jrr" id="gM9-lq-Chh"/>
+                <outlet property="nameLabel" destination="PAi-Z9-4uM" id="lTN-vE-LoQ"/>
                 <outlet property="tableView" destination="ljx-L2-XUZ" id="F0L-X2-nSE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -20,17 +22,40 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ljx-L2-XUZ">
-                    <rect key="frame" x="0.0" y="277" width="414" height="585"/>
+                    <rect key="frame" x="0.0" y="186" width="414" height="585"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNQ-q0-jrr">
+                    <rect key="frame" x="18" y="108" width="58" height="58"/>
+                    <color key="backgroundColor" red="0.8901960784313725" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="58" id="iIa-MK-syR"/>
+                        <constraint firstAttribute="width" constant="58" id="xMS-DU-0oN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="23"/>
+                    <color key="textColor" red="0.53725490196078429" green="0.53333333333333333" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAi-Z9-4uM">
+                    <rect key="frame" x="84" y="108" width="199.5" height="58"/>
+                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="23"/>
+                    <color key="textColor" red="0.14117647058823529" green="0.13333333333333333" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="ljx-L2-XUZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3hb-bB-Je4"/>
-                <constraint firstItem="ljx-L2-XUZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="233" id="8ua-RK-ei0"/>
+                <constraint firstItem="PAi-Z9-4uM" firstAttribute="leading" secondItem="kNQ-q0-jrr" secondAttribute="trailing" constant="8" symbolic="YES" id="5RS-Jb-MAe"/>
+                <constraint firstItem="PAi-Z9-4uM" firstAttribute="width" secondItem="kNQ-q0-jrr" secondAttribute="width" multiplier="3.44286" id="Ga6-4R-N3d"/>
                 <constraint firstItem="ljx-L2-XUZ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Ujo-RM-unt"/>
+                <constraint firstItem="kNQ-q0-jrr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="64" id="Z81-q4-oqV"/>
                 <constraint firstItem="ljx-L2-XUZ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.652902" id="kdV-EV-CvE"/>
+                <constraint firstItem="PAi-Z9-4uM" firstAttribute="centerY" secondItem="kNQ-q0-jrr" secondAttribute="centerY" id="n6X-sa-FlZ"/>
+                <constraint firstItem="ljx-L2-XUZ" firstAttribute="top" secondItem="PAi-Z9-4uM" secondAttribute="bottom" constant="20" id="nSP-cD-fpJ"/>
+                <constraint firstItem="kNQ-q0-jrr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="18" id="rdQ-Kg-hOc"/>
+                <constraint firstItem="PAi-Z9-4uM" firstAttribute="height" secondItem="kNQ-q0-jrr" secondAttribute="height" id="uGE-H7-DLo"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="63.616071428571423"/>
         </view>

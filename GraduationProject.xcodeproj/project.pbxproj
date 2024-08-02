@@ -55,6 +55,11 @@
 		7C60E7272C5A3F15009E06C6 /* CountryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C60E7252C5A3F15009E06C6 /* CountryViewCell.swift */; };
 		7C60E7282C5A3F15009E06C6 /* CountryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C60E7262C5A3F15009E06C6 /* CountryViewCell.xib */; };
 		7C60E72C2C5A4209009E06C6 /* AuthenticationRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C60E72B2C5A4209009E06C6 /* AuthenticationRouting.swift */; };
+		7C88C3B62C5CC93900BE6622 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3B42C5CC93900BE6622 /* NotificationCell.swift */; };
+		7C88C3B72C5CC93900BE6622 /* NotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C88C3B52C5CC93900BE6622 /* NotificationCell.xib */; };
+		7C88C3BB2C5CDFE400BE6622 /* SuccessConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3B92C5CDFE400BE6622 /* SuccessConnect.swift */; };
+		7C88C3BC2C5CDFE400BE6622 /* SuccessConnect.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C88C3BA2C5CDFE400BE6622 /* SuccessConnect.xib */; };
+		7C88C3BF2C5CEF9300BE6622 /* MyCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3BE2C5CEF9300BE6622 /* MyCardsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +113,11 @@
 		7C60E7252C5A3F15009E06C6 /* CountryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryViewCell.swift; sourceTree = "<group>"; };
 		7C60E7262C5A3F15009E06C6 /* CountryViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryViewCell.xib; sourceTree = "<group>"; };
 		7C60E72B2C5A4209009E06C6 /* AuthenticationRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRouting.swift; sourceTree = "<group>"; };
+		7C88C3B42C5CC93900BE6622 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		7C88C3B52C5CC93900BE6622 /* NotificationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationCell.xib; sourceTree = "<group>"; };
+		7C88C3B92C5CDFE400BE6622 /* SuccessConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessConnect.swift; sourceTree = "<group>"; };
+		7C88C3BA2C5CDFE400BE6622 /* SuccessConnect.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessConnect.xib; sourceTree = "<group>"; };
+		7C88C3BE2C5CEF9300BE6622 /* MyCardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardsVC.swift; sourceTree = "<group>"; };
 		8F1D8EAD26E64F381BD4DD5A /* Pods-GraduationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraduationProject.debug.xcconfig"; path = "Target Support Files/Pods-GraduationProject/Pods-GraduationProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C319482BBD425217D0084764 /* Pods_GraduationProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GraduationProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -191,6 +201,8 @@
 				7C5C3BF42C5AC60E00BDD86A /* ProfileCell.xib */,
 				7C5C3C012C5ADE5300BDD86A /* ProfileInfoCell.swift */,
 				7C5C3C022C5ADE5300BDD86A /* ProfileInfoCell.xib */,
+				7C88C3B42C5CC93900BE6622 /* NotificationCell.swift */,
+				7C88C3B52C5CC93900BE6622 /* NotificationCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -325,6 +337,8 @@
 		7C5DFC062C5A4C9100C25AED /* AddCard */ = {
 			isa = PBXGroup;
 			children = (
+				7C88C3BD2C5CEF7A00BE6622 /* MyCards */,
+				7C88C3B82C5CDFC200BE6622 /* SuccessConnect */,
 				7C561AE62C5A8A8C00DEAC2E /* BankCardOTP */,
 				7C561ADF2C5A740400DEAC2E /* ConnectingProgrsss */,
 				7C5DFC132C5A63F400C25AED /* AddNewCard */,
@@ -403,6 +417,23 @@
 				7C5DFC0F2C5A5FE300C25AED /* AddCardRouting.swift */,
 			);
 			path = Routing;
+			sourceTree = "<group>";
+		};
+		7C88C3B82C5CDFC200BE6622 /* SuccessConnect */ = {
+			isa = PBXGroup;
+			children = (
+				7C88C3B92C5CDFE400BE6622 /* SuccessConnect.swift */,
+				7C88C3BA2C5CDFE400BE6622 /* SuccessConnect.xib */,
+			);
+			path = SuccessConnect;
+			sourceTree = "<group>";
+		};
+		7C88C3BD2C5CEF7A00BE6622 /* MyCards */ = {
+			isa = PBXGroup;
+			children = (
+				7C88C3BE2C5CEF9300BE6622 /* MyCardsVC.swift */,
+			);
+			path = MyCards;
 			sourceTree = "<group>";
 		};
 		7E900848BFBBC2B9535E1931 /* Frameworks */ = {
@@ -487,6 +518,8 @@
 				7C5DFC0A2C5A572100C25AED /* SelectCurrencyVC.xib in Resources */,
 				7C561AF92C5AAC7400DEAC2E /* EditProfileVC.xib in Resources */,
 				7C555BD72C5994CF00BDCAC2 /* SignUpVC.xib in Resources */,
+				7C88C3B72C5CC93900BE6622 /* NotificationCell.xib in Resources */,
+				7C88C3BC2C5CDFE400BE6622 /* SuccessConnect.xib in Resources */,
 				7C5D7E6F2C592F9E00D60725 /* SignInVC.xib in Resources */,
 				7C60E7282C5A3F15009E06C6 /* CountryViewCell.xib in Resources */,
 				7C561AE32C5A742900DEAC2E /* ConnectingProgressVC.xib in Resources */,
@@ -574,12 +607,15 @@
 				7C56CD062C5A1EEA00C29FFD /* RoundedImage.swift in Sources */,
 				7C561AE22C5A742900DEAC2E /* ConnectingProgressVC.swift in Sources */,
 				7C5C3BF12C5AC5B400BDD86A /* SettingsTVC.swift in Sources */,
+				7C88C3BF2C5CEF9300BE6622 /* MyCardsVC.swift in Sources */,
 				7C59BF3F2C5963FE00AA97E9 /* CustomTextField.swift in Sources */,
 				7C5C3BFE2C5ACE5100BDD86A /* ProfileConstData.swift in Sources */,
+				7C88C3BB2C5CDFE400BE6622 /* SuccessConnect.swift in Sources */,
 				7C60E72C2C5A4209009E06C6 /* AuthenticationRouting.swift in Sources */,
 				7C5C3C002C5AD5CC00BDD86A /* CellsNames.swift in Sources */,
 				7C5DFC102C5A5FE300C25AED /* AddCardRouting.swift in Sources */,
 				7C60E7272C5A3F15009E06C6 /* CountryViewCell.swift in Sources */,
+				7C88C3B62C5CC93900BE6622 /* NotificationCell.swift in Sources */,
 				7C5C3C032C5ADE5300BDD86A /* ProfileInfoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     private func setRootViewController() {
         window  = UIWindow(frame: UIScreen.main.bounds)
-        let rootController = ProfileVC()
+        let rootController = SuccessConnect()
         let navigationController = UINavigationController(rootViewController: rootController)
     
         window?.makeKeyAndVisible()
