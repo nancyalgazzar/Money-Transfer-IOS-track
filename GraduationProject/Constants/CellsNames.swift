@@ -15,4 +15,5 @@ struct CellsNames{
     static let recentTransactionCell = "HomeRecentTransactionTableViewCell"
     static let lastTransactionCell = "LastTransactionTableViewCell"
     static let notificationCell = "NotificationTableViewCell"
+    static let myCardsCell = "MyCardsCell"
 }
