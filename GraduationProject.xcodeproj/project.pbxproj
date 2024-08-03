@@ -322,6 +322,7 @@
 				7C59BF3D2C5963B500AA97E9 /* SharedViews */,
 				7C59BF382C595E5900AA97E9 /* Extensions */,
 				7C5D7E6B2C592F2700D60725 /* Resources */,
+				7C5D7E5D2C592B3400D60725 /* Assets.xcassets */,
 			);
 			path = GraduationProject;
 			sourceTree = "<group>";
@@ -357,7 +358,6 @@
 		7C5D7E6B2C592F2700D60725 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				7C5D7E5D2C592B3400D60725 /* Assets.xcassets */,
 				7C5D7E542C592B3300D60725 /* AppDelegate.swift */,
 				7C5D7E622C592B3400D60725 /* Info.plist */,
 			);
