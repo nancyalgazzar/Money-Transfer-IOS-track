@@ -13,6 +13,8 @@ class TapBarVC: UITabBarController {
     let homeNavigation = UINavigationController()
     let transferNavigation = UINavigationController()
     let transactionNavigation = UINavigationController()
+    let myCardNavigation = UINavigationController()
+    let moreNavigation = UINavigationController()
     
 //MARK: - Lifecycle Methods
     override func viewDidLoad() {
@@ -53,14 +55,31 @@ extension TapBarVC {
         transactionVC.tabBarItem.title = "Transaction"
         transactionNavigation.viewControllers = [transactionVC]
     }
+    
+    private func setMyCardsTab() {
+        let myCardsVC = MyCardsVC()
+        myCardsVC.tabBarItem.image = #imageLiteral(resourceName: "Cards 1")
+        myCardsVC.tabBarItem.title = "My Cards"
+        myCardNavigation.viewControllers = [myCardsVC]
+    }
+    
+    private func setMoreTab() {
+        let profileVC = ProfileVC()
+        profileVC.tabBarItem.image = #imageLiteral(resourceName: "More 1")
+        profileVC.tabBarItem.title = "More"
+        moreNavigation.viewControllers = [profileVC]
+    }
 
     
     private func setViewControllers() {
         setHomeTab()
         setTransferTab()
         setTransactionTab()
+        setMyCardsTab()
+        setMoreTab()
         
-        self.viewControllers = [homeNavigation, transferNavigation, transactionNavigation]
+        
+        self.viewControllers = [homeNavigation, transferNavigation, transactionNavigation, myCardNavigation, moreNavigation]
         self.selectedIndex = 0
         for vc in self.viewControllers! {
             vc.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
