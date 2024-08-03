@@ -13,9 +13,10 @@ class CustomButton: UIButton {
             self.setTitleColor(UIColor(hex: textColorCode), for: .normal)
         }
     }
-    @IBInspectable var radius: CGFloat = 15.0{
+    @IBInspectable var radius: CGFloat = 10.0{
         didSet{
             layer.cornerRadius = radius
+            clipsToBounds = true
         }
     }
     @IBInspectable var backColor: String =  "#521220"{

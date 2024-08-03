@@ -21,7 +21,7 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="GradientView" customModule="GraduationProject" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -31,36 +31,36 @@
                     <color key="textColor" red="0.51278409090909083" green="0.48017991949316752" blue="0.48241341613065569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="DuE-pi-uxn">
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DuE-pi-uxn">
                     <rect key="frame" x="43.5" y="193" width="327" height="58"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PN6-He-zZa" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="37" height="58"/>
+                            <rect key="frame" x="0.0" y="0.0" width="46" height="58"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yjJ-oD-GQH" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
-                            <rect key="frame" x="58" y="0.0" width="37" height="58"/>
+                            <rect key="frame" x="56" y="0.0" width="46.5" height="58"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c5E-SU-d1G" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
-                            <rect key="frame" x="116" y="0.0" width="37" height="58"/>
+                            <rect key="frame" x="112.5" y="0.0" width="46" height="58"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PL7-zV-hVs" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
-                            <rect key="frame" x="174" y="0.0" width="37" height="58"/>
+                            <rect key="frame" x="168.5" y="0.0" width="46" height="58"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xEE-Av-ydA" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
-                            <rect key="frame" x="232" y="0.0" width="37" height="58"/>
+                            <rect key="frame" x="224.5" y="0.0" width="46.5" height="58"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                         </textField>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="PoD-KO-IIg" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
-                            <rect key="frame" x="290" y="0.0" width="37" height="58"/>
+                            <rect key="frame" x="281" y="0.0" width="46" height="58"/>
                             <color key="tintColor" red="0.72333333330000005" green="0.0" blue="0.020309805390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
@@ -131,15 +131,41 @@
                 <constraint firstItem="DuE-pi-uxn" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.065" id="nfz-Ec-fOv"/>
                 <constraint firstItem="YDj-Kr-5G0" firstAttribute="top" secondItem="qSh-He-X0Y" secondAttribute="bottom" constant="113" id="tg9-K6-N5H"/>
             </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                    <color key="value" red="1" green="0.91764705882352937" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <point key="canvasLocation" x="131.8840579710145" y="63.616071428571423"/>
         </view>
     </objects>
     <designables>
+        <designable name="PL7-zV-hVs">
+            <size key="intrinsicContentSize" width="-1" height="50"/>
+        </designable>
+        <designable name="PN6-He-zZa">
+            <size key="intrinsicContentSize" width="-1" height="50"/>
+        </designable>
+        <designable name="PoD-KO-IIg">
+            <size key="intrinsicContentSize" width="-1" height="50"/>
+        </designable>
         <designable name="YDj-Kr-5G0">
             <size key="intrinsicContentSize" width="190" height="53"/>
         </designable>
+        <designable name="c5E-SU-d1G">
+            <size key="intrinsicContentSize" width="-1" height="50"/>
+        </designable>
         <designable name="eZB-8e-Zeg">
             <size key="intrinsicContentSize" width="96" height="29"/>
+        </designable>
+        <designable name="xEE-Av-ydA">
+            <size key="intrinsicContentSize" width="-1" height="50"/>
+        </designable>
+        <designable name="yjJ-oD-GQH">
+            <size key="intrinsicContentSize" width="-1" height="50"/>
         </designable>
     </designables>
     <resources>

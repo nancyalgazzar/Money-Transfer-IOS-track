@@ -8,9 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectCurrencyVC" customModule="GraduationProject" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyCardsVC" customModule="GraduationProject" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="Udr-yZ-Udp" id="2dr-Gl-JxI"/>
+                <outlet property="addNewAccountBtn" destination="yZf-Mo-dZz" id="WMI-Zg-5qK"/>
+                <outlet property="tableView" destination="WV0-oF-VFr" id="TAh-ws-fX4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,10 +20,14 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOx-j1-ccC" customClass="CustomButton" customModule="GraduationProject" customModuleProvider="target">
-                    <rect key="frame" x="20" y="766" width="374" height="61"/>
+                <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" style="insetGrouped" separatorStyle="singleLineEtched" rowHeight="72" estimatedRowHeight="80" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WV0-oF-VFr">
+                    <rect key="frame" x="-4" y="44" width="422" height="615"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZf-Mo-dZz" customClass="CustomButton" customModule="GraduationProject" customModuleProvider="target">
+                    <rect key="frame" x="20" y="758" width="374" height="61"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Get Started">
+                    <buttonConfiguration key="configuration" style="plain" title="Add New Account">
                         <backgroundConfiguration key="background"/>
                         <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -30,30 +35,23 @@
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#521220"/>
                     </userDefinedRuntimeAttributes>
-                    <connections>
-                        <action selector="getStartedBtn:" destination="-1" eventType="touchUpInside" id="8jq-xK-9GF"/>
-                    </connections>
                 </button>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Udr-yZ-Udp">
-                    <rect key="frame" x="0.0" y="44" width="414" height="625"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aOx-j1-ccC" secondAttribute="bottom" constant="35" id="81K-Jz-1bT"/>
-                <constraint firstItem="aOx-j1-ccC" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.903382" id="8r4-T5-6Zb"/>
-                <constraint firstItem="Udr-yZ-Udp" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Q6X-dg-f3W"/>
-                <constraint firstItem="Udr-yZ-Udp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="V9X-aM-781"/>
-                <constraint firstItem="aOx-j1-ccC" firstAttribute="centerX" secondItem="Udr-yZ-Udp" secondAttribute="centerX" id="dbr-oN-YlR"/>
-                <constraint firstItem="Udr-yZ-Udp" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="iTC-BQ-0sy"/>
-                <constraint firstItem="Udr-yZ-Udp" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.697545" id="ySq-XK-6YO"/>
-                <constraint firstItem="aOx-j1-ccC" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0680804" id="zKl-EB-GLl"/>
+                <constraint firstItem="yZf-Mo-dZz" firstAttribute="height" secondItem="WV0-oF-VFr" secondAttribute="height" multiplier="0.099187" id="0Jl-BJ-BI6"/>
+                <constraint firstItem="yZf-Mo-dZz" firstAttribute="centerX" secondItem="WV0-oF-VFr" secondAttribute="centerX" id="6cQ-lo-Fcj"/>
+                <constraint firstItem="yZf-Mo-dZz" firstAttribute="top" secondItem="WV0-oF-VFr" secondAttribute="bottom" constant="99" id="AO8-gV-cNK"/>
+                <constraint firstItem="yZf-Mo-dZz" firstAttribute="width" secondItem="WV0-oF-VFr" secondAttribute="width" multiplier="0.886256" id="Ijs-jf-CxT"/>
+                <constraint firstItem="WV0-oF-VFr" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="JL8-kd-mQI"/>
+                <constraint firstItem="WV0-oF-VFr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="O0J-s1-TYB"/>
+                <constraint firstItem="WV0-oF-VFr" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1.01932" id="etJ-B1-A5Q"/>
+                <constraint firstItem="WV0-oF-VFr" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.686384" id="lcg-mE-O89"/>
             </constraints>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="color" keyPath="topColor">
-                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="value" red="1" green="0.97254901960784312" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                 </userDefinedRuntimeAttribute>
                 <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
                     <color key="value" red="1" green="0.91764705882352937" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
@@ -63,8 +61,8 @@
         </view>
     </objects>
     <designables>
-        <designable name="aOx-j1-ccC">
-            <size key="intrinsicContentSize" width="183.5" height="53"/>
+        <designable name="yZf-Mo-dZz">
+            <size key="intrinsicContentSize" width="275.5" height="53"/>
         </designable>
     </designables>
     <resources>

@@ -72,14 +72,15 @@ extension BankCardOTP :UITextFieldDelegate{
                 fifthNumberTF.becomeFirstResponder()
             case fifthNumberTF:
                 sixthNumberTF.becomeFirstResponder()
-                self.dismissKeyboard()
             default:
+                self.dismissKeyboard()
                 break
             }
         }
     }
     private func reorganizeFirstResponder(textField: UITextField){
         if textField.text?.count == 0{
+            deColorTextField(textField: textField)
             switch textField {
             case firstNumberTF:
                 firstNumberTF.becomeFirstResponder()
@@ -91,6 +92,8 @@ extension BankCardOTP :UITextFieldDelegate{
                 thirdNumberTF.becomeFirstResponder()
             case fifthNumberTF:
                 fourthNumberTF.becomeFirstResponder()
+            case sixthNumberTF:
+                fifthNumberTF.becomeFirstResponder()
             default:
                 break
             }
@@ -103,6 +106,10 @@ extension BankCardOTP :UITextFieldDelegate{
     private func colorTextField(textField: UITextField){
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor(hex: "#871E35").cgColor
+    }
+    private func deColorTextField(textField: UITextField){
+        textField.layer.borderWidth = 1
+        textField.layer.borderColor = UIColor(hex: "#898886").cgColor
     }
     
 }

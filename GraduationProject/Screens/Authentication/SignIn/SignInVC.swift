@@ -37,6 +37,8 @@ class SignInVC: UIViewController {
     }
     @IBAction func signInBtn(_ sender: UIButton) {
         signInModelProtocol.checkSignValidation()
+        navigationItem.hidesBackButton = true
+        HomeRouting.goToHome(VC: self)
     }
     
 
