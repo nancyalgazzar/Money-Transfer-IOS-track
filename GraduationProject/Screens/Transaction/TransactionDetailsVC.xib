@@ -236,45 +236,13 @@
                     <viewLayoutGuide key="contentLayoutGuide" id="xRp-c3-PyU"/>
                     <viewLayoutGuide key="frameLayoutGuide" id="LKN-5O-AVh"/>
                 </scrollView>
-                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b3m-gP-X18">
-                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                    <items>
-                        <navigationItem title="Successful Transaction" id="Srd-uy-MhO">
-                            <barButtonItem key="leftBarButtonItem" style="plain" id="FiF-He-YIz">
-                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="znZ-xX-Tmd">
-                                    <rect key="frame" x="16" y="3" width="87" height="38.333333333333336"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="DRop down 1" title=""/>
-                                </button>
-                            </barButtonItem>
-                        </navigationItem>
-                    </items>
-                </navigationBar>
-                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xxx-hH-9Aq">
-                    <rect key="frame" x="0.0" y="770" width="393" height="83"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <items>
-                        <tabBarItem title="Home" image="home 1" id="rb3-1O-XQ1"/>
-                        <tabBarItem title="Transfer" image="Transfer 1" id="slr-O0-Qd7"/>
-                        <tabBarItem title="Transactions" image="History 1" id="oUx-Dv-CGw"/>
-                        <tabBarItem title="My Cards" image="Cards 1" id="TfE-nE-lk7"/>
-                        <tabBarItem title="More" image="More 1" id="slT-Os-83g"/>
-                    </items>
-                </tabBar>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="b3m-gP-X18" secondAttribute="trailing" id="27n-3h-5ga"/>
-                <constraint firstItem="xxx-hH-9Aq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3d8-T9-f6I"/>
                 <constraint firstItem="5Do-aD-5Yg" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="Mp3-9e-EuO"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xxx-hH-9Aq" secondAttribute="trailing" id="Q6g-ax-CVT"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="b3m-gP-X18" secondAttribute="top" id="XVi-xe-eQP"/>
                 <constraint firstAttribute="top" secondItem="5Do-aD-5Yg" secondAttribute="top" id="dy4-eF-rDr"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5Do-aD-5Yg" secondAttribute="trailing" id="iyk-qV-ZQx"/>
-                <constraint firstItem="b3m-gP-X18" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lzg-5Q-2QJ"/>
-                <constraint firstItem="xxx-hH-9Aq" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="1" id="vq4-Ig-whd"/>
                 <constraint firstItem="5Do-aD-5Yg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yxB-jX-AaW"/>
             </constraints>
             <point key="canvasLocation" x="58.778625954198468" y="19.718309859154932"/>
@@ -288,14 +256,8 @@
         </view>
     </objects>
     <resources>
-        <image name="Cards 1" width="24" height="24"/>
         <image name="Check mark" width="113" height="113"/>
-        <image name="DRop down 1" width="24" height="24"/>
-        <image name="History 1" width="24" height="24"/>
-        <image name="More 1" width="24" height="24"/>
-        <image name="Transfer 1" width="24" height="24"/>
         <image name="bank 1" width="24" height="24"/>
-        <image name="home 1" width="24" height="24"/>
         <image name="success" width="124" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

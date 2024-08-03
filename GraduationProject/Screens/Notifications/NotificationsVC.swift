@@ -21,7 +21,7 @@ class NotificationsVC: UIViewController {
     private func setupTableView() {
         notificationsTableView.delegate = self
         notificationsTableView.dataSource = self
-        notificationsTableView.register(UINib(nibName: "NotificationTableViewCell", bundle: nil), forCellReuseIdentifier: "NotificationTableViewCell")
+        notificationsTableView.register(UINib(nibName: CellsNames.notificationCell, bundle: nil), forCellReuseIdentifier: CellsNames.notificationCell)
     }
 }
 
@@ -36,11 +36,11 @@ extension NotificationsVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = notificationsTableView.dequeueReusableCell(withIdentifier: "NotificationTableViewCell", for: indexPath) as? NotificationTableViewCell else {
+        guard let cell = notificationsTableView.dequeueReusableCell(withIdentifier: CellsNames.notificationCell, for: indexPath) as? NotificationTableViewCell else {
             return UITableViewCell()
         }
         
-        let notification = notificationArr[indexPath.section]
+//        let notification = notificationArr[indexPath.section]
 //        cell.configureCell(notification)
         
         return cell

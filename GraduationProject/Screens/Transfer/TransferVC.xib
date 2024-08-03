@@ -46,7 +46,7 @@
                                                     <rect key="frame" x="8" y="0.0" width="35" height="35"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vb4-LT-g2g">
-                                                            <rect key="frame" x="8.3333333333333321" y="7.3333333333333339" width="18" height="20.333333333333329"/>
+                                                            <rect key="frame" x="8.6666666666666679" y="7.3333333333333339" width="18" height="20.333333333333329"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.52941176469999995" green="0.1176470588" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -92,7 +92,7 @@
                                             <rect key="frame" x="144.66666666666669" y="5.6666666666666643" width="83.666666666666686" height="57"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EGq-Ec-h0B" customClass="StepView" customModule="GraduationProject" customModuleProvider="target">
-                                                    <rect key="frame" x="24.333333333333314" y="0.0" width="35" height="35"/>
+                                                    <rect key="frame" x="24.333333333333343" y="0.0" width="35" height="35"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lR-iF-lZt">
                                                             <rect key="frame" x="7.333333333333341" y="7.3333333333333339" width="20.333333333333329" height="20.333333333333329"/>
@@ -259,7 +259,7 @@
                                                 <constraint firstItem="7ZW-6u-1Q8" firstAttribute="leading" secondItem="TwS-GS-eOh" secondAttribute="trailing" constant="8" symbolic="YES" id="yfg-tE-Sr2"/>
                                             </constraints>
                                         </view>
-                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1000" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F6b-D3-CDs">
+                                        <textField opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1000" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F6b-D3-CDs">
                                             <rect key="frame" x="175" y="114.33333333333331" width="178" height="34"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -296,7 +296,7 @@
                                                 <constraint firstAttribute="height" constant="1.6699999999999999" id="YhA-om-ses"/>
                                             </constraints>
                                         </view>
-                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="48332.50" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OUB-sU-bzw">
+                                        <textField opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="48332.50" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OUB-sU-bzw">
                                             <rect key="frame" x="175" y="226" width="178" height="34"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -335,12 +335,12 @@
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Recepent Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s26-cP-s2x">
                                     <rect key="frame" x="16" y="618" width="361" height="34"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Recepent Account" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PAe-jB-Rlw">
                                     <rect key="frame" x="16" y="691" width="361" height="34"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much are you sending?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwe-Xs-xyu">
                                     <rect key="frame" x="19" y="139" width="247" height="24"/>
@@ -377,6 +377,9 @@
                                     <color key="tintColor" red="0.52941176470588236" green="0.11764705882352941" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="filled" title="Continue"/>
+                                    <connections>
+                                        <action selector="continueBtnPressed:" destination="-1" eventType="touchUpInside" id="ekm-nD-2AO"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -403,6 +406,7 @@
                                 <constraint firstItem="s26-cP-s2x" firstAttribute="top" secondItem="AFp-rZ-pr2" secondAttribute="bottom" constant="14" id="gYc-Ul-Zjh"/>
                                 <constraint firstAttribute="bottom" secondItem="jNe-4c-yHb" secondAttribute="bottom" constant="54.666666666666629" id="gwc-fV-RdB"/>
                                 <constraint firstAttribute="trailing" secondItem="PAe-jB-Rlw" secondAttribute="trailing" constant="16" id="lpM-sw-4eJ"/>
+                                <constraint firstItem="Ynf-7j-B0U" firstAttribute="width" secondItem="6QD-Nu-tKm" secondAttribute="width" multiplier="0.961832" id="muq-VS-OFr"/>
                                 <constraint firstItem="jNe-4c-yHb" firstAttribute="trailing" secondItem="PAe-jB-Rlw" secondAttribute="trailing" id="nCV-hj-XSR"/>
                                 <constraint firstItem="Ynf-7j-B0U" firstAttribute="top" secondItem="6QD-Nu-tKm" secondAttribute="top" constant="30" id="vCv-nB-mQT"/>
                                 <constraint firstItem="jNe-4c-yHb" firstAttribute="top" secondItem="PAe-jB-Rlw" secondAttribute="bottom" constant="34" id="vdH-aE-wpn"/>
@@ -440,6 +444,13 @@
             </constraints>
             <point key="canvasLocation" x="72.51908396946564" y="50.70422535211268"/>
         </view>
+        <view contentMode="scaleToFill" id="rmT-ah-5d5">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <viewLayoutGuide key="safeArea" id="1aK-M9-wjp"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <point key="canvasLocation" x="912" y="53"/>
+        </view>
     </objects>
     <resources>
         <image name="chevron-down 1" width="24" height="24"/>
@@ -449,13 +460,13 @@
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

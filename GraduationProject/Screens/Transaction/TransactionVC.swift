@@ -26,7 +26,7 @@ class TransactionVC: UIViewController {
     private func setupTableView() {
         lastTransactionsTableView.delegate = self
         lastTransactionsTableView.dataSource = self
-        lastTransactionsTableView.register(UINib(nibName: "LastTransactionTableViewCell", bundle: nil), forCellReuseIdentifier: "LastTransactionTableViewCell")
+        lastTransactionsTableView.register(UINib(nibName: CellsNames.lastTransactionCell, bundle: nil), forCellReuseIdentifier: CellsNames.lastTransactionCell)
     }
     
     private func getData() {
@@ -46,7 +46,7 @@ extension TransactionVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = lastTransactionsTableView.dequeueReusableCell(withIdentifier: "LastTransactionTableViewCell", for: indexPath) as? LastTransactionTableViewCell else {
+        guard let cell = lastTransactionsTableView.dequeueReusableCell(withIdentifier: CellsNames.lastTransactionCell, for: indexPath) as? LastTransactionTableViewCell else {
             return UITableViewCell()
         }
         

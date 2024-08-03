@@ -12,4 +12,7 @@ struct CellsNames{
     static let countryViewCell = "CountryViewCell"
     static let profileCell = "ProfileCell"
     static let profileInfoCell = "ProfileInfoCell"
+    static let recentTransactionCell = "HomeRecentTransactionTableViewCell"
+    static let lastTransactionCell = "LastTransactionTableViewCell"
+    static let notificationCell = "NotificationTableViewCell"
 }

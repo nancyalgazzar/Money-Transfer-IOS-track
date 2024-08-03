@@ -29,7 +29,7 @@ class HomeVC: UIViewController {
     private func setupTableView() {
         recentTransactionsTableView.delegate = self
         recentTransactionsTableView.dataSource = self
-        recentTransactionsTableView.register(UINib(nibName: "HomeRecentTransactionTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeRecentTransactionTableViewCell")
+        recentTransactionsTableView.register(UINib(nibName: CellsNames.recentTransactionCell, bundle: nil), forCellReuseIdentifier: CellsNames.recentTransactionCell)
     }
     
     private func getData() {
@@ -65,7 +65,14 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func cardsBtnPressed(_ sender: UIButton) {
-        print("Open Cards")
+        if let tabBarController = self.tabBarController {
+            tabBarController.selectedIndex = 3
+        } else {
+            if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+            let rootViewController = windowScene.windows.first?.rootViewController as? UITabBarController {
+                rootViewController.selectedIndex = 3
+            }
+        }
     }
     
     @IBAction func accountBtnPressed(_ sender: UIButton) {
@@ -93,7 +100,7 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = recentTransactionsTableView.dequeueReusableCell(withIdentifier: "HomeRecentTransactionTableViewCell", for: indexPath) as? HomeRecentTransactionTableViewCell else {
+        guard let cell = recentTransactionsTableView.dequeueReusableCell(withIdentifier: CellsNames.recentTransactionCell, for: indexPath) as? HomeRecentTransactionTableViewCell else {
             return UITableViewCell()
         }
         
