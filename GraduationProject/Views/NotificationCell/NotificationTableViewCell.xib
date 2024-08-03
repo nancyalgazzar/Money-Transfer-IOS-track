@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="107" id="KGk-i7-Jjw" customClass="NotificationTableViewCell" customModule="GraduationProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="107"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRZ-zY-hF9" customClass="RoundedCornerView" customModule="GraduationProject" customModuleProvider="target">
+                        <rect key="frame" x="8" y="16" width="57" height="54"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="idz-1T-IzI" customClass="CircularView" customModule="GraduationProject" customModuleProvider="target">
+                                <rect key="frame" x="12.666666666666668" y="11" width="32" height="32"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="received 1" translatesAutoresizingMaskIntoConstraints="NO" id="dfC-ew-LfG">
+                                        <rect key="frame" x="4" y="4" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="4Gq-lC-adM"/>
+                                            <constraint firstAttribute="height" constant="24" id="gYv-S3-1XH"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80784313730000001" green="0.63921568630000003" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="3ZX-Tp-MI1"/>
+                                    <constraint firstItem="dfC-ew-LfG" firstAttribute="top" secondItem="idz-1T-IzI" secondAttribute="top" constant="4" id="VWE-N6-drB"/>
+                                    <constraint firstAttribute="height" constant="32" id="VuV-jb-ogw"/>
+                                    <constraint firstAttribute="bottom" secondItem="dfC-ew-LfG" secondAttribute="bottom" constant="4" id="eRz-st-UXm"/>
+                                    <constraint firstItem="dfC-ew-LfG" firstAttribute="leading" secondItem="idz-1T-IzI" secondAttribute="leading" constant="4" id="ttE-6V-wxv"/>
+                                    <constraint firstAttribute="trailing" secondItem="dfC-ew-LfG" secondAttribute="trailing" constant="4" id="x9r-wN-9Pe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.9137254901960784" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="57" id="cH4-hd-A10"/>
+                            <constraint firstAttribute="height" constant="54" id="gWP-Ya-DJa"/>
+                            <constraint firstItem="idz-1T-IzI" firstAttribute="centerX" secondItem="fRZ-zY-hF9" secondAttribute="centerX" id="lrm-r6-kIt"/>
+                            <constraint firstItem="idz-1T-IzI" firstAttribute="centerY" secondItem="fRZ-zY-hF9" secondAttribute="centerY" id="sCX-da-SKB"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Received Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pS-mA-vQt">
+                        <rect key="frame" x="73" y="16" width="141" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have received 1000 USD from Asmaa Dosuky 1234 xxx" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihk-C0-FsK">
+                        <rect key="frame" x="73" y="37" width="257" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="7c9-UI-dGz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 Jul 2024 09:00 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JT-0g-Rpo">
+                        <rect key="frame" x="73" y="83" width="125" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.95294117647058818" green="0.9137254901960784" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstItem="8JT-0g-Rpo" firstAttribute="top" secondItem="ihk-C0-FsK" secondAttribute="bottom" constant="8" symbolic="YES" id="4AJ-Y8-cgf"/>
+                    <constraint firstItem="ihk-C0-FsK" firstAttribute="top" secondItem="6pS-mA-vQt" secondAttribute="bottom" constant="4" id="DaY-5I-UVK"/>
+                    <constraint firstItem="fRZ-zY-hF9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Hoi-td-wtm"/>
+                    <constraint firstAttribute="trailing" secondItem="ihk-C0-FsK" secondAttribute="trailing" constant="13" id="NfC-kh-1Ez"/>
+                    <constraint firstItem="8JT-0g-Rpo" firstAttribute="leading" secondItem="ihk-C0-FsK" secondAttribute="leading" id="OHx-od-aIC"/>
+                    <constraint firstItem="6pS-mA-vQt" firstAttribute="top" secondItem="fRZ-zY-hF9" secondAttribute="top" id="QnQ-EF-bG7"/>
+                    <constraint firstItem="6pS-mA-vQt" firstAttribute="leading" secondItem="fRZ-zY-hF9" secondAttribute="trailing" constant="8" symbolic="YES" id="SaG-Ge-dEf"/>
+                    <constraint firstItem="fRZ-zY-hF9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="b5y-6v-VMC"/>
+                    <constraint firstItem="ihk-C0-FsK" firstAttribute="leading" secondItem="6pS-mA-vQt" secondAttribute="leading" id="ibD-SO-ebR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="77.099236641221367" y="41.197183098591552"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="received 1" width="24" height="24"/>
+    </resources>
+</document>

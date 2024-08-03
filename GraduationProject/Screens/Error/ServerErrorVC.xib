@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ServerErrorVC" customModule="GraduationProject" customModuleProvider="target">
+            <connections>
+                <outlet property="callUsBtnView" destination="8hV-ut-1u7" id="Mka-eP-bPp"/>
+                <outlet property="messageUsBtnView" destination="VVM-UF-WR6" id="Ajt-bk-vII"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="GradientView" customModule="GraduationProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="404-error" translatesAutoresizingMaskIntoConstraints="NO" id="gzZ-7r-hMZ">
+                    <rect key="frame" x="51" y="161" width="273" height="195"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="273" id="RD3-dM-xpB"/>
+                        <constraint firstAttribute="height" constant="195" id="hBl-vC-Ka2"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Server error..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSO-QV-mc0">
+                    <rect key="frame" x="119" y="406" width="137" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="0.14117647058823529" green="0.13333333333333333" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVM-UF-WR6">
+                    <rect key="frame" x="16" y="619" width="343" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="VdL-LN-ZgX"/>
+                        <constraint firstAttribute="width" constant="343" id="svl-E4-eF6"/>
+                    </constraints>
+                    <color key="tintColor" red="0.52941176469999995" green="0.1176470588" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Message Us"/>
+                    <connections>
+                        <action selector="messageUsBtnPressed:" destination="-1" eventType="touchUpInside" id="xyL-Lg-lex"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="It seems like we’re haveing some diffculities , please don’t leave your aspirations, we are sending for help" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Jqi-Tu-OjZ">
+                    <rect key="frame" x="16" y="460" width="343" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="343" id="bnn-WV-76T"/>
+                        <constraint firstAttribute="height" constant="72" id="qn2-AM-blt"/>
+                    </constraints>
+                    <color key="textColor" red="0.23529411764705882" green="0.22745098039215686" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hV-ut-1u7">
+                    <rect key="frame" x="16" y="564" width="343" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="2tx-3X-JIu"/>
+                        <constraint firstAttribute="width" constant="343" id="tS1-3V-eXR"/>
+                    </constraints>
+                    <color key="tintColor" red="0.52941176470588236" green="0.11764705882352941" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Call Us"/>
+                    <connections>
+                        <action selector="callUsBtnPressed:" destination="-1" eventType="touchUpInside" id="icZ-Nw-PAs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Jqi-Tu-OjZ" firstAttribute="top" secondItem="sSO-QV-mc0" secondAttribute="bottom" constant="25" id="3cq-j4-rrJ"/>
+                <constraint firstItem="8hV-ut-1u7" firstAttribute="trailing" secondItem="Jqi-Tu-OjZ" secondAttribute="trailing" id="6ME-KQ-dgt"/>
+                <constraint firstItem="8hV-ut-1u7" firstAttribute="top" secondItem="Jqi-Tu-OjZ" secondAttribute="bottom" constant="32" id="G8Z-nU-vCf"/>
+                <constraint firstItem="sSO-QV-mc0" firstAttribute="centerX" secondItem="gzZ-7r-hMZ" secondAttribute="centerX" id="IfQ-Zl-wIg"/>
+                <constraint firstItem="gzZ-7r-hMZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="111" id="LIa-Rl-6i3"/>
+                <constraint firstItem="8hV-ut-1u7" firstAttribute="leading" secondItem="Jqi-Tu-OjZ" secondAttribute="leading" id="RjJ-rg-ILz"/>
+                <constraint firstItem="Jqi-Tu-OjZ" firstAttribute="centerX" secondItem="sSO-QV-mc0" secondAttribute="centerX" id="Rla-Dw-fHO"/>
+                <constraint firstItem="VVM-UF-WR6" firstAttribute="trailing" secondItem="8hV-ut-1u7" secondAttribute="trailing" id="ZzC-FU-UZV"/>
+                <constraint firstItem="VVM-UF-WR6" firstAttribute="top" secondItem="8hV-ut-1u7" secondAttribute="bottom" constant="16" id="fH6-XC-FNC"/>
+                <constraint firstItem="sSO-QV-mc0" firstAttribute="top" secondItem="gzZ-7r-hMZ" secondAttribute="bottom" constant="50" id="lkR-zh-LP9"/>
+                <constraint firstItem="VVM-UF-WR6" firstAttribute="leading" secondItem="8hV-ut-1u7" secondAttribute="leading" id="qdN-eH-R0A"/>
+                <constraint firstItem="gzZ-7r-hMZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="51" id="s8O-RO-cNR"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                    <color key="value" red="0.99607843159999998" green="0.97254902119999997" blue="0.90980386729999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                    <color key="value" red="0.96078431610000004" green="0.90196079019999997" blue="0.90588235859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="60" y="19.95073891625616"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="404-error" width="274" height="195"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationsVC" customModule="GraduationProject" customModuleProvider="target">
+            <connections>
+                <outlet property="notificationsTableView" destination="T9T-Ik-bjO" id="e2W-CU-xOZ"/>
+                <outlet property="view" destination="yVL-hR-H49" id="R3u-EP-XD7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="yVL-hR-H49" customClass="GradientView" customModule="GraduationProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="insetGrouped" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="T9T-Ik-bjO">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="lHu-X6-vwJ"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="T9T-Ik-bjO" firstAttribute="leading" secondItem="lHu-X6-vwJ" secondAttribute="leading" id="8Ia-eT-DaW"/>
+                <constraint firstItem="lHu-X6-vwJ" firstAttribute="bottom" secondItem="T9T-Ik-bjO" secondAttribute="bottom" id="DzO-SO-CEo"/>
+                <constraint firstItem="T9T-Ik-bjO" firstAttribute="top" secondItem="lHu-X6-vwJ" secondAttribute="top" id="FTG-hf-Aja"/>
+                <constraint firstItem="lHu-X6-vwJ" firstAttribute="trailing" secondItem="T9T-Ik-bjO" secondAttribute="trailing" id="hAb-gL-SRZ"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                    <color key="value" red="0.99607843139999996" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                    <color key="value" red="0.96078431610000004" green="0.90196079019999997" blue="0.90588235859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="58.778625954198468" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
