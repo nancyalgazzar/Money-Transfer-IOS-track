@@ -12,4 +12,5 @@ struct CellsNames{
     static let countryViewCell = "CountryViewCell"
     static let profileCell = "ProfileCell"
     static let profileInfoCell = "ProfileInfoCell"
+    static let myCardsCell = "MyCardsCell"
 }
