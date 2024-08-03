@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AuthenticationRouting{
+struct AuthenticationRouting{
     
     static  func goToSignUpUserDataVC(VC: UIViewController) {
         let userDataVC = SignUpUserDataEntryVC()

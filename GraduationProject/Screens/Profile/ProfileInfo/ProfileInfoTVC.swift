@@ -14,11 +14,6 @@ class ProfileInfoTVC: UITableViewController {
         tableView.contentInset = UIEdgeInsets(top: 40, left: 0, bottom: 0, right: 0)
         tableView.isUserInteractionEnabled = false
         navigationItem.title = "Profile information"
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
         tableView.register(UINib(nibName: CellsNames.profileInfoCell, bundle: nil), forCellReuseIdentifier: CellsNames.profileInfoCell)
     }
 

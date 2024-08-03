@@ -7,12 +7,22 @@
 
 import UIKit
 
+
+protocol SignInProtocol: DisplayErrorMessageProtocol,ChangePasswordVisibility{
+    func getEmailValue()->String?
+    func getPasswordValue()->String?
+}
+
 class SignInVC: UIViewController {
 
     @IBOutlet weak var passwordTextField: CustomTextField!
     @IBOutlet weak var emailTextField: CustomTextField!
+    var signInModelProtocol: SignInModelProtocol!
     override func viewDidLoad() {
         super.viewDidLoad()
+        signInModelProtocol = SignInViewModel(signInProtocol: self)
+
+        passwordTextField.handler = signInModelProtocol.setPasswordVisibilityHander()
 //        navigationItem.hidesBackButton = true
 //        let backButton = UIButton()
 //        backButton.setTitleColor(UIColor.black, for: .normal)
@@ -26,15 +36,32 @@ class SignInVC: UIViewController {
         AuthenticationRouting.goToSignUp(VC: self)
     }
     @IBAction func signInBtn(_ sender: UIButton) {
+        signInModelProtocol.checkSignValidation()
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
+extension SignInVC: SignInProtocol{
+    
+   
+    func showPassword(){
+        self.passwordTextField.rightImage = UIImage(named: "Open-eye")
+        self.passwordTextField.isSecureTextEntry = false
+
+    }
+    func hidePassword() {
+        
+        self.passwordTextField.rightImage = UIImage(named: "close-eye")
+        self.passwordTextField.isSecureTextEntry = true
+    }
+    func getEmailValue() -> String? {
+        return emailTextField.text
+    }
+    func getPasswordValue() -> String? {
+        return passwordTextField.text
+    }
+    func displayErrorMessage(title: String, message: String) {
+        alertMessage(title: title, message: message)
+    }
+}
+

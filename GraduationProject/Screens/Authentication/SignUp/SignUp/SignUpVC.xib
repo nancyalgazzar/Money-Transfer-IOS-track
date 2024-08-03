@@ -12,7 +12,7 @@
             <connections>
                 <outlet property="emailTextField" destination="76b-7q-CW5" id="muk-u8-Y67"/>
                 <outlet property="nameTextField" destination="KuQ-NL-URJ" id="8n1-5m-7ih"/>
-                <outlet property="passwordTextField" destination="rf4-DO-lDf" id="xqI-wT-dye"/>
+                <outlet property="passwordTextField" destination="OVt-2I-uYM" id="vpz-g4-25g"/>
                 <outlet property="signUpBtn" destination="NOh-KP-h5e" id="0HC-Fw-SGi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -28,8 +28,8 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cP-Ly-CbY">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZx-ia-g9A">
-                                    <rect key="frame" x="160" y="58" width="94" height="39"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZx-ia-g9A">
+                                    <rect key="frame" x="152.5" y="58" width="109.5" height="39"/>
                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -54,6 +54,7 @@
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KuQ-NL-URJ" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="50" width="331" height="50"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
                                                     <userDefinedRuntimeAttributes>
@@ -74,8 +75,9 @@
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="76b-7q-CW5" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="50" width="331" height="50"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#FBFBFB"/>
                                                         <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="email 1"/>
@@ -92,12 +94,13 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rf4-DO-lDf" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OVt-2I-uYM" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="50" width="331" height="50"/>
-                                                    <color key="backgroundColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" secureTextEntry="YES" textContentType="password"/>
                                                     <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#FBFBFB"/>
                                                         <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="close-eye"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
@@ -191,19 +194,19 @@
     </objects>
     <designables>
         <designable name="76b-7q-CW5">
-            <size key="intrinsicContentSize" width="132.5" height="34"/>
+            <size key="intrinsicContentSize" width="-1" height="50"/>
         </designable>
         <designable name="KuQ-NL-URJ">
-            <size key="intrinsicContentSize" width="162.5" height="34"/>
+            <size key="intrinsicContentSize" width="-1" height="50"/>
         </designable>
         <designable name="NOh-KP-h5e">
             <size key="intrinsicContentSize" width="133.5" height="53"/>
         </designable>
+        <designable name="OVt-2I-uYM">
+            <size key="intrinsicContentSize" width="-1" height="50"/>
+        </designable>
         <designable name="Zn5-Jt-FpD">
             <size key="intrinsicContentSize" width="50" height="29"/>
-        </designable>
-        <designable name="rf4-DO-lDf">
-            <size key="intrinsicContentSize" width="160.5" height="34"/>
         </designable>
     </designables>
     <resources>

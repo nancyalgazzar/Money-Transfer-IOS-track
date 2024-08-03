@@ -45,7 +45,7 @@ extension ProfileVC: UITableViewDelegate,UITableViewDataSource {
     }
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = ProfileGeneralConstData().getVCNameOfIndex(indexPath.row)
-        navigationController?.pushViewController(vc, animated: true)
+         ProfileRouting.navigateBetweenScreens(self, and: vc)
     }
      func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80

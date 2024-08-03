@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddCardRouting{
+struct AddCardRouting{
     static func goToSelectCurrency(VC: UIViewController){
         let selectCurrency = SelectCurrencyVC()
         VC.navigationController?.pushViewController(selectCurrency, animated: true)
@@ -16,14 +16,17 @@ class AddCardRouting{
         let addNewCard = AddNewCardVC()
         VC.navigationController?.pushViewController(addNewCard, animated: true)
     }
-    static func goToConnectingProgress(VC:
-         UIViewController){
+    static func goToConnectingProgress(VC: UIViewController){
              let connectingProgress = ConnectingProgressVC()
              VC.navigationController?.pushViewController(connectingProgress, animated: true)
     }
-    static func goToBankCardOTP(VC:
-         UIViewController){
+    static func goToBankCardOTP(VC: UIViewController){
              let bankCardOTP = BankCardOTP()
              VC.navigationController?.pushViewController(bankCardOTP, animated: true)
     }
+    static func goToSuccessConnect(VC: UIViewController){
+             let bankCardOTP = SuccessConnect()
+             VC.navigationController?.pushViewController(bankCardOTP, animated: true)
+    }
+
 }

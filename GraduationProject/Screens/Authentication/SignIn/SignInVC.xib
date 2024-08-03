@@ -53,9 +53,10 @@
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dh4-AM-H2u" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="50" width="331" height="50"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#FBFBFB"/>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="email 1"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                             </subviews>
@@ -72,9 +73,10 @@
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="soP-u5-3SQ" customClass="CustomTextField" customModule="GraduationProject" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="50" width="331" height="50"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#FBFBFB"/>
+                                                        <userDefinedRuntimeAttribute type="image" keyPath="rightImage" value="close-eye"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                             </subviews>
@@ -182,6 +184,8 @@
         </designable>
     </designables>
     <resources>
+        <image name="close-eye" width="24" height="24"/>
+        <image name="email 1" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

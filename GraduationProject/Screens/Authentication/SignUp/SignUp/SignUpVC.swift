@@ -6,12 +6,12 @@
 //
 
 import UIKit
-protocol SignUpProtocol{
+protocol SignUpProtocol: DisplayErrorMessageProtocol, ChangePasswordVisibility{
     func getNameValue()->String?
     func getEmailValue()->String?
     func getPasswordValue()->String?
-    func displayError(title:String,message:String)
     func gotToSignUpUserData()
+
 }
 class SignUpVC: UIViewController {
 
@@ -19,11 +19,11 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var passwordTextField: CustomTextField!
     @IBOutlet weak var emailTextField: CustomTextField!
     @IBOutlet weak var nameTextField: CustomTextField!
-    
     var signUpModelProtocol: SignUpModelProtocol!
     override func viewDidLoad() {
         super.viewDidLoad()
         signUpModelProtocol = SignUpViewModel(self)
+        passwordTextField.handler = signUpModelProtocol.setPasswordVisibilityHander()
         // Do any additional setup after loading the view.
     }
 
@@ -35,6 +35,16 @@ class SignUpVC: UIViewController {
     }
 }
 extension SignUpVC: SignUpProtocol{
+    func showPassword(){
+        self.passwordTextField.rightImage = UIImage(named: "Open-eye")
+        self.passwordTextField.isSecureTextEntry = false
+
+    }
+    func hidePassword() {
+        
+        self.passwordTextField.rightImage = UIImage(named: "close-eye")
+        self.passwordTextField.isSecureTextEntry = true
+    }
     func getNameValue()->String?{
        return nameTextField.text
     }
@@ -44,10 +54,11 @@ extension SignUpVC: SignUpProtocol{
     func getPasswordValue()->String?{
         return passwordTextField.text
     }
-    func displayError(title:String,message:String){
+    func displayErrorMessage(title:String,message:String){
         alertMessage(title: title, message: message)
     }
     func gotToSignUpUserData(){
         AuthenticationRouting.goToSignUpUserDataVC(VC: self)
     }
 }
+

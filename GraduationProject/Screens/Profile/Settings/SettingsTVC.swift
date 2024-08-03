@@ -44,7 +44,7 @@ class SettingsTVC: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = ProfileConstData().getVCNameOfIndex(indexPath.row)
-        navigationController?.pushViewController(vc, animated: true)
+        ProfileRouting.navigateBetweenScreens(self, and: vc)
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80

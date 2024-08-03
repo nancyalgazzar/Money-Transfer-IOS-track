@@ -18,7 +18,7 @@ class CustomTextField: UITextField {
                 invalidateIntrinsicContentSize()
             }
         }
-
+    var handler: (()->())? = nil
     override init(frame: CGRect) {
         super.init(frame: frame)
         setUp()
@@ -45,11 +45,20 @@ class CustomTextField: UITextField {
         
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         imageView.contentMode = .scaleAspectFit
+        imageView.isUserInteractionEnabled = true
+        let tap  = UITapGestureRecognizer(target: self, action: #selector(imageClicked))
+        imageView.addGestureRecognizer(tap)
+        
         imageView.image = image
         self.rightView = imageView
         self.rightViewMode = .always
     }
-    
+    @objc func imageClicked(){
+        if let handler = handler {
+            handler()
+            
+        }
+    }
         
     override var intrinsicContentSize: CGSize {
         return CGSize(width: UIView.noIntrinsicMetric, height: customHeight)

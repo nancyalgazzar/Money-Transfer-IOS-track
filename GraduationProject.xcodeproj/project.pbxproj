@@ -52,6 +52,10 @@
 		7C5DFC102C5A5FE300C25AED /* AddCardRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DFC0F2C5A5FE300C25AED /* AddCardRouting.swift */; };
 		7C5DFC162C5A641900C25AED /* AddNewCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DFC142C5A641900C25AED /* AddNewCardVC.swift */; };
 		7C5DFC172C5A641900C25AED /* AddNewCardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C5DFC152C5A641900C25AED /* AddNewCardVC.xib */; };
+		7C5E3B1B2C5E0F4300677A06 /* ProfileRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E3B1A2C5E0F4300677A06 /* ProfileRouting.swift */; };
+		7C5E3B1F2C5E1C5900677A06 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E3B1E2C5E1C5900677A06 /* SignInViewModel.swift */; };
+		7C5E3B222C5E25C700677A06 /* DisplayErrorMessageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E3B212C5E25C700677A06 /* DisplayErrorMessageProtocol.swift */; };
+		7C5E3B242C5E317B00677A06 /* ChangePasswordVisibilityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E3B232C5E317B00677A06 /* ChangePasswordVisibilityProtocol.swift */; };
 		7C60E7272C5A3F15009E06C6 /* CountryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C60E7252C5A3F15009E06C6 /* CountryViewCell.swift */; };
 		7C60E7282C5A3F15009E06C6 /* CountryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C60E7262C5A3F15009E06C6 /* CountryViewCell.xib */; };
 		7C60E72C2C5A4209009E06C6 /* AuthenticationRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C60E72B2C5A4209009E06C6 /* AuthenticationRouting.swift */; };
@@ -117,6 +121,10 @@
 		7C5DFC0F2C5A5FE300C25AED /* AddCardRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardRouting.swift; sourceTree = "<group>"; };
 		7C5DFC142C5A641900C25AED /* AddNewCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCardVC.swift; sourceTree = "<group>"; };
 		7C5DFC152C5A641900C25AED /* AddNewCardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewCardVC.xib; sourceTree = "<group>"; };
+		7C5E3B1A2C5E0F4300677A06 /* ProfileRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouting.swift; sourceTree = "<group>"; };
+		7C5E3B1E2C5E1C5900677A06 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		7C5E3B212C5E25C700677A06 /* DisplayErrorMessageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayErrorMessageProtocol.swift; sourceTree = "<group>"; };
+		7C5E3B232C5E317B00677A06 /* ChangePasswordVisibilityProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVisibilityProtocol.swift; sourceTree = "<group>"; };
 		7C60E7252C5A3F15009E06C6 /* CountryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryViewCell.swift; sourceTree = "<group>"; };
 		7C60E7262C5A3F15009E06C6 /* CountryViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryViewCell.xib; sourceTree = "<group>"; };
 		7C60E72B2C5A4209009E06C6 /* AuthenticationRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRouting.swift; sourceTree = "<group>"; };
@@ -302,10 +310,12 @@
 		7C5D7E532C592B3300D60725 /* GraduationProject */ = {
 			isa = PBXGroup;
 			children = (
+				7C5E3B202C5E256E00677A06 /* CommonProtocols */,
 				7C88C3D02C5CFF9000BE6622 /* Utilities */,
 				7C5C3BFA2C5ACC5800BDD86A /* Constants */,
 				7C5C3BF72C5ACA9600BDD86A /* Models */,
 				7C5DFC122C5A611700C25AED /* Screens */,
+				7C88C3D12C5CFFB600BE6622 /* ViewModel */,
 				7C60E72A2C5A41F1009E06C6 /* Routing */,
 				7C60E7292C5A3FCB009E06C6 /* StoryBoard */,
 				7C56CD002C5A1D7B00C29FFD /* Views */,
@@ -328,7 +338,6 @@
 		7C5D7E692C592F0F00D60725 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				7C88C3D12C5CFFB600BE6622 /* ViewModel */,
 				7C5DFC0D2C5A5A1C00C25AED /* CompleteUserData */,
 				7C5DFC0C2C5A59AF00C25AED /* SignUp */,
 				7C5DFC0B2C5A599200C25AED /* CountrySelect */,
@@ -423,6 +432,31 @@
 			path = AddNewCard;
 			sourceTree = "<group>";
 		};
+		7C5E3B1C2C5E1C2E00677A06 /* SignUpViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7C88C3D22C5D050700BE6622 /* SignUpViewModel.swift */,
+			);
+			path = SignUpViewModels;
+			sourceTree = "<group>";
+		};
+		7C5E3B1D2C5E1C4200677A06 /* SignInViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7C5E3B1E2C5E1C5900677A06 /* SignInViewModel.swift */,
+			);
+			path = SignInViewModels;
+			sourceTree = "<group>";
+		};
+		7C5E3B202C5E256E00677A06 /* CommonProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				7C5E3B212C5E25C700677A06 /* DisplayErrorMessageProtocol.swift */,
+				7C5E3B232C5E317B00677A06 /* ChangePasswordVisibilityProtocol.swift */,
+			);
+			path = CommonProtocols;
+			sourceTree = "<group>";
+		};
 		7C60E7292C5A3FCB009E06C6 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -436,6 +470,7 @@
 			children = (
 				7C60E72B2C5A4209009E06C6 /* AuthenticationRouting.swift */,
 				7C5DFC0F2C5A5FE300C25AED /* AddCardRouting.swift */,
+				7C5E3B1A2C5E0F4300677A06 /* ProfileRouting.swift */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -468,7 +503,8 @@
 		7C88C3D12C5CFFB600BE6622 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				7C88C3D22C5D050700BE6622 /* SignUpViewModel.swift */,
+				7C5E3B1D2C5E1C4200677A06 /* SignInViewModels */,
+				7C5E3B1C2C5E1C2E00677A06 /* SignUpViewModels */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -628,6 +664,7 @@
 				7C5C3BF92C5ACAF100BDD86A /* ProfileCellModel.swift in Sources */,
 				7C5C3C0D2C5AE65F00BDD86A /* ProfileVC.swift in Sources */,
 				7C555BD62C5994CF00BDCAC2 /* SignUpVC.swift in Sources */,
+				7C5E3B1F2C5E1C5900677A06 /* SignInViewModel.swift in Sources */,
 				7C5C3BF52C5AC60E00BDD86A /* ProfileCell.swift in Sources */,
 				7C88C3C62C5CFA2F00BE6622 /* String+Trim.swift in Sources */,
 				7C88C3C92C5CFA2F00BE6622 /* UserDefaults+contains.swift in Sources */,
@@ -635,8 +672,10 @@
 				7C561AF82C5AAC7400DEAC2E /* EditProfileVC.swift in Sources */,
 				7C59BF3C2C595FEA00AA97E9 /* UIView+HexColor.swift in Sources */,
 				7C59BF3A2C595E7300AA97E9 /* UIColor+Hex.swift in Sources */,
+				7C5E3B242C5E317B00677A06 /* ChangePasswordVisibilityProtocol.swift in Sources */,
 				7C88C3C12C5CF02C00BE6622 /* UserModel.swift in Sources */,
 				7C5C3BFC2C5ACC6800BDD86A /* VCs.swift in Sources */,
+				7C5E3B1B2C5E0F4300677A06 /* ProfileRouting.swift in Sources */,
 				7C5DFC092C5A572100C25AED /* SelectCurrencyVC.swift in Sources */,
 				7C555BD32C59835500BDCAC2 /* CustomButton.swift in Sources */,
 				7C561AE92C5A8ABF00DEAC2E /* BankCardOTP.swift in Sources */,
@@ -647,6 +686,7 @@
 				7C5D7E552C592B3300D60725 /* AppDelegate.swift in Sources */,
 				7C561AF42C5AA08B00DEAC2E /* ChangeSettingVC.swift in Sources */,
 				7C56CD062C5A1EEA00C29FFD /* RoundedImage.swift in Sources */,
+				7C5E3B222C5E25C700677A06 /* DisplayErrorMessageProtocol.swift in Sources */,
 				7C561AE22C5A742900DEAC2E /* ConnectingProgressVC.swift in Sources */,
 				7C5C3BF12C5AC5B400BDD86A /* SettingsTVC.swift in Sources */,
 				7C88C3BF2C5CEF9300BE6622 /* MyCardsVC.swift in Sources */,
