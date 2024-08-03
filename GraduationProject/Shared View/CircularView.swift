@@ -10,6 +10,7 @@ import UIKit
 @IBDesignable
 
 class CircularView: UIView {
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         let radius = self.frame.height / 2.0

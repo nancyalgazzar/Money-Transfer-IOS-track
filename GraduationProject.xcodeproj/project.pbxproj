@@ -29,6 +29,8 @@
 		9C6FA7972C5BD037006CA2F9 /* UIViewController + roundedCorners + toCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FA7962C5BD037006CA2F9 /* UIViewController + roundedCorners + toCircle.swift */; };
 		9C6FA7992C5C5569006CA2F9 /* TapBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FA7982C5C5569006CA2F9 /* TapBarVC.swift */; };
 		9C77AF372C5D9E5900349296 /* DummyTransactionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C77AF362C5D9E5900349296 /* DummyTransactionData.swift */; };
+		9C77AF3B2C5DAAE300349296 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C77AF392C5DAAE300349296 /* NotificationTableViewCell.swift */; };
+		9C77AF3C2C5DAAE300349296 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C77AF3A2C5DAAE300349296 /* NotificationTableViewCell.xib */; };
 		9CCA28002C5AF86B0036DD9A /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CCA27FE2C5AF86B0036DD9A /* NotificationsVC.swift */; };
 		9CCA28012C5AF86B0036DD9A /* NotificationsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CCA27FF2C5AF86B0036DD9A /* NotificationsVC.xib */; };
 		9CCB4E9C2C59BA31000F942F /* TransferVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CCB4E9B2C59BA31000F942F /* TransferVC.xib */; };
@@ -63,6 +65,8 @@
 		9C6FA7962C5BD037006CA2F9 /* UIViewController + roundedCorners + toCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + roundedCorners + toCircle.swift"; sourceTree = "<group>"; };
 		9C6FA7982C5C5569006CA2F9 /* TapBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarVC.swift; sourceTree = "<group>"; };
 		9C77AF362C5D9E5900349296 /* DummyTransactionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTransactionData.swift; sourceTree = "<group>"; };
+		9C77AF392C5DAAE300349296 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		9C77AF3A2C5DAAE300349296 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
 		9CCA27FE2C5AF86B0036DD9A /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
 		9CCA27FF2C5AF86B0036DD9A /* NotificationsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsVC.xib; sourceTree = "<group>"; };
 		9CCB4E9A2C59BA31000F942F /* TransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferVC.swift; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 		9C67E8F22C5D25BD00537C6F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9C77AF382C5DAA3600349296 /* NotificationCell */,
 				9C67E8F82C5D397C00537C6F /* LastTransactionCell */,
 				9C67E8F32C5D25D000537C6F /* HomeRecentTransactionCell */,
 			);
@@ -217,6 +222,15 @@
 				9C6FA7982C5C5569006CA2F9 /* TapBarVC.swift */,
 			);
 			path = Routing;
+			sourceTree = "<group>";
+		};
+		9C77AF382C5DAA3600349296 /* NotificationCell */ = {
+			isa = PBXGroup;
+			children = (
+				9C77AF392C5DAAE300349296 /* NotificationTableViewCell.swift */,
+				9C77AF3A2C5DAAE300349296 /* NotificationTableViewCell.xib */,
+			);
+			path = NotificationCell;
 			sourceTree = "<group>";
 		};
 		9CCA27FD2C5AF80B0036DD9A /* Notifications */ = {
@@ -314,6 +328,7 @@
 				9C01E3692C593EFB000F416E /* HomeVC.xib in Resources */,
 				9C45EC952C5AC331001EBD24 /* ServerErrorVC.xib in Resources */,
 				7C5D7E612C592B3400D60725 /* LaunchScreen.storyboard in Resources */,
+				9C77AF3C2C5DAAE300349296 /* NotificationTableViewCell.xib in Resources */,
 				9C67E8FC2C5D39B100537C6F /* LastTransactionTableViewCell.xib in Resources */,
 				7C5D7E5E2C592B3400D60725 /* Assets.xcassets in Resources */,
 				9C45EC8C2C5A9A4D001EBD24 /* TransactionVC.xib in Resources */,
@@ -333,6 +348,7 @@
 				9CCA28002C5AF86B0036DD9A /* NotificationsVC.swift in Sources */,
 				9C01E3682C593EFB000F416E /* HomeVC.swift in Sources */,
 				9C01E36B2C594223000F416E /* GradientView.swift in Sources */,
+				9C77AF3B2C5DAAE300349296 /* NotificationTableViewCell.swift in Sources */,
 				9CD3E16C2C5CFCCF00801453 /* RoundedCornerView.swift in Sources */,
 				9C67E8F62C5D261700537C6F /* HomeRecentTransactionTableViewCell.swift in Sources */,
 				9C45EC8B2C5A9A4D001EBD24 /* TransactionVC.swift in Sources */,

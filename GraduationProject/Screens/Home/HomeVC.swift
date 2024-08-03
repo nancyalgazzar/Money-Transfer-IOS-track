@@ -38,7 +38,8 @@ class HomeVC: UIViewController {
     
     //MARK: - IB Actions
     @IBAction func notificationBtnPressed(_ sender: UIButton) {
-        print("Open Notification")
+        let notificationVC = NotificationsVC()
+        navigationController?.pushViewController(notificationVC, animated: true)
     }
     
     @IBAction func transferBtnPressed(_ sender: UIButton) {
