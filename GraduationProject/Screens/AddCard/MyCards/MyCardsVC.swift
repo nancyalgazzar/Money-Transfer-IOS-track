@@ -2,7 +2,7 @@
 //  MyCardsVC.swift
 //  GraduationProject
 //
-//  Created by 1234 on 02/08/2024.
+//  Created by 1234 on 03/08/2024.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class MyCardsVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation

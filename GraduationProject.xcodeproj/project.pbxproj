@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7099C16AA95FDAB6654ABAD8 /* Pods_GraduationProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C319482BBD425217D0084764 /* Pods_GraduationProject.framework */; };
+		7C17B7AD2C5E66E20066892C /* HomeRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C17B7AC2C5E66E20066892C /* HomeRouting.swift */; };
+		7C17B7B02C5E77AF0066892C /* MyCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C17B7AE2C5E77AE0066892C /* MyCardsVC.swift */; };
+		7C17B7B12C5E77AF0066892C /* MyCardsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C17B7AF2C5E77AF0066892C /* MyCardsVC.xib */; };
 		7C555BD32C59835500BDCAC2 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C555BD22C59835500BDCAC2 /* CustomButton.swift */; };
 		7C555BD62C5994CF00BDCAC2 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C555BD42C5994CF00BDCAC2 /* SignUpVC.swift */; };
 		7C555BD72C5994CF00BDCAC2 /* SignUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C555BD52C5994CF00BDCAC2 /* SignUpVC.xib */; };
@@ -63,7 +66,6 @@
 		7C88C3B72C5CC93900BE6622 /* NotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C88C3B52C5CC93900BE6622 /* NotificationCell.xib */; };
 		7C88C3BB2C5CDFE400BE6622 /* SuccessConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3B92C5CDFE400BE6622 /* SuccessConnect.swift */; };
 		7C88C3BC2C5CDFE400BE6622 /* SuccessConnect.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C88C3BA2C5CDFE400BE6622 /* SuccessConnect.xib */; };
-		7C88C3BF2C5CEF9300BE6622 /* MyCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3BE2C5CEF9300BE6622 /* MyCardsVC.swift */; };
 		7C88C3C12C5CF02C00BE6622 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3C02C5CF02C00BE6622 /* UserModel.swift */; };
 		7C88C3C62C5CFA2F00BE6622 /* String+Trim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3C22C5CFA2F00BE6622 /* String+Trim.swift */; };
 		7C88C3C72C5CFA2F00BE6622 /* VC+AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3C32C5CFA2F00BE6622 /* VC+AlertMessage.swift */; };
@@ -103,6 +105,9 @@
 
 /* Begin PBXFileReference section */
 		2EF063EC907CEBAFA6D7EC25 /* Pods-GraduationProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraduationProject.release.xcconfig"; path = "Target Support Files/Pods-GraduationProject/Pods-GraduationProject.release.xcconfig"; sourceTree = "<group>"; };
+		7C17B7AC2C5E66E20066892C /* HomeRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouting.swift; sourceTree = "<group>"; };
+		7C17B7AE2C5E77AE0066892C /* MyCardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardsVC.swift; sourceTree = "<group>"; };
+		7C17B7AF2C5E77AF0066892C /* MyCardsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCardsVC.xib; sourceTree = "<group>"; };
 		7C555BD22C59835500BDCAC2 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		7C555BD42C5994CF00BDCAC2 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		7C555BD52C5994CF00BDCAC2 /* SignUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpVC.xib; sourceTree = "<group>"; };
@@ -160,7 +165,6 @@
 		7C88C3B52C5CC93900BE6622 /* NotificationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationCell.xib; sourceTree = "<group>"; };
 		7C88C3B92C5CDFE400BE6622 /* SuccessConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessConnect.swift; sourceTree = "<group>"; };
 		7C88C3BA2C5CDFE400BE6622 /* SuccessConnect.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessConnect.xib; sourceTree = "<group>"; };
-		7C88C3BE2C5CEF9300BE6622 /* MyCardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardsVC.swift; sourceTree = "<group>"; };
 		7C88C3C02C5CF02C00BE6622 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		7C88C3C22C5CFA2F00BE6622 /* String+Trim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Trim.swift"; sourceTree = "<group>"; };
 		7C88C3C32C5CFA2F00BE6622 /* VC+AlertMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VC+AlertMessage.swift"; sourceTree = "<group>"; };
@@ -543,6 +547,7 @@
 				7C60E72B2C5A4209009E06C6 /* AuthenticationRouting.swift */,
 				7C5DFC0F2C5A5FE300C25AED /* AddCardRouting.swift */,
 				7C5E3B1A2C5E0F4300677A06 /* ProfileRouting.swift */,
+				7C17B7AC2C5E66E20066892C /* HomeRouting.swift */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -559,7 +564,8 @@
 		7C88C3BD2C5CEF7A00BE6622 /* MyCards */ = {
 			isa = PBXGroup;
 			children = (
-				7C88C3BE2C5CEF9300BE6622 /* MyCardsVC.swift */,
+				7C17B7AE2C5E77AE0066892C /* MyCardsVC.swift */,
+				7C17B7AF2C5E77AF0066892C /* MyCardsVC.xib */,
 			);
 			path = MyCards;
 			sourceTree = "<group>";
@@ -735,6 +741,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C56CCFF2C5A1D7100C29FFD /* CountriesTVC.xib in Resources */,
+				7C17B7B12C5E77AF0066892C /* MyCardsVC.xib in Resources */,
 				7C5C3C042C5ADE5300BDD86A /* ProfileInfoCell.xib in Resources */,
 				7C5DFC0A2C5A572100C25AED /* SelectCurrencyVC.xib in Resources */,
 				7C561AF92C5AAC7400DEAC2E /* EditProfileVC.xib in Resources */,
@@ -831,6 +838,7 @@
 				9CC706612C5E61FC007F0E6A /* HomeVC.swift in Sources */,
 				7C88C3C92C5CFA2F00BE6622 /* UserDefaults+contains.swift in Sources */,
 				7C5C3C082C5AE09800BDD86A /* ProfileInfoTVC.swift in Sources */,
+				7C17B7AD2C5E66E20066892C /* HomeRouting.swift in Sources */,
 				9CC7067B2C5E6262007F0E6A /* InternetConnectionErrorVC.swift in Sources */,
 				9CC7067D2C5E6262007F0E6A /* ServerErrorVC.swift in Sources */,
 				9CC706982C5E6343007F0E6A /* NotificationTableViewCell.swift in Sources */,
@@ -858,11 +866,11 @@
 				7C561AE22C5A742900DEAC2E /* ConnectingProgressVC.swift in Sources */,
 				9CC7068E2C5E6319007F0E6A /* TapBarVC.swift in Sources */,
 				7C5C3BF12C5AC5B400BDD86A /* SettingsTVC.swift in Sources */,
-				7C88C3BF2C5CEF9300BE6622 /* MyCardsVC.swift in Sources */,
 				9CC7068A2C5E6309007F0E6A /* CircularView.swift in Sources */,
 				7C59BF3F2C5963FE00AA97E9 /* CustomTextField.swift in Sources */,
 				9CC706662C5E623B007F0E6A /* TransferVC.swift in Sources */,
 				7C88C3CB2C5CFA4000BE6622 /* ValidateUserData.swift in Sources */,
+				7C17B7B02C5E77AF0066892C /* MyCardsVC.swift in Sources */,
 				7C5C3BFE2C5ACE5100BDD86A /* ProfileConstData.swift in Sources */,
 				7C88C3BB2C5CDFE400BE6622 /* SuccessConnect.swift in Sources */,
 				7C88C3C82C5CFA2F00BE6622 /* UIView+Loader.swift in Sources */,

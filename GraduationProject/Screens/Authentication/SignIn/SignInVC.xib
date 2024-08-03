@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,7 +15,7 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="GradientView" customModule="GraduationProject" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -127,7 +126,7 @@
                                     </subviews>
                                 </stackView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="akT-sD-nnk" firstAttribute="height" secondItem="soP-u5-3SQ" secondAttribute="height" multiplier="1.22" id="0v1-Xq-PLn"/>
                                 <constraint firstItem="5rf-c6-iR9" firstAttribute="centerX" secondItem="zD7-wy-ytA" secondAttribute="centerX" id="DA7-yS-1jx"/>
@@ -166,6 +165,14 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="FHl-vX-L5G" secondAttribute="top" id="gVB-H2-gun"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FHl-vX-L5G" secondAttribute="trailing" id="wyy-ab-dKy"/>
             </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                    <color key="value" red="1" green="0.91764705882352937" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <point key="canvasLocation" x="131.8840579710145" y="63.616071428571423"/>
         </view>
     </objects>
@@ -186,8 +193,5 @@
     <resources>
         <image name="close-eye" width="24" height="24"/>
         <image name="email 1" width="24" height="24"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

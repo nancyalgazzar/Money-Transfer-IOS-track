@@ -21,7 +21,7 @@ class SignInViewModel:SignInModelProtocol{
     }
     func checkSignValidation(){
         guard isEmailValid() && isPasswordValid() else {
-            signInProtocol.displayErrorMessage(title: "Error", message: "Email or password are invalid")
+            signInProtocol.displayErrorMessage(title: "Error", message: "Email or password is invalid")
             return
         }
     }
