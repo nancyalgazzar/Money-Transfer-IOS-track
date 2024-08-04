@@ -83,6 +83,13 @@
 		7C88C3D32C5D050700BE6622 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3D22C5D050700BE6622 /* SignUpViewModel.swift */; };
 		9C38C8642C5EF42600C8AC0A /* TransferConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8622C5EF42600C8AC0A /* TransferConfirmationVC.swift */; };
 		9C38C8652C5EF42600C8AC0A /* TransferConfirmationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C38C8632C5EF42600C8AC0A /* TransferConfirmationVC.xib */; };
+		9C38C8672C5FE75000C8AC0A /* HomeVC + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8662C5FE75000C8AC0A /* HomeVC + TableView.swift */; };
+		9C38C8692C5FEC0200C8AC0A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8682C5FEC0200C8AC0A /* HomeViewModel.swift */; };
+		9C38C86B2C5FECDE00C8AC0A /* NotificationRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C86A2C5FECDE00C8AC0A /* NotificationRouting.swift */; };
+		9C38C86D2C5FF17300C8AC0A /* TransferRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C86C2C5FF17300C8AC0A /* TransferRouting.swift */; };
+		9C38C86F2C5FF4D200C8AC0A /* TransactionRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C86E2C5FF4D200C8AC0A /* TransactionRouting.swift */; };
+		9C38C8712C5FF54C00C8AC0A /* CardsRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8702C5FF54C00C8AC0A /* CardsRouting.swift */; };
+		9C38C8732C5FF58F00C8AC0A /* AccountRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8722C5FF58F00C8AC0A /* AccountRouting.swift */; };
 		9CC706612C5E61FC007F0E6A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC7065E2C5E61FC007F0E6A /* HomeVC.swift */; };
 		9CC706622C5E61FC007F0E6A /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC7065F2C5E61FC007F0E6A /* HomeVC.xib */; };
 		9CC706662C5E623B007F0E6A /* TransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC706632C5E623B007F0E6A /* TransferVC.swift */; };
@@ -193,6 +200,13 @@
 		8F1D8EAD26E64F381BD4DD5A /* Pods-GraduationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraduationProject.debug.xcconfig"; path = "Target Support Files/Pods-GraduationProject/Pods-GraduationProject.debug.xcconfig"; sourceTree = "<group>"; };
 		9C38C8622C5EF42600C8AC0A /* TransferConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferConfirmationVC.swift; sourceTree = "<group>"; };
 		9C38C8632C5EF42600C8AC0A /* TransferConfirmationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferConfirmationVC.xib; sourceTree = "<group>"; };
+		9C38C8662C5FE75000C8AC0A /* HomeVC + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC + TableView.swift"; sourceTree = "<group>"; };
+		9C38C8682C5FEC0200C8AC0A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		9C38C86A2C5FECDE00C8AC0A /* NotificationRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRouting.swift; sourceTree = "<group>"; };
+		9C38C86C2C5FF17300C8AC0A /* TransferRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferRouting.swift; sourceTree = "<group>"; };
+		9C38C86E2C5FF4D200C8AC0A /* TransactionRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRouting.swift; sourceTree = "<group>"; };
+		9C38C8702C5FF54C00C8AC0A /* CardsRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsRouting.swift; sourceTree = "<group>"; };
+		9C38C8722C5FF58F00C8AC0A /* AccountRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRouting.swift; sourceTree = "<group>"; };
 		9CC7065E2C5E61FC007F0E6A /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		9CC7065F2C5E61FC007F0E6A /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		9CC706632C5E623B007F0E6A /* TransferVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferVC.swift; sourceTree = "<group>"; };
@@ -567,6 +581,11 @@
 				7C5DFC0F2C5A5FE300C25AED /* AddCardRouting.swift */,
 				7C5E3B1A2C5E0F4300677A06 /* ProfileRouting.swift */,
 				7C17B7AC2C5E66E20066892C /* HomeRouting.swift */,
+				9C38C86A2C5FECDE00C8AC0A /* NotificationRouting.swift */,
+				9C38C86C2C5FF17300C8AC0A /* TransferRouting.swift */,
+				9C38C86E2C5FF4D200C8AC0A /* TransactionRouting.swift */,
+				9C38C8702C5FF54C00C8AC0A /* CardsRouting.swift */,
+				9C38C8722C5FF58F00C8AC0A /* AccountRouting.swift */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -619,8 +638,10 @@
 		9CC706602C5E61FC007F0E6A /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				9CC7065E2C5E61FC007F0E6A /* HomeVC.swift */,
 				9CC7065F2C5E61FC007F0E6A /* HomeVC.xib */,
+				9CC7065E2C5E61FC007F0E6A /* HomeVC.swift */,
+				9C38C8662C5FE75000C8AC0A /* HomeVC + TableView.swift */,
+				9C38C8682C5FEC0200C8AC0A /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -844,6 +865,8 @@
 				7C88C3D32C5D050700BE6622 /* SignUpViewModel.swift in Sources */,
 				7C555BDA2C59971300BDCAC2 /* SignUpUserDataEntryVC.swift in Sources */,
 				7C5C3BF92C5ACAF100BDD86A /* ProfileCellModel.swift in Sources */,
+				9C38C86D2C5FF17300C8AC0A /* TransferRouting.swift in Sources */,
+				9C38C8712C5FF54C00C8AC0A /* CardsRouting.swift in Sources */,
 				7C17B7B52C5E80F40066892C /* MyCardsCell.swift in Sources */,
 				7C5C3C0D2C5AE65F00BDD86A /* ProfileVC.swift in Sources */,
 				7C555BD62C5994CF00BDCAC2 /* SignUpVC.swift in Sources */,
@@ -856,8 +879,10 @@
 				7C88C3C92C5CFA2F00BE6622 /* UserDefaults+contains.swift in Sources */,
 				7C5C3C082C5AE09800BDD86A /* ProfileInfoTVC.swift in Sources */,
 				7C17B7AD2C5E66E20066892C /* HomeRouting.swift in Sources */,
+				9C38C86F2C5FF4D200C8AC0A /* TransactionRouting.swift in Sources */,
 				9CC7067B2C5E6262007F0E6A /* InternetConnectionErrorVC.swift in Sources */,
 				9CC7067D2C5E6262007F0E6A /* ServerErrorVC.swift in Sources */,
+				9C38C8692C5FEC0200C8AC0A /* HomeViewModel.swift in Sources */,
 				9CC706982C5E6343007F0E6A /* NotificationTableViewCell.swift in Sources */,
 				7C5E4D182C5F842D002433B9 /* SelectCurrencyModel.swift in Sources */,
 				7C561AF82C5AAC7400DEAC2E /* EditProfileVC.swift in Sources */,
@@ -866,6 +891,7 @@
 				7C59BF3A2C595E7300AA97E9 /* UIColor+Hex.swift in Sources */,
 				7C5E3B242C5E317B00677A06 /* ChangePasswordVisibilityProtocol.swift in Sources */,
 				9CC706812C5E62A2007F0E6A /* DummyTransactionData.swift in Sources */,
+				9C38C86B2C5FECDE00C8AC0A /* NotificationRouting.swift in Sources */,
 				7C88C3C12C5CF02C00BE6622 /* UserModel.swift in Sources */,
 				7C5C3BFC2C5ACC6800BDD86A /* VCs.swift in Sources */,
 				9CC706742C5E6257007F0E6A /* NotificationsVC.swift in Sources */,
@@ -878,7 +904,9 @@
 				7C88C3C72C5CFA2F00BE6622 /* VC+AlertMessage.swift in Sources */,
 				7C5DFC162C5A641900C25AED /* AddNewCardVC.swift in Sources */,
 				7C5D7E6E2C592F9E00D60725 /* SignInVC.swift in Sources */,
+				9C38C8672C5FE75000C8AC0A /* HomeVC + TableView.swift in Sources */,
 				7C5D7E552C592B3300D60725 /* AppDelegate.swift in Sources */,
+				9C38C8732C5FF58F00C8AC0A /* AccountRouting.swift in Sources */,
 				7C561AF42C5AA08B00DEAC2E /* ChangeSettingVC.swift in Sources */,
 				7C56CD062C5A1EEA00C29FFD /* RoundedImage.swift in Sources */,
 				7C5E4D122C5F69D5002433B9 /* GetCountriesAPIManager.swift in Sources */,
