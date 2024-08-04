@@ -19,7 +19,7 @@ class CountriesViewModel: CountriesViewModelProtocol{
         self.countriesViewProtocol = countriesProtocol
     }
     func fetchCountries( completion:@escaping()->()) {
-        getCountriesAPIManager.getCountries(completion: {
+        GetCountriesAPIManager.getCountries(completion: {
             error, fetchedCountries in
             if let error = error {
                 self.countriesViewProtocol.displayErrorMessage(title: "Sorry", message: error.localizedDescription)

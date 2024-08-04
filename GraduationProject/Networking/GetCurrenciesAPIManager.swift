@@ -1,5 +1,5 @@
 //
-//  GetCountriesAPIManager.swift
+//  GetCurrenciesAPIManager.swift
 //  GraduationProject
 //
 //  Created by 1234 on 04/08/2024.
@@ -7,9 +7,9 @@
 
 import Foundation
 import Alamofire
-class GetCountriesAPIManager{
+class GetCurrenciesAPIManager{
     
-    static func getCountries(completion: @escaping (_ error: Error?, _ countries: [CountryModel]?)->Void){
+    static func getCurrencies(completion: @escaping (_ error: Error?, _ countries: [Currency]?)->Void){
         AF.request("https://restcountries.com/v3.1/all", method: .get).response{ response in
             debugPrint(response)
             guard response.error == nil else {
@@ -23,10 +23,10 @@ class GetCountriesAPIManager{
                 return
             }
             do {
-                let Countries = try JSONDecoder().decode([CountryModel].self, from: data)
-                completion(nil, Countries)
-//                for country in Countries {
-//                    print(country.flags.png)
+                let currencies = try JSONDecoder().decode([Currency].self, from: data)
+                completion(nil, currencies)
+//                for currency in currencies {
+//                    print(currency.currencies?.first?.value.name ?? "cant beat")
 //                }
             } catch let error {
                 print(error.localizedDescription)

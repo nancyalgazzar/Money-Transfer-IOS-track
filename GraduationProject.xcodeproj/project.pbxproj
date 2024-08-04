@@ -64,6 +64,9 @@
 		7C5E4D122C5F69D5002433B9 /* GetCountriesAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E4D112C5F69D5002433B9 /* GetCountriesAPIManager.swift */; };
 		7C5E4D142C5F6B6A002433B9 /* CountriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E4D132C5F6B6A002433B9 /* CountriesModel.swift */; };
 		7C5E4D162C5F6DA9002433B9 /* CountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E4D152C5F6DA9002433B9 /* CountriesViewModel.swift */; };
+		7C5E4D182C5F842D002433B9 /* SelectCurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E4D172C5F842D002433B9 /* SelectCurrencyModel.swift */; };
+		7C5E4D1A2C5F84D9002433B9 /* GetCurrenciesAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E4D192C5F84D9002433B9 /* GetCurrenciesAPIManager.swift */; };
+		7C5E4D1D2C5F878F002433B9 /* SelectCurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5E4D1C2C5F878F002433B9 /* SelectCurrencyViewModel.swift */; };
 		7C60E7272C5A3F15009E06C6 /* CountryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C60E7252C5A3F15009E06C6 /* CountryViewCell.swift */; };
 		7C60E7282C5A3F15009E06C6 /* CountryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C60E7262C5A3F15009E06C6 /* CountryViewCell.xib */; };
 		7C60E72C2C5A4209009E06C6 /* AuthenticationRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C60E72B2C5A4209009E06C6 /* AuthenticationRouting.swift */; };
@@ -170,6 +173,9 @@
 		7C5E4D112C5F69D5002433B9 /* GetCountriesAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCountriesAPIManager.swift; sourceTree = "<group>"; };
 		7C5E4D132C5F6B6A002433B9 /* CountriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesModel.swift; sourceTree = "<group>"; };
 		7C5E4D152C5F6DA9002433B9 /* CountriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewModel.swift; sourceTree = "<group>"; };
+		7C5E4D172C5F842D002433B9 /* SelectCurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyModel.swift; sourceTree = "<group>"; };
+		7C5E4D192C5F84D9002433B9 /* GetCurrenciesAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrenciesAPIManager.swift; sourceTree = "<group>"; };
+		7C5E4D1C2C5F878F002433B9 /* SelectCurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyViewModel.swift; sourceTree = "<group>"; };
 		7C60E7252C5A3F15009E06C6 /* CountryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryViewCell.swift; sourceTree = "<group>"; };
 		7C60E7262C5A3F15009E06C6 /* CountryViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountryViewCell.xib; sourceTree = "<group>"; };
 		7C60E72B2C5A4209009E06C6 /* AuthenticationRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRouting.swift; sourceTree = "<group>"; };
@@ -344,6 +350,7 @@
 				7C5C3BF82C5ACAF100BDD86A /* ProfileCellModel.swift */,
 				7C88C3C02C5CF02C00BE6622 /* UserModel.swift */,
 				7C5E4D132C5F6B6A002433B9 /* CountriesModel.swift */,
+				7C5E4D172C5F842D002433B9 /* SelectCurrencyModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -555,8 +562,17 @@
 			isa = PBXGroup;
 			children = (
 				7C5E4D112C5F69D5002433B9 /* GetCountriesAPIManager.swift */,
+				7C5E4D192C5F84D9002433B9 /* GetCurrenciesAPIManager.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		7C5E4D1B2C5F8775002433B9 /* AddCardViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7C5E4D1C2C5F878F002433B9 /* SelectCurrencyViewModel.swift */,
+			);
+			path = AddCardViewModels;
 			sourceTree = "<group>";
 		};
 		7C60E7292C5A3FCB009E06C6 /* StoryBoard */ = {
@@ -608,6 +624,7 @@
 		7C88C3D12C5CFFB600BE6622 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7C5E4D1B2C5F8775002433B9 /* AddCardViewModels */,
 				7C5E3B1D2C5E1C4200677A06 /* SignInViewModels */,
 				7C5E3B1C2C5E1C2E00677A06 /* SignUpViewModels */,
 			);
@@ -874,6 +891,7 @@
 				9CC7067B2C5E6262007F0E6A /* InternetConnectionErrorVC.swift in Sources */,
 				9CC7067D2C5E6262007F0E6A /* ServerErrorVC.swift in Sources */,
 				9CC706982C5E6343007F0E6A /* NotificationTableViewCell.swift in Sources */,
+				7C5E4D182C5F842D002433B9 /* SelectCurrencyModel.swift in Sources */,
 				7C561AF82C5AAC7400DEAC2E /* EditProfileVC.swift in Sources */,
 				7C59BF3C2C595FEA00AA97E9 /* UIView+HexColor.swift in Sources */,
 				7C5E4D142C5F6B6A002433B9 /* CountriesModel.swift in Sources */,
@@ -902,6 +920,7 @@
 				7C5C3BF12C5AC5B400BDD86A /* SettingsTVC.swift in Sources */,
 				9CC7068A2C5E6309007F0E6A /* CircularView.swift in Sources */,
 				7C59BF3F2C5963FE00AA97E9 /* CustomTextField.swift in Sources */,
+				7C5E4D1D2C5F878F002433B9 /* SelectCurrencyViewModel.swift in Sources */,
 				9CC706662C5E623B007F0E6A /* TransferVC.swift in Sources */,
 				7C88C3CB2C5CFA4000BE6622 /* ValidateUserData.swift in Sources */,
 				7C17B7B02C5E77AF0066892C /* MyCardsVC.swift in Sources */,
@@ -917,6 +936,7 @@
 				9CC7069A2C5E6343007F0E6A /* LastTransactionTableViewCell.swift in Sources */,
 				7C60E7272C5A3F15009E06C6 /* CountryViewCell.swift in Sources */,
 				7C88C3B62C5CC93900BE6622 /* NotificationCell.swift in Sources */,
+				7C5E4D1A2C5F84D9002433B9 /* GetCurrenciesAPIManager.swift in Sources */,
 				7C5C3C032C5ADE5300BDD86A /* ProfileInfoCell.swift in Sources */,
 				9CC7068B2C5E6309007F0E6A /* RoundedCornerView.swift in Sources */,
 				9C38C8642C5EF42600C8AC0A /* TransferConfirmationVC.swift in Sources */,

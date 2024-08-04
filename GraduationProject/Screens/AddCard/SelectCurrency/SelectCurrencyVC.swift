@@ -7,11 +7,18 @@
 
 import UIKit
 
+protocol SelectCurrencyProtocol:DisplayErrorMessageProtocol{
+    func reloadTable()
+    func goToAddCard()
+}
 class SelectCurrencyVC: UIViewController {
-
+    
+    var selectCurrencyModelProtocol: SelectCurrencyModelProtocol!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.backgroundColor = .clear
+        selectCurrencyModelProtocol = SelectCurrencyViewModel(self)
         SetTableView()
         registerCell()
         navigationItemFormat()
@@ -19,7 +26,7 @@ class SelectCurrencyVC: UIViewController {
     }
     
     @IBAction func getStartedBtn(_ sender: UIButton) {
-        AddCardRouting.goToAddNewCard(VC: self)
+        selectCurrencyModelProtocol.goToAddCard()
     }
 }
 //MARK: Table View
@@ -34,19 +41,31 @@ extension SelectCurrencyVC: UITableViewDelegate,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 35
+        return selectCurrencyModelProtocol.getCurrenciesCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellsNames.countryViewCell, for: indexPath) as! CountryViewCell
          // config cell
+        let cellData = selectCurrencyModelProtocol.getCurrencyAtIndex(indexPath.row)
+        cell.configCell(country: cellData)
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 55
     }
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        let selectedCell:UITableViewCell = tableView.cellForRow(at: indexPath)!
+        selectedCell.contentView.backgroundColor = UIColor(hex: "#F3E9EB")
+        return indexPath
+    }
+    func tableView(_ tableView: UITableView, willDeselectRowAt indexPath: IndexPath) -> IndexPath? {
+        let selectedCell:UITableViewCell = tableView.cellForRow(at: indexPath)!
+        selectedCell.contentView.backgroundColor = .clear
+        return indexPath
+    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-                
+        selectCurrencyModelProtocol.getSelectedRow(index: indexPath.row)
     }
 }
 
@@ -60,5 +79,17 @@ extension SelectCurrencyVC{
     }
     @objc private func cancelTransfer(){
         navigationController?.popViewController(animated: true)
+    }
+}
+extension SelectCurrencyVC: SelectCurrencyProtocol{
+    func reloadTable(){
+        tableView.reloadData()
+    }
+    func displayErrorMessage(title: String, message: String){
+        alertMessage(title: title, message: message)
+    }
+    func goToAddCard(){
+        AddCardRouting.goToAddNewCard(VC: self)
+
     }
 }
