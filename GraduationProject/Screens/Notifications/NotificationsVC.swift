@@ -18,10 +18,20 @@ class NotificationsVC: UIViewController {
         setupTableView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        setupNavigationBar()
+    }
+    
     private func setupTableView() {
         notificationsTableView.delegate = self
         notificationsTableView.dataSource = self
         notificationsTableView.register(UINib(nibName: CellsNames.notificationCell, bundle: nil), forCellReuseIdentifier: CellsNames.notificationCell)
+    }
+    
+    private func setupNavigationBar() {
+        navigationController?.navigationBar.isHidden = false
+        self.title = "Notifications"
+        navigationItem.hidesBackButton = false
     }
 }
 

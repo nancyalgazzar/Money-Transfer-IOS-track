@@ -41,12 +41,20 @@ class TransferVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        setupNavigationBar()
         sendAmountTextFilled.text = ""
         getsAmountTextFilled.text = ""
     }
     
+    private func setupNavigationBar() {
+        self.title = "Transfer"
+        navigationItem.backButtonTitle = ""
+        navigationItem.hidesBackButton = false
+    }
+    
     @IBAction func continueBtnPressed(_ sender: UIButton) {
-        print("Continue Pressed")
+        let transferConfirmationVC = TransferConfirmationVC()
+        navigationController?.pushViewController(transferConfirmationVC, animated: true)
     }
     
     @objc func dismissKeyboard() {

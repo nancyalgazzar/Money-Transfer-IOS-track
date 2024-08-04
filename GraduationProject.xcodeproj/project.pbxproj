@@ -75,6 +75,8 @@
 		7C88C3C92C5CFA2F00BE6622 /* UserDefaults+contains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3C52C5CFA2F00BE6622 /* UserDefaults+contains.swift */; };
 		7C88C3CB2C5CFA4000BE6622 /* ValidateUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3CA2C5CFA4000BE6622 /* ValidateUserData.swift */; };
 		7C88C3D32C5D050700BE6622 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88C3D22C5D050700BE6622 /* SignUpViewModel.swift */; };
+		9C38C8642C5EF42600C8AC0A /* TransferConfirmationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8622C5EF42600C8AC0A /* TransferConfirmationVC.swift */; };
+		9C38C8652C5EF42600C8AC0A /* TransferConfirmationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C38C8632C5EF42600C8AC0A /* TransferConfirmationVC.xib */; };
 		9CC706612C5E61FC007F0E6A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC7065E2C5E61FC007F0E6A /* HomeVC.swift */; };
 		9CC706622C5E61FC007F0E6A /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC7065F2C5E61FC007F0E6A /* HomeVC.xib */; };
 		9CC706662C5E623B007F0E6A /* TransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC706632C5E623B007F0E6A /* TransferVC.swift */; };
@@ -177,6 +179,8 @@
 		7C88C3CA2C5CFA4000BE6622 /* ValidateUserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateUserData.swift; sourceTree = "<group>"; };
 		7C88C3D22C5D050700BE6622 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		8F1D8EAD26E64F381BD4DD5A /* Pods-GraduationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GraduationProject.debug.xcconfig"; path = "Target Support Files/Pods-GraduationProject/Pods-GraduationProject.debug.xcconfig"; sourceTree = "<group>"; };
+		9C38C8622C5EF42600C8AC0A /* TransferConfirmationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferConfirmationVC.swift; sourceTree = "<group>"; };
+		9C38C8632C5EF42600C8AC0A /* TransferConfirmationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferConfirmationVC.xib; sourceTree = "<group>"; };
 		9CC7065E2C5E61FC007F0E6A /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		9CC7065F2C5E61FC007F0E6A /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		9CC706632C5E623B007F0E6A /* TransferVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferVC.swift; sourceTree = "<group>"; };
@@ -624,6 +628,8 @@
 			children = (
 				9CC706632C5E623B007F0E6A /* TransferVC.swift */,
 				9CC706642C5E623B007F0E6A /* TransferVC.xib */,
+				9C38C8622C5EF42600C8AC0A /* TransferConfirmationVC.swift */,
+				9C38C8632C5EF42600C8AC0A /* TransferConfirmationVC.xib */,
 			);
 			path = Transfer;
 			sourceTree = "<group>";
@@ -747,6 +753,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C56CCFF2C5A1D7100C29FFD /* CountriesTVC.xib in Resources */,
+				9C38C8652C5EF42600C8AC0A /* TransferConfirmationVC.xib in Resources */,
 				7C17B7B12C5E77AF0066892C /* MyCardsVC.xib in Resources */,
 				7C5C3C042C5ADE5300BDD86A /* ProfileInfoCell.xib in Resources */,
 				7C5DFC0A2C5A572100C25AED /* SelectCurrencyVC.xib in Resources */,
@@ -892,6 +899,7 @@
 				7C88C3B62C5CC93900BE6622 /* NotificationCell.swift in Sources */,
 				7C5C3C032C5ADE5300BDD86A /* ProfileInfoCell.swift in Sources */,
 				9CC7068B2C5E6309007F0E6A /* RoundedCornerView.swift in Sources */,
+				9C38C8642C5EF42600C8AC0A /* TransferConfirmationVC.swift in Sources */,
 				9CC7068C2C5E6309007F0E6A /* StepView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

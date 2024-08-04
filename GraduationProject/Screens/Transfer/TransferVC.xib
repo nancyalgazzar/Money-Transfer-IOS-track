@@ -82,7 +82,7 @@
                                         </stackView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVE-la-2rM">
                                             <rect key="frame" x="55.000000000000007" y="33" width="85.666666666666686" height="2"/>
-                                            <color key="backgroundColor" red="0.52941176469999995" green="0.1176470588" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="85.670000000000002" id="20x-3w-mFm"/>
                                                 <constraint firstAttribute="height" constant="2" id="yhG-Fc-Dpq"/>
@@ -414,7 +414,7 @@
                             </constraints>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="color" keyPath="topColor">
-                                    <color key="value" red="0.99607843159999998" green="0.97254902119999997" blue="0.90980386729999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="value" red="0.99607843137254903" green="0.97254901960784312" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
                                     <color key="value" red="0.96078431610000004" green="0.90196079019999997" blue="0.90588235859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -443,13 +443,6 @@
                 <constraint firstItem="cE3-nE-PsY" firstAttribute="bottom" secondItem="Bzq-iJ-awe" secondAttribute="bottom" id="tXf-ng-ioR"/>
             </constraints>
             <point key="canvasLocation" x="72.51908396946564" y="50.70422535211268"/>
-        </view>
-        <view contentMode="scaleToFill" id="rmT-ah-5d5">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <viewLayoutGuide key="safeArea" id="1aK-M9-wjp"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="912" y="53"/>
         </view>
     </objects>
     <resources>

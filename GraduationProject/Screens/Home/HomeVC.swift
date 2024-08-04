@@ -25,6 +25,10 @@ class HomeVC: UIViewController {
         recentTransactionsTableView.layer.cornerRadius = 8
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.isHidden = true
+    }
+    
     //MARK: - private functions
     private func setupTableView() {
         recentTransactionsTableView.delegate = self
