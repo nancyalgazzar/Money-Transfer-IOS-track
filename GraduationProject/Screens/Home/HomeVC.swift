@@ -14,7 +14,11 @@ class HomeVC: UIViewController {
     @IBOutlet weak var curruntBalanceView: UIView!
     @IBOutlet weak var servicesView: UIView!
     @IBOutlet weak var recentTransactionsTableView: UITableView!
+    @IBOutlet weak var hideBtnView: UIButton!
+    @IBOutlet weak var curruntBalanceTextFilled: UILabel!
     
+    var isBalanceHidden = true
+    var Balance = "$2,85,856.20"
     var recentTransactionArr: [TransactionCellModel] = []
     
     //MARK: - lifeCycle methods
@@ -92,6 +96,17 @@ class HomeVC: UIViewController {
             let rootViewController = windowScene.windows.first?.rootViewController as? UITabBarController {
                 rootViewController.selectedIndex = 2
             }
+        }
+    }
+    @IBAction func hideBtnPressed(_ sender: UIButton) {
+        if isBalanceHidden {
+            curruntBalanceTextFilled.text = Balance
+            hideBtnView.setImage(UIImage(named: "close-eye"), for: .normal)
+            isBalanceHidden = false
+        } else if !isBalanceHidden {
+            curruntBalanceTextFilled.text = "********"
+            hideBtnView.setImage(UIImage(named: "Open-eye"), for: .normal)
+            isBalanceHidden = true
         }
     }
 }

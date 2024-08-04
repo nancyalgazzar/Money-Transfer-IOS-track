@@ -11,7 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="GraduationProject" customModuleProvider="target">
             <connections>
+                <outlet property="curruntBalanceTextFilled" destination="fhy-T7-Dmh" id="osv-uS-QLu"/>
                 <outlet property="curruntBalanceView" destination="30w-NQ-VFr" id="gOi-iB-S7U"/>
+                <outlet property="hideBtnView" destination="x35-8e-wS0" id="pPr-2X-3S7"/>
                 <outlet property="profilePicView" destination="Kyk-6L-u1f" id="PBa-JT-MND"/>
                 <outlet property="recentTransactionsTableView" destination="yN4-0Y-kP5" id="Fo1-do-0me"/>
                 <outlet property="servicesView" destination="EZn-4B-MH3" id="3hL-WN-TZB"/>
@@ -93,7 +95,7 @@
                                     <rect key="frame" x="16" y="120" width="342.66666666666669" height="123"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9Xf-WM-eod">
-                                            <rect key="frame" x="13" y="25" width="172" height="63"/>
+                                            <rect key="frame" x="13.000000000000007" y="25" width="116.66666666666669" height="63"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJS-MA-BMu">
                                                     <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="19.333333333333332"/>
@@ -101,20 +103,34 @@
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$2,85,856.20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhy-T7-Dmh">
-                                                    <rect key="frame" x="0.0" y="29.333333333333339" width="172" height="33.666666666666657"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="********" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhy-T7-Dmh">
+                                                    <rect key="frame" x="0.0" y="29.333333333333339" width="93" height="33.666666666666657"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x35-8e-wS0">
+                                            <rect key="frame" x="297" y="54.666666666666657" width="33" height="33"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="33" id="31V-zA-VaP"/>
+                                                <constraint firstAttribute="height" constant="33" id="xIR-xo-M3T"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="Open-eye" title=""/>
+                                            <connections>
+                                                <action selector="hideBtnPressed:" destination="-1" eventType="touchUpInside" id="t1O-UK-bPD"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" red="0.52941176469999995" green="0.1176470588" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="123" id="2ud-Ph-CD7"/>
+                                        <constraint firstItem="x35-8e-wS0" firstAttribute="centerY" secondItem="fhy-T7-Dmh" secondAttribute="centerY" id="CWT-3r-h0h"/>
                                         <constraint firstItem="9Xf-WM-eod" firstAttribute="top" secondItem="30w-NQ-VFr" secondAttribute="top" constant="25" id="g3N-AG-thI"/>
                                         <constraint firstItem="9Xf-WM-eod" firstAttribute="leading" secondItem="30w-NQ-VFr" secondAttribute="leading" constant="13" id="gco-ho-riw"/>
+                                        <constraint firstAttribute="trailing" secondItem="x35-8e-wS0" secondAttribute="trailing" constant="12.666666666666686" id="qDU-wq-czd"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZn-4B-MH3" customClass="RoundedCornerView" customModule="GraduationProject" customModuleProvider="target">
@@ -320,6 +336,7 @@
         <image name="Bell Icon" width="24" height="24"/>
         <image name="Cards 1" width="24" height="24"/>
         <image name="History 1" width="24" height="24"/>
+        <image name="Open-eye" width="24" height="24"/>
         <image name="Transfer 1" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
