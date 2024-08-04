@@ -23,7 +23,7 @@ class SignUpViewModel:SignUpModelProtocol{
         if isNameFieldValid(name: signUpProtocol.getNameValue()) &&
             isEmailFieldValid(email: signUpProtocol.getEmailValue()) &&
             isPasswordFieldValid(password: signUpProtocol.getPasswordValue()){
-            signUpProtocol.gotToSignUpUserData()
+
         }
     }
     func setPasswordVisibilityHander() -> (()->()) {

@@ -6,29 +6,36 @@
 //
 
 import Foundation
-protocol SelectCurrencyModelProtocol{
+protocol SelectCurrencyViewModelProtocol{
     func getCurrenciesCount()->Int
     func getCurrencyAtIndex(_ index: Int)->Currency
     func getSelectedRow(index: Int)
+    func fetchCurrency()
     func goToAddCard()
+    var showError: ((_ title: String, _ message: String)->Void )? { get set  }
+    var updateView: (()->Void)? {get set}
+    var currencySelected: (()->Void )? {get set}
+
 }
-class SelectCurrencyViewModel: SelectCurrencyModelProtocol {
+class SelectCurrencyViewModel: SelectCurrencyViewModelProtocol {
+    var showError: ((_ title: String, _ message: String)->Void )?
+    var updateView: (()->Void)?
+    var currencySelected: (()->Void )?
     var currencies:[Currency] = []
     var selectedCurrencyName: String?
-    let selectCurrencyProtocol: SelectCurrencyProtocol
-    init(_ selectCurrency: SelectCurrencyProtocol){
-        selectCurrencyProtocol = selectCurrency
-        fetchCurrency()
+    init(){
     }
     func fetchCurrency(){
         GetCurrenciesAPIManager.getCurrencies(completion: {
             error, currencies in
             if let error = error {
-                self.selectCurrencyProtocol.displayErrorMessage(title: "Sorry", message: error.localizedDescription)            }
+                self.showError?("Sorry",error.localizedDescription)
+            }
             if let currencies = currencies {
                 self.currencies = currencies
-                self.selectCurrencyProtocol.reloadTable()
+                self.updateView?()
             }
+            
         })
         
     }
@@ -44,9 +51,9 @@ class SelectCurrencyViewModel: SelectCurrencyModelProtocol {
     }
     func goToAddCard(){
         if let _ = selectedCurrencyName{
-            selectCurrencyProtocol.goToAddCard()
+           currencySelected?()
         }else{
-            selectCurrencyProtocol.displayErrorMessage(title: "Sorry", message: "you must select Currency")
+            showError?("Sorry","you must select Currency")
         }
     }
 }
