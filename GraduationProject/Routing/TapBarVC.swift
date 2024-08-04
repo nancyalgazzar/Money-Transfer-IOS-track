@@ -24,8 +24,8 @@ class TapBarVC: UITabBarController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        navigationItem.hidesBackButton = true
         navigationController?.navigationBar.isHidden = true
+        navigationItem.hidesBackButton = true
     }
 }
 

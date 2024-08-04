@@ -26,14 +26,14 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="Bzq-iJ-awe">
+        <view contentMode="scaleToFill" id="Bzq-iJ-awe" customClass="GradientView" customModule="GraduationProject" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cE3-nE-PsY">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6QD-Nu-tKm" customClass="GradientView" customModule="GraduationProject" customModuleProvider="target">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6QD-Nu-tKm">
                             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ynf-7j-B0U">
@@ -382,7 +382,6 @@
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="Qwe-Xs-xyu" firstAttribute="top" secondItem="Ynf-7j-B0U" secondAttribute="bottom" constant="41" id="0XF-dX-zqD"/>
                                 <constraint firstItem="5Jn-uA-uFT" firstAttribute="leading" secondItem="HBG-BB-lmD" secondAttribute="leading" id="2v9-L3-dTp"/>
@@ -442,6 +441,14 @@
                 <constraint firstAttribute="top" secondItem="cE3-nE-PsY" secondAttribute="top" id="ZPM-CU-WFW"/>
                 <constraint firstItem="cE3-nE-PsY" firstAttribute="bottom" secondItem="Bzq-iJ-awe" secondAttribute="bottom" id="tXf-ng-ioR"/>
             </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                    <color key="value" red="0.99607843139999996" green="0.97254901959999995" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                    <color key="value" red="0.96078431610000004" green="0.90196079019999997" blue="0.90588235859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <point key="canvasLocation" x="72.51908396946564" y="50.70422535211268"/>
         </view>
     </objects>
