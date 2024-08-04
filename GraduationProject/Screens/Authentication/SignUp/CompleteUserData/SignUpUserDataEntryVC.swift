@@ -60,7 +60,7 @@ extension SignUpUserDataEntryVC{
      private func setFittedSheet(VC: UIViewController) -> SheetViewController{
         let sheetController = SheetViewController(controller: VC)
         sheetController.cornerRadius = 35
-        sheetController.setSizes([.percent(0.5)])
+        sheetController.setSizes([.percent(0.7)])
         return sheetController
      }
 }

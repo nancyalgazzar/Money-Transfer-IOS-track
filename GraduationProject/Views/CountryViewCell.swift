@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class CountryViewCell: UITableViewCell {
 
@@ -22,6 +23,10 @@ class CountryViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    func configCell(country: CountryModel){
+        self.countryFlag.sd_setImage(with: URL(string: country.flags.png), placeholderImage: UIImage(named: "country 1"))
+        countryName.text = country.name.common
     }
     
 }
