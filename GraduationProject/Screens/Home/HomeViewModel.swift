@@ -10,7 +10,7 @@ import Foundation
 class HomeViewModel {
     var isBalanceHidden = true
     var Balance = "$2,85,856.20"
-    var recentTransactionArr: [TransactionCellModel] = []
+    var recentTransactionArr: [TransactionCellModel] = DummyTransactionData.recentTransactionArr
     
     private func getData() {
         self.recentTransactionArr = DummyTransactionData.recentTransactionArr

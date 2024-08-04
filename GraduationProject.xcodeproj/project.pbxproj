@@ -90,6 +90,7 @@
 		9C38C86F2C5FF4D200C8AC0A /* TransactionRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C86E2C5FF4D200C8AC0A /* TransactionRouting.swift */; };
 		9C38C8712C5FF54C00C8AC0A /* CardsRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8702C5FF54C00C8AC0A /* CardsRouting.swift */; };
 		9C38C8732C5FF58F00C8AC0A /* AccountRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8722C5FF58F00C8AC0A /* AccountRouting.swift */; };
+		9C38C8772C5FF8F800C8AC0A /* TransferVC + UITextfilled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8762C5FF8F800C8AC0A /* TransferVC + UITextfilled.swift */; };
 		9CC706612C5E61FC007F0E6A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC7065E2C5E61FC007F0E6A /* HomeVC.swift */; };
 		9CC706622C5E61FC007F0E6A /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC7065F2C5E61FC007F0E6A /* HomeVC.xib */; };
 		9CC706662C5E623B007F0E6A /* TransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC706632C5E623B007F0E6A /* TransferVC.swift */; };
@@ -207,6 +208,7 @@
 		9C38C86E2C5FF4D200C8AC0A /* TransactionRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRouting.swift; sourceTree = "<group>"; };
 		9C38C8702C5FF54C00C8AC0A /* CardsRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsRouting.swift; sourceTree = "<group>"; };
 		9C38C8722C5FF58F00C8AC0A /* AccountRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRouting.swift; sourceTree = "<group>"; };
+		9C38C8762C5FF8F800C8AC0A /* TransferVC + UITextfilled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransferVC + UITextfilled.swift"; sourceTree = "<group>"; };
 		9CC7065E2C5E61FC007F0E6A /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		9CC7065F2C5E61FC007F0E6A /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		9CC706632C5E623B007F0E6A /* TransferVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferVC.swift; sourceTree = "<group>"; };
@@ -635,6 +637,25 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9C38C8742C5FF7EA00C8AC0A /* Amount */ = {
+			isa = PBXGroup;
+			children = (
+				9CC706642C5E623B007F0E6A /* TransferVC.xib */,
+				9CC706632C5E623B007F0E6A /* TransferVC.swift */,
+				9C38C8762C5FF8F800C8AC0A /* TransferVC + UITextfilled.swift */,
+			);
+			path = Amount;
+			sourceTree = "<group>";
+		};
+		9C38C8752C5FF80E00C8AC0A /* Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				9C38C8622C5EF42600C8AC0A /* TransferConfirmationVC.swift */,
+				9C38C8632C5EF42600C8AC0A /* TransferConfirmationVC.xib */,
+			);
+			path = Confirmation;
+			sourceTree = "<group>";
+		};
 		9CC706602C5E61FC007F0E6A /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -649,10 +670,8 @@
 		9CC706652C5E623B007F0E6A /* Transfer */ = {
 			isa = PBXGroup;
 			children = (
-				9CC706632C5E623B007F0E6A /* TransferVC.swift */,
-				9CC706642C5E623B007F0E6A /* TransferVC.xib */,
-				9C38C8622C5EF42600C8AC0A /* TransferConfirmationVC.swift */,
-				9C38C8632C5EF42600C8AC0A /* TransferConfirmationVC.xib */,
+				9C38C8742C5FF7EA00C8AC0A /* Amount */,
+				9C38C8752C5FF80E00C8AC0A /* Confirmation */,
 			);
 			path = Transfer;
 			sourceTree = "<group>";
@@ -914,6 +933,7 @@
 				7C561AE22C5A742900DEAC2E /* ConnectingProgressVC.swift in Sources */,
 				9CC7068E2C5E6319007F0E6A /* TapBarVC.swift in Sources */,
 				7C5C3BF12C5AC5B400BDD86A /* SettingsTVC.swift in Sources */,
+				9C38C8772C5FF8F800C8AC0A /* TransferVC + UITextfilled.swift in Sources */,
 				9CC7068A2C5E6309007F0E6A /* CircularView.swift in Sources */,
 				7C59BF3F2C5963FE00AA97E9 /* CustomTextField.swift in Sources */,
 				7C5E4D1D2C5F878F002433B9 /* SelectCurrencyViewModel.swift in Sources */,

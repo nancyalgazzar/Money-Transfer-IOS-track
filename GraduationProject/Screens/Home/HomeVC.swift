@@ -17,6 +17,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var hideBtnView: UIButton!
     @IBOutlet weak var curruntBalanceTextFilled: UILabel!
     
+    //MARK: - view model
     let homeViewModel = HomeViewModel()
     
     //MARK: - lifeCycle methods
@@ -29,6 +30,7 @@ class HomeVC: UIViewController {
         navigationController?.navigationBar.isHidden = true
     }
     
+    //MARK: - private functions
     private func configView() {
         setupTableView()
         recentTransactionsTableView.layer.cornerRadius = 8

@@ -21,8 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     private func setRootViewController() {
         window  = UIWindow(frame: UIScreen.main.bounds)
-        let rootController = SelectCurrencyVC()
-//        let rootController = TapBarVC()
+//        let rootController = SelectCurrencyVC()
+        let rootController = TapBarVC()
         let navigationController = UINavigationController(rootViewController: rootController)
     
         window?.makeKeyAndVisible()
