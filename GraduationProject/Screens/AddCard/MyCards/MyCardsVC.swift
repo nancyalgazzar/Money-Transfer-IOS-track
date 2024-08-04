@@ -26,15 +26,14 @@ extension MyCardsVC: UITableViewDelegate,UITableViewDataSource{
     
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        return 1
+    }
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 10
     }
-
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellsNames.myCardsCell, for: indexPath) as! MyCardsCell
-         
-         cell.layer.cornerRadius = 10.0
-         cell.layer.masksToBounds = true
         return cell
     }
      func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

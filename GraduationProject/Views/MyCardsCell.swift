@@ -17,6 +17,9 @@ class MyCardsCell: UITableViewCell {
         super.awakeFromNib()
         imageBackView.layer.cornerRadius = imageBackView.frame.size.width / 2
         imageBackView.clipsToBounds = true
+        
+       
+
         // Initialization code
     }
 
@@ -25,5 +28,14 @@ class MyCardsCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        layer.shadowOffset = CGSize(width: 1.0, height: 0.0)
+        layer.shadowColor = UIColor(hex: "#00000").cgColor
+        layer.cornerRadius = 10.0
+       
+        layer.masksToBounds = false
+        layer.shadowOpacity = 0.2
+        layer.shadowPath = UIBezierPath(roundedRect: contentView.bounds, cornerRadius:  contentView.layer.cornerRadius).cgPath
+    }
 }

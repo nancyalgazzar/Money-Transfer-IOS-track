@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     private func setRootViewController() {
         window  = UIWindow(frame: UIScreen.main.bounds)
-        let rootController = SignUpVC()
+        let rootController = MyCardsVC()
 //        let rootController = TapBarVC()
         let navigationController = UINavigationController(rootViewController: rootController)
     
