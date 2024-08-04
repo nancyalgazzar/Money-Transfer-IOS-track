@@ -6,11 +6,9 @@
 //
 
 import UIKit
-protocol CountriesViewProtocol:DisplayErrorMessageProtocol{
-    
-}
 
-class CountriesTVC: UITableViewController, CountriesViewProtocol {
+
+class CountriesTVC: UITableViewController {
         
     var isCompleted: (( _ selectedCountry: String)->())? = nil
     var countriesViewModel: CountriesViewModelProtocol!
@@ -19,7 +17,8 @@ class CountriesTVC: UITableViewController, CountriesViewProtocol {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        countriesViewModel = CountriesViewModel(self)
+        countriesViewModel = CountriesViewModel()
+        bindViewModel()
         countriesViewModel.fetchCountries(completion: {[weak self] in
             DispatchQueue.main.async {
                 self?.tableView.reloadData()
@@ -61,7 +60,11 @@ class CountriesTVC: UITableViewController, CountriesViewProtocol {
     }
 }
 extension CountriesTVC{
-    func displayErrorMessage(title: String, message:String){
-        alertMessage(title: title, message: message)
+    func bindViewModel(){
+        countriesViewModel.showError = { title, message in
+            DispatchQueue.main.async {
+                self.alertMessage(title: title, message: message)
+            }
+        }
     }
 }
