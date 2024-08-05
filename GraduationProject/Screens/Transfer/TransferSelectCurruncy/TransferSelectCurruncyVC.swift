@@ -80,30 +80,3 @@ extension TransferSelectCurruncyVC: UITableViewDelegate,UITableViewDataSource {
         selectCurrencyViewModelProtocol.getSelectedRow(index: indexPath.row)
     }
 }
-
-
-extension TransferSelectCurruncyVC {
-    func fetchCurrencies() {
-            GetChangeRateAPIManager.getCurrencies { error, changeRate in
-                if let error = error {
-                    print("Failed to fetch currencies: \(error.localizedDescription)")
-                    return
-                }
-                
-                guard let changeRate = changeRate else {
-                    print("No data returned")
-                    return
-                }
-                
-                // Process the data
-                self.processChangeRate(changeRate: changeRate)
-            }
-        }
-        
-        func processChangeRate(changeRate: ChangeRate) {
-            print("Base Code: \(changeRate.baseCode)")
-            for (currency, rate) in changeRate.conversionRates {
-                print("\(currency): \(rate)")
-            }
-        }
-}

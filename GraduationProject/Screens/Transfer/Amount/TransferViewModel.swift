@@ -9,22 +9,32 @@ import Foundation
 
 class TransferViewModel {
     
-    var sendCurreuncy
+    var sendCurreuncy: Currency!
     var currencyChangeRate: Double!
     var getsAmount: Double = 0.0
     var sendAmount: Double = 0.0
     
-    func getChangeRate() -> Double {
-        return 48.4220
-    }
-    
     func calculateSendingAmount(getAmount: Double) {
-        currencyChangeRate = 1 / getChangeRate()
-        self.sendAmount = getAmount * currencyChangeRate
+        self.sendAmount = getAmount * (1 / currencyChangeRate)
     }
     
     func calculateGettingAmount(sendAmount: Double) {
-        currencyChangeRate = getChangeRate()
         self.getsAmount = sendAmount * currencyChangeRate
+    }
+    
+    func fetchExchangeRate(from baseCurrency: String, to targetCurrency: String) {
+        GetChangeRateAPIManager.getExchangeRate(from: baseCurrency, to: targetCurrency) { error, exchangeRate in
+            if let error = error {
+                print("Failed to fetch exchange rate: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let exchangeRate = exchangeRate else {
+                print("No data returned")
+                return
+            }
+            
+            self.currencyChangeRate = exchangeRate
+        }
     }
 }

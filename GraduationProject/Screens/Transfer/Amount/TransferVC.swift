@@ -29,7 +29,7 @@ class TransferVC: UIViewController {
         super.viewDidLoad()
         setupDismissKeyBoard()
         setupTextfilleds()
-        fetchCurrencies()
+        transferViewModel.fetchExchangeRate(from: "USD", to: "EGP")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,7 +40,7 @@ class TransferVC: UIViewController {
         setupTextfilleds()
         setupNavigationBar()
         continueBtnView.tintColor = #colorLiteral(red: 0.6062087417, green: 0.1836366951, blue: 0.2688316107, alpha: 1)
-        changeRateLabel.text = "1 USD = \(transferViewModel.getChangeRate()) EGP"
+        changeRateLabel.text = "1 USD = \(transferViewModel.currencyChangeRate ?? 48.422) EGP"
         sendAmountTextFilled.text = ""
         getsAmountTextFilled.text = ""
     }
@@ -100,31 +100,4 @@ extension TransferVC {
         
         return true
     }
-}
-
-
-extension TransferVC {
-    func fetchCurrencies() {
-            GetChangeRateAPIManager.getCurrencies { error, changeRate in
-                if let error = error {
-                    print("Failed to fetch currencies: \(error.localizedDescription)")
-                    return
-                }
-                
-                guard let changeRate = changeRate else {
-                    print("No data returned")
-                    return
-                }
-                
-                // Process the data
-                self.processChangeRate(changeRate: changeRate)
-            }
-        }
-        
-        func processChangeRate(changeRate: ChangeRate) {
-            print("Base Code: \(changeRate.baseCode)")
-            for (currency, rate) in changeRate.conversionRates {
-                print("\(currency): \(rate)")
-            }
-        }
 }

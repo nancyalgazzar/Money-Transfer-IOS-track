@@ -114,6 +114,8 @@
 		9C38C88E2C6052E700C8AC0A /* TransferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C88D2C6052E700C8AC0A /* TransferModel.swift */; };
 		9C38C8922C605AC900C8AC0A /* TransferSelectCurruncyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8902C605AC900C8AC0A /* TransferSelectCurruncyVC.swift */; };
 		9C38C8932C605AC900C8AC0A /* TransferSelectCurruncyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C38C8912C605AC900C8AC0A /* TransferSelectCurruncyVC.xib */; };
+		9C38C89D2C61331300C8AC0A /* GetChangeRateAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C89C2C61331300C8AC0A /* GetChangeRateAPIManager.swift */; };
+		9C38C89F2C61337400C8AC0A /* ChangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C89E2C61337400C8AC0A /* ChangeRate.swift */; };
 		9CC706612C5E61FC007F0E6A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC7065E2C5E61FC007F0E6A /* HomeVC.swift */; };
 		9CC706622C5E61FC007F0E6A /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC7065F2C5E61FC007F0E6A /* HomeVC.xib */; };
 		9CC706662C5E623B007F0E6A /* TransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC706632C5E623B007F0E6A /* TransferVC.swift */; };
@@ -255,6 +257,8 @@
 		9C38C88D2C6052E700C8AC0A /* TransferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferModel.swift; sourceTree = "<group>"; };
 		9C38C8902C605AC900C8AC0A /* TransferSelectCurruncyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferSelectCurruncyVC.swift; sourceTree = "<group>"; };
 		9C38C8912C605AC900C8AC0A /* TransferSelectCurruncyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferSelectCurruncyVC.xib; sourceTree = "<group>"; };
+		9C38C89C2C61331300C8AC0A /* GetChangeRateAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetChangeRateAPIManager.swift; sourceTree = "<group>"; };
+		9C38C89E2C61337400C8AC0A /* ChangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeRate.swift; sourceTree = "<group>"; };
 		9CC7065E2C5E61FC007F0E6A /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		9CC7065F2C5E61FC007F0E6A /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		9CC706632C5E623B007F0E6A /* TransferVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferVC.swift; sourceTree = "<group>"; };
@@ -412,6 +416,7 @@
 			children = (
 				9CC7067F2C5E62A2007F0E6A /* DummyTransactionData.swift */,
 				9CC706802C5E62A2007F0E6A /* TransactionCellModel.swift */,
+				9C38C89E2C61337400C8AC0A /* ChangeRate.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -626,6 +631,7 @@
 				7C5E4D192C5F84D9002433B9 /* GetCurrenciesAPIManager.swift */,
 				7C595BB12C60BD3900193843 /* GetProfileInfoAPIManager.swift */,
 				7C595BB32C60E98200193843 /* ChangePasswordAPIManager.swift */,
+				9C38C89C2C61331300C8AC0A /* GetChangeRateAPIManager.swift */,
 				7C5DB8772C60FE4600AEAFFC /* EditProfileAPIManager.swift */,
 				7C5DB87D2C610FAE00AEAFFC /* SignInAPIManager.swift */,
 			);
@@ -1030,9 +1036,11 @@
 				7C5E4D142C5F6B6A002433B9 /* CountriesModel.swift in Sources */,
 				7C59BF3A2C595E7300AA97E9 /* UIColor+Hex.swift in Sources */,
 				7C5E3B242C5E317B00677A06 /* ChangePasswordVisibilityProtocol.swift in Sources */,
+				9C38C89F2C61337400C8AC0A /* ChangeRate.swift in Sources */,
 				9CC706812C5E62A2007F0E6A /* DummyTransactionData.swift in Sources */,
 				9C38C86B2C5FECDE00C8AC0A /* NotificationRouting.swift in Sources */,
 				7C88C3C12C5CF02C00BE6622 /* UserModel.swift in Sources */,
+				9C38C89D2C61331300C8AC0A /* GetChangeRateAPIManager.swift in Sources */,
 				7C5C3BFC2C5ACC6800BDD86A /* VCs.swift in Sources */,
 				9CC706742C5E6257007F0E6A /* NotificationsVC.swift in Sources */,
 				9CC7069C2C5E6343007F0E6A /* HomeRecentTransactionTableViewCell.swift in Sources */,
