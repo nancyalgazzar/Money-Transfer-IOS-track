@@ -18,5 +18,21 @@ struct TransferRouting {
             }
         }
     }
+    
+    static func goToTransferConfirmation(VC: UIViewController) {
+        let transferConfirmationVC = TransferConfirmationVC()
+        VC.navigationController?.pushViewController(transferConfirmationVC, animated: true)
+    }
+    
+    static func goToTransferPayment(VC: UIViewController) {
+        let transferPaymentVC = TransferPaymentVC()
+        VC.navigationController?.pushViewController(transferPaymentVC, animated: true)
+    }
+    
+    static func goToTransferSelectCurruncy(VC: UIViewController) {
+        let transferSelectCurruncyVC = TransferSelectCurruncyVC()
+        VC.navigationController?.pushViewController(transferSelectCurruncyVC, animated: true)
+    }
+
 }
 

@@ -63,7 +63,7 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="SIh-o4-DXb">
                                     <rect key="frame" x="21" y="343" width="343" height="374"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fD9-Zu-B1p">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fD9-Zu-B1p" customClass="RoundedCornerView" customModule="GraduationProject" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="126"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsa-hk-0EW">
@@ -107,7 +107,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="46p-nx-jcz" secondAttribute="bottom" constant="39" id="lWa-G9-wq1"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzt-a8-sV8">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzt-a8-sV8" customClass="RoundedCornerView" customModule="GraduationProject" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="142" width="343" height="126"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DqM-0L-qSz">
@@ -151,7 +151,7 @@
                                                 <constraint firstItem="bFW-3w-uXi" firstAttribute="leading" secondItem="DqM-0L-qSz" secondAttribute="leading" id="tof-Tp-YyZ"/>
                                             </constraints>
                                         </view>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BaI-lb-imi">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BaI-lb-imi" customClass="RoundedCornerView" customModule="GraduationProject" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="284" width="343" height="90"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reference" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFa-vR-6Ug">

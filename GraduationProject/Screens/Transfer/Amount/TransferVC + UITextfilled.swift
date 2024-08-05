@@ -9,6 +9,11 @@ import UIKit
 
 extension TransferVC : UITextFieldDelegate{
     
+    func setupTextfilleds() {
+        sendAmountTextFilled.delegate = self
+        getsAmountTextFilled.delegate = self
+    }
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         let currentText = textField.text ?? ""
@@ -16,13 +21,11 @@ extension TransferVC : UITextFieldDelegate{
         let amount = Double(newText) ?? 0.0
 
         if textField.tag == 1 {
-            sendAmount = amount
-            getsAmount = sendAmount * currencyChangeRate
-            getsAmountTextFilled.text = String(format: "%.2f", getsAmount)
+            transferViewModel.calculateGettingAmount(sendAmount: amount)
+            getsAmountTextFilled.text = String(format: "%.2f", transferViewModel.getsAmount)
         } else if textField.tag == 2 {
-            getsAmount = amount
-            sendAmount = getsAmount / currencyChangeRate
-            sendAmountTextFilled.text = String(format: "%.2f", sendAmount)
+            transferViewModel.calculateSendingAmount(getAmount: amount)
+            sendAmountTextFilled.text = String(format: "%.2f", transferViewModel.sendAmount)
         }
         
         return true

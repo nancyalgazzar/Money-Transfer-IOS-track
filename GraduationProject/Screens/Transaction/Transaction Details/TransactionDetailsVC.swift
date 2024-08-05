@@ -14,9 +14,6 @@ class TransactionDetailsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        roundedCorners(view: &fromView, radius: 8)
-        roundedCorners(view: &toView, radius: 8)
-        roundedCorners(view: &detailView, radius: 8)
         
     }
 }

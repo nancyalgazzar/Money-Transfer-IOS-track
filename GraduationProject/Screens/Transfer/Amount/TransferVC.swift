@@ -21,34 +21,27 @@ class TransferVC: UIViewController {
     @IBOutlet weak var recepentAccountTextFilled: UITextField!
     @IBOutlet weak var continueBtnView: UIButton!
     
-    var currencyChangeRate = 48.4220
-    var getsAmount: Double = 0.0
-    var sendAmount: Double = 0.0
+    //MARK: - View Model
+    let transferViewModel = TransferViewModel()
     
     //MARK: - lifeCycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        configView()
-        
-        sendAmountTextFilled.delegate = self
-        getsAmountTextFilled.delegate = self
-        
-        
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-        tapGesture.cancelsTouchesInView = false
-        view.addGestureRecognizer(tapGesture)
+        setupDismissKeyBoard()
+        setupTextfilleds()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        setupNavigationBar()
-        sendAmountTextFilled.text = ""
-        getsAmountTextFilled.text = ""
+        configView()
     }
     
     private func configView() {
+        setupTextfilleds()
+        setupNavigationBar()
         continueBtnView.tintColor = #colorLiteral(red: 0.6062087417, green: 0.1836366951, blue: 0.2688316107, alpha: 1)
-        changeRateLabel.text = "1 USD = \(currencyChangeRate) EGP"
+        changeRateLabel.text = "1 USD = \(transferViewModel.getChangeRate()) EGP"
+        sendAmountTextFilled.text = ""
+        getsAmountTextFilled.text = ""
     }
     
     private func setupNavigationBar() {
@@ -57,12 +50,53 @@ class TransferVC: UIViewController {
         navigationItem.hidesBackButton = false
     }
     
-    @IBAction func continueBtnPressed(_ sender: UIButton) {
-        let transferConfirmationVC = TransferConfirmationVC()
-        navigationController?.pushViewController(transferConfirmationVC, animated: true)
+    @IBAction func sendCurrencyPressed(_ sender: UIButton) {
+        TransferRouting.goToTransferSelectCurruncy(VC: self)
     }
     
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
+    @IBAction func reciveCurruncyPressed(_ sender: UIButton) {
+        TransferRouting.goToTransferSelectCurruncy(VC: self)
+    }
+    
+    @IBAction func continueBtnPressed(_ sender: UIButton) {
+        if transferValidation() {
+            TransferRouting.goToTransferConfirmation(VC: self)
+        }
+    }
+}
+
+extension TransferVC {
+    func transferValidation() -> Bool {
+        guard sendAmountTextFilled.text != "" || sendAmountTextFilled.text != "0.0" else {
+            alertMessage(title: "Sorry", message: "Enter how much do you wnt to send")
+            return false
+        }
+        
+        guard getsAmountTextFilled.text != "" || getsAmountTextFilled.text != "0.0" else {
+            alertMessage(title: "Sorry", message: "Enter how much do you wnt to send")
+            return false
+        }
+        
+        guard Double(sendAmountTextFilled.text!) != nil else {
+            alertMessage(title: "Sorry", message: "invaid input")
+            return false
+        }
+        
+        guard Double(sendAmountTextFilled.text!) != nil else {
+            alertMessage(title: "Sorry", message: "invaid input")
+            return false
+        }
+        
+        guard recepentNameTextFilled.text?.trimmed != "" else {
+            alertMessage(title: "Sorry", message: "Please Enter Recipents Name")
+            return false
+        }
+        
+        guard recepentAccountTextFilled.text?.trimmed != "" else {
+            alertMessage(title: "Sorry", message: "Please Enter Recipents Account Number")
+            return false
+        }
+        
+        return true
     }
 }

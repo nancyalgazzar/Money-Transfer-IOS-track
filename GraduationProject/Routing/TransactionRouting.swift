@@ -18,4 +18,10 @@ struct TransactionRouting {
             }
         }
     }
+    
+    static func goToTransactionDetails(VC: UIViewController) {
+        let transactionDetailsVC = TransactionDetailsVC()
+        VC.navigationController?.pushViewController(transactionDetailsVC, animated: true)
+        
+    }
 }

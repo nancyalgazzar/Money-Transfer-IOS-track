@@ -91,6 +91,18 @@
 		9C38C8712C5FF54C00C8AC0A /* CardsRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8702C5FF54C00C8AC0A /* CardsRouting.swift */; };
 		9C38C8732C5FF58F00C8AC0A /* AccountRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8722C5FF58F00C8AC0A /* AccountRouting.swift */; };
 		9C38C8772C5FF8F800C8AC0A /* TransferVC + UITextfilled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8762C5FF8F800C8AC0A /* TransferVC + UITextfilled.swift */; };
+		9C38C8792C6031C100C8AC0A /* TransferVC + Dismiss Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8782C6031C100C8AC0A /* TransferVC + Dismiss Keyboard.swift */; };
+		9C38C87B2C60323D00C8AC0A /* TransferViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C87A2C60323D00C8AC0A /* TransferViewModel.swift */; };
+		9C38C87F2C6038CB00C8AC0A /* TransactionVC + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C87E2C6038CB00C8AC0A /* TransactionVC + TableView.swift */; };
+		9C38C8812C603AF900C8AC0A /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8802C603AF900C8AC0A /* TransactionViewModel.swift */; };
+		9C38C8832C603EB600C8AC0A /* ErrorRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8822C603EB600C8AC0A /* ErrorRouting.swift */; };
+		9C38C8852C603F9200C8AC0A /* NotificationsVC + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8842C603F9200C8AC0A /* NotificationsVC + TableView.swift */; };
+		9C38C8892C60414600C8AC0A /* TransferPaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8872C60414600C8AC0A /* TransferPaymentVC.swift */; };
+		9C38C88A2C60414600C8AC0A /* TransferPaymentVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C38C8882C60414600C8AC0A /* TransferPaymentVC.xib */; };
+		9C38C88C2C6050EE00C8AC0A /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C88B2C6050EE00C8AC0A /* HomeModel.swift */; };
+		9C38C88E2C6052E700C8AC0A /* TransferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C88D2C6052E700C8AC0A /* TransferModel.swift */; };
+		9C38C8922C605AC900C8AC0A /* TransferSelectCurruncyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8902C605AC900C8AC0A /* TransferSelectCurruncyVC.swift */; };
+		9C38C8932C605AC900C8AC0A /* TransferSelectCurruncyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C38C8912C605AC900C8AC0A /* TransferSelectCurruncyVC.xib */; };
 		9CC706612C5E61FC007F0E6A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC7065E2C5E61FC007F0E6A /* HomeVC.swift */; };
 		9CC706622C5E61FC007F0E6A /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC7065F2C5E61FC007F0E6A /* HomeVC.xib */; };
 		9CC706662C5E623B007F0E6A /* TransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC706632C5E623B007F0E6A /* TransferVC.swift */; };
@@ -209,6 +221,18 @@
 		9C38C8702C5FF54C00C8AC0A /* CardsRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsRouting.swift; sourceTree = "<group>"; };
 		9C38C8722C5FF58F00C8AC0A /* AccountRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRouting.swift; sourceTree = "<group>"; };
 		9C38C8762C5FF8F800C8AC0A /* TransferVC + UITextfilled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransferVC + UITextfilled.swift"; sourceTree = "<group>"; };
+		9C38C8782C6031C100C8AC0A /* TransferVC + Dismiss Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransferVC + Dismiss Keyboard.swift"; sourceTree = "<group>"; };
+		9C38C87A2C60323D00C8AC0A /* TransferViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewModel.swift; sourceTree = "<group>"; };
+		9C38C87E2C6038CB00C8AC0A /* TransactionVC + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionVC + TableView.swift"; sourceTree = "<group>"; };
+		9C38C8802C603AF900C8AC0A /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		9C38C8822C603EB600C8AC0A /* ErrorRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorRouting.swift; sourceTree = "<group>"; };
+		9C38C8842C603F9200C8AC0A /* NotificationsVC + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationsVC + TableView.swift"; sourceTree = "<group>"; };
+		9C38C8872C60414600C8AC0A /* TransferPaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferPaymentVC.swift; sourceTree = "<group>"; };
+		9C38C8882C60414600C8AC0A /* TransferPaymentVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferPaymentVC.xib; sourceTree = "<group>"; };
+		9C38C88B2C6050EE00C8AC0A /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		9C38C88D2C6052E700C8AC0A /* TransferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferModel.swift; sourceTree = "<group>"; };
+		9C38C8902C605AC900C8AC0A /* TransferSelectCurruncyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferSelectCurruncyVC.swift; sourceTree = "<group>"; };
+		9C38C8912C605AC900C8AC0A /* TransferSelectCurruncyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferSelectCurruncyVC.xib; sourceTree = "<group>"; };
 		9CC7065E2C5E61FC007F0E6A /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		9CC7065F2C5E61FC007F0E6A /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		9CC706632C5E623B007F0E6A /* TransferVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferVC.swift; sourceTree = "<group>"; };
@@ -588,6 +612,7 @@
 				9C38C86E2C5FF4D200C8AC0A /* TransactionRouting.swift */,
 				9C38C8702C5FF54C00C8AC0A /* CardsRouting.swift */,
 				9C38C8722C5FF58F00C8AC0A /* AccountRouting.swift */,
+				9C38C8822C603EB600C8AC0A /* ErrorRouting.swift */,
 			);
 			path = Routing;
 			sourceTree = "<group>";
@@ -642,6 +667,8 @@
 			children = (
 				9CC706642C5E623B007F0E6A /* TransferVC.xib */,
 				9CC706632C5E623B007F0E6A /* TransferVC.swift */,
+				9C38C87A2C60323D00C8AC0A /* TransferViewModel.swift */,
+				9C38C8782C6031C100C8AC0A /* TransferVC + Dismiss Keyboard.swift */,
 				9C38C8762C5FF8F800C8AC0A /* TransferVC + UITextfilled.swift */,
 			);
 			path = Amount;
@@ -656,11 +683,50 @@
 			path = Confirmation;
 			sourceTree = "<group>";
 		};
+		9C38C87C2C60387D00C8AC0A /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				9CC7066B2C5E6243007F0E6A /* TransactionVC.xib */,
+				9CC7066A2C5E6243007F0E6A /* TransactionVC.swift */,
+				9C38C8802C603AF900C8AC0A /* TransactionViewModel.swift */,
+				9C38C87E2C6038CB00C8AC0A /* TransactionVC + TableView.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		9C38C87D2C60389900C8AC0A /* Transaction Details */ = {
+			isa = PBXGroup;
+			children = (
+				9CC706682C5E6243007F0E6A /* TransactionDetailsVC.swift */,
+				9CC706692C5E6243007F0E6A /* TransactionDetailsVC.xib */,
+			);
+			path = "Transaction Details";
+			sourceTree = "<group>";
+		};
+		9C38C8862C60411B00C8AC0A /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				9C38C8872C60414600C8AC0A /* TransferPaymentVC.swift */,
+				9C38C8882C60414600C8AC0A /* TransferPaymentVC.xib */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		9C38C88F2C605A9500C8AC0A /* TransferSelectCurruncy */ = {
+			isa = PBXGroup;
+			children = (
+				9C38C8912C605AC900C8AC0A /* TransferSelectCurruncyVC.xib */,
+				9C38C8902C605AC900C8AC0A /* TransferSelectCurruncyVC.swift */,
+			);
+			path = TransferSelectCurruncy;
+			sourceTree = "<group>";
+		};
 		9CC706602C5E61FC007F0E6A /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				9CC7065F2C5E61FC007F0E6A /* HomeVC.xib */,
 				9CC7065E2C5E61FC007F0E6A /* HomeVC.swift */,
+				9C38C88B2C6050EE00C8AC0A /* HomeModel.swift */,
 				9C38C8662C5FE75000C8AC0A /* HomeVC + TableView.swift */,
 				9C38C8682C5FEC0200C8AC0A /* HomeViewModel.swift */,
 			);
@@ -670,8 +736,11 @@
 		9CC706652C5E623B007F0E6A /* Transfer */ = {
 			isa = PBXGroup;
 			children = (
+				9C38C88D2C6052E700C8AC0A /* TransferModel.swift */,
 				9C38C8742C5FF7EA00C8AC0A /* Amount */,
 				9C38C8752C5FF80E00C8AC0A /* Confirmation */,
+				9C38C8862C60411B00C8AC0A /* Payment */,
+				9C38C88F2C605A9500C8AC0A /* TransferSelectCurruncy */,
 			);
 			path = Transfer;
 			sourceTree = "<group>";
@@ -679,10 +748,8 @@
 		9CC7066C2C5E6243007F0E6A /* Transaction */ = {
 			isa = PBXGroup;
 			children = (
-				9CC706682C5E6243007F0E6A /* TransactionDetailsVC.swift */,
-				9CC706692C5E6243007F0E6A /* TransactionDetailsVC.xib */,
-				9CC7066A2C5E6243007F0E6A /* TransactionVC.swift */,
-				9CC7066B2C5E6243007F0E6A /* TransactionVC.xib */,
+				9C38C87C2C60387D00C8AC0A /* Transactions */,
+				9C38C87D2C60389900C8AC0A /* Transaction Details */,
 			);
 			path = Transaction;
 			sourceTree = "<group>";
@@ -690,8 +757,9 @@
 		9CC706732C5E6257007F0E6A /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
-				9CC706712C5E6257007F0E6A /* NotificationsVC.swift */,
 				9CC706722C5E6257007F0E6A /* NotificationsVC.xib */,
+				9CC706712C5E6257007F0E6A /* NotificationsVC.swift */,
+				9C38C8842C603F9200C8AC0A /* NotificationsVC + TableView.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -808,6 +876,7 @@
 				9CC706752C5E6257007F0E6A /* NotificationsVC.xib in Resources */,
 				7C5D7E6F2C592F9E00D60725 /* SignInVC.xib in Resources */,
 				7C60E7282C5A3F15009E06C6 /* CountryViewCell.xib in Resources */,
+				9C38C88A2C60414600C8AC0A /* TransferPaymentVC.xib in Resources */,
 				7C561AE32C5A742900DEAC2E /* ConnectingProgressVC.xib in Resources */,
 				9CC706992C5E6343007F0E6A /* NotificationTableViewCell.xib in Resources */,
 				9CC7067C2C5E6262007F0E6A /* InternetConnectionErrorVC.xib in Resources */,
@@ -819,6 +888,7 @@
 				7C5C3C0E2C5AE65F00BDD86A /* ProfileVC.xib in Resources */,
 				9CC706672C5E623B007F0E6A /* TransferVC.xib in Resources */,
 				9CC706622C5E61FC007F0E6A /* HomeVC.xib in Resources */,
+				9C38C8932C605AC900C8AC0A /* TransferSelectCurruncyVC.xib in Resources */,
 				7C5C3BF22C5AC5B400BDD86A /* SettingsTVC.xib in Resources */,
 				9CC706702C5E6243007F0E6A /* TransactionVC.xib in Resources */,
 				7C5C3BF62C5AC60E00BDD86A /* ProfileCell.xib in Resources */,
@@ -882,12 +952,15 @@
 				7C56CCFE2C5A1D7100C29FFD /* CountriesTVC.swift in Sources */,
 				9CC706842C5E62B8007F0E6A /* UIViewController + roundedCorners + toCircle.swift in Sources */,
 				7C88C3D32C5D050700BE6622 /* SignUpViewModel.swift in Sources */,
+				9C38C8832C603EB600C8AC0A /* ErrorRouting.swift in Sources */,
 				7C555BDA2C59971300BDCAC2 /* SignUpUserDataEntryVC.swift in Sources */,
 				7C5C3BF92C5ACAF100BDD86A /* ProfileCellModel.swift in Sources */,
 				9C38C86D2C5FF17300C8AC0A /* TransferRouting.swift in Sources */,
 				9C38C8712C5FF54C00C8AC0A /* CardsRouting.swift in Sources */,
 				7C17B7B52C5E80F40066892C /* MyCardsCell.swift in Sources */,
+				9C38C8892C60414600C8AC0A /* TransferPaymentVC.swift in Sources */,
 				7C5C3C0D2C5AE65F00BDD86A /* ProfileVC.swift in Sources */,
+				9C38C88E2C6052E700C8AC0A /* TransferModel.swift in Sources */,
 				7C555BD62C5994CF00BDCAC2 /* SignUpVC.swift in Sources */,
 				7C5E3B1F2C5E1C5900677A06 /* SignInViewModel.swift in Sources */,
 				9CC706892C5E6308007F0E6A /* GradientView.swift in Sources */,
@@ -898,6 +971,7 @@
 				7C88C3C92C5CFA2F00BE6622 /* UserDefaults+contains.swift in Sources */,
 				7C5C3C082C5AE09800BDD86A /* ProfileInfoTVC.swift in Sources */,
 				7C17B7AD2C5E66E20066892C /* HomeRouting.swift in Sources */,
+				9C38C87B2C60323D00C8AC0A /* TransferViewModel.swift in Sources */,
 				9C38C86F2C5FF4D200C8AC0A /* TransactionRouting.swift in Sources */,
 				9CC7067B2C5E6262007F0E6A /* InternetConnectionErrorVC.swift in Sources */,
 				9CC7067D2C5E6262007F0E6A /* ServerErrorVC.swift in Sources */,
@@ -905,6 +979,7 @@
 				9CC706982C5E6343007F0E6A /* NotificationTableViewCell.swift in Sources */,
 				7C5E4D182C5F842D002433B9 /* SelectCurrencyModel.swift in Sources */,
 				7C561AF82C5AAC7400DEAC2E /* EditProfileVC.swift in Sources */,
+				9C38C8812C603AF900C8AC0A /* TransactionViewModel.swift in Sources */,
 				7C59BF3C2C595FEA00AA97E9 /* UIView+HexColor.swift in Sources */,
 				7C5E4D142C5F6B6A002433B9 /* CountriesModel.swift in Sources */,
 				7C59BF3A2C595E7300AA97E9 /* UIColor+Hex.swift in Sources */,
@@ -919,6 +994,7 @@
 				7C5DFC092C5A572100C25AED /* SelectCurrencyVC.swift in Sources */,
 				7C555BD32C59835500BDCAC2 /* CustomButton.swift in Sources */,
 				7C561AE92C5A8ABF00DEAC2E /* BankCardOTP.swift in Sources */,
+				9C38C8852C603F9200C8AC0A /* NotificationsVC + TableView.swift in Sources */,
 				7C561AE52C5A745C00DEAC2E /* CircularProgressView.swift in Sources */,
 				7C88C3C72C5CFA2F00BE6622 /* VC+AlertMessage.swift in Sources */,
 				7C5DFC162C5A641900C25AED /* AddNewCardVC.swift in Sources */,
@@ -932,6 +1008,7 @@
 				7C5E3B222C5E25C700677A06 /* DisplayErrorMessageProtocol.swift in Sources */,
 				7C561AE22C5A742900DEAC2E /* ConnectingProgressVC.swift in Sources */,
 				9CC7068E2C5E6319007F0E6A /* TapBarVC.swift in Sources */,
+				9C38C8792C6031C100C8AC0A /* TransferVC + Dismiss Keyboard.swift in Sources */,
 				7C5C3BF12C5AC5B400BDD86A /* SettingsTVC.swift in Sources */,
 				9C38C8772C5FF8F800C8AC0A /* TransferVC + UITextfilled.swift in Sources */,
 				9CC7068A2C5E6309007F0E6A /* CircularView.swift in Sources */,
@@ -944,10 +1021,13 @@
 				7C88C3BB2C5CDFE400BE6622 /* SuccessConnect.swift in Sources */,
 				7C5E4D162C5F6DA9002433B9 /* CountriesViewModel.swift in Sources */,
 				7C88C3C82C5CFA2F00BE6622 /* UIView+Loader.swift in Sources */,
+				9C38C87F2C6038CB00C8AC0A /* TransactionVC + TableView.swift in Sources */,
 				9CC706822C5E62A2007F0E6A /* TransactionCellModel.swift in Sources */,
+				9C38C8922C605AC900C8AC0A /* TransferSelectCurruncyVC.swift in Sources */,
 				7C60E72C2C5A4209009E06C6 /* AuthenticationRouting.swift in Sources */,
 				7C5C3C002C5AD5CC00BDD86A /* CellsNames.swift in Sources */,
 				7C5DFC102C5A5FE300C25AED /* AddCardRouting.swift in Sources */,
+				9C38C88C2C6050EE00C8AC0A /* HomeModel.swift in Sources */,
 				9CC7066F2C5E6243007F0E6A /* TransactionVC.swift in Sources */,
 				9CC7069A2C5E6343007F0E6A /* LastTransactionTableViewCell.swift in Sources */,
 				7C60E7272C5A3F15009E06C6 /* CountryViewCell.swift in Sources */,
