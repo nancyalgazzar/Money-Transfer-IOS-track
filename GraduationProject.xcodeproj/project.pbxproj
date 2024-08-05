@@ -30,6 +30,10 @@
 		7C56CCFE2C5A1D7100C29FFD /* CountriesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56CCFC2C5A1D7100C29FFD /* CountriesTVC.swift */; };
 		7C56CCFF2C5A1D7100C29FFD /* CountriesTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C56CCFD2C5A1D7100C29FFD /* CountriesTVC.xib */; };
 		7C56CD062C5A1EEA00C29FFD /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C56CD052C5A1EEA00C29FFD /* RoundedImage.swift */; };
+		7C595BAA2C60AAE400193843 /* SignUpUserDataEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C595BA92C60AAE400193843 /* SignUpUserDataEntryViewModel.swift */; };
+		7C595BAC2C60BAFB00193843 /* ProfileInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C595BAB2C60BAFB00193843 /* ProfileInfoViewModel.swift */; };
+		7C595BB02C60BBE700193843 /* ProfileInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C595BAF2C60BBE700193843 /* ProfileInfoModel.swift */; };
+		7C595BB22C60BD3900193843 /* GetProfileInfoAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C595BB12C60BD3900193843 /* GetProfileInfoAPIManager.swift */; };
 		7C59BF3A2C595E7300AA97E9 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C59BF392C595E7300AA97E9 /* UIColor+Hex.swift */; };
 		7C59BF3C2C595FEA00AA97E9 /* UIView+HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C59BF3B2C595FEA00AA97E9 /* UIView+HexColor.swift */; };
 		7C59BF3F2C5963FE00AA97E9 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C59BF3E2C5963FD00AA97E9 /* CustomTextField.swift */; };
@@ -157,6 +161,10 @@
 		7C56CCFC2C5A1D7100C29FFD /* CountriesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTVC.swift; sourceTree = "<group>"; };
 		7C56CCFD2C5A1D7100C29FFD /* CountriesTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesTVC.xib; sourceTree = "<group>"; };
 		7C56CD052C5A1EEA00C29FFD /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		7C595BA92C60AAE400193843 /* SignUpUserDataEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUserDataEntryViewModel.swift; sourceTree = "<group>"; };
+		7C595BAB2C60BAFB00193843 /* ProfileInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoViewModel.swift; sourceTree = "<group>"; };
+		7C595BAF2C60BBE700193843 /* ProfileInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoModel.swift; sourceTree = "<group>"; };
+		7C595BB12C60BD3900193843 /* GetProfileInfoAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfileInfoAPIManager.swift; sourceTree = "<group>"; };
 		7C59BF392C595E7300AA97E9 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		7C59BF3B2C595FEA00AA97E9 /* UIView+HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+HexColor.swift"; sourceTree = "<group>"; };
 		7C59BF3E2C5963FD00AA97E9 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -407,6 +415,8 @@
 				7C5C3BF82C5ACAF100BDD86A /* ProfileCellModel.swift */,
 				7C5C3C062C5AE09800BDD86A /* ProfileInfoTVC.swift */,
 				7C5C3C072C5AE09800BDD86A /* ProfileInfoTVC.xib */,
+				7C595BAB2C60BAFB00193843 /* ProfileInfoViewModel.swift */,
+				7C595BAF2C60BBE700193843 /* ProfileInfoModel.swift */,
 			);
 			path = ProfileInfo;
 			sourceTree = "<group>";
@@ -532,6 +542,7 @@
 		7C5DFC0D2C5A5A1C00C25AED /* CompleteUserData */ = {
 			isa = PBXGroup;
 			children = (
+				7C595BA92C60AAE400193843 /* SignUpUserDataEntryViewModel.swift */,
 				7C555BD82C59971300BDCAC2 /* SignUpUserDataEntryVC.swift */,
 				7C555BD92C59971300BDCAC2 /* SignUpUserDataEntryVC.xib */,
 			);
@@ -587,6 +598,7 @@
 			children = (
 				7C5E4D112C5F69D5002433B9 /* GetCountriesAPIManager.swift */,
 				7C5E4D192C5F84D9002433B9 /* GetCurrenciesAPIManager.swift */,
+				7C595BB12C60BD3900193843 /* GetProfileInfoAPIManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -972,10 +984,13 @@
 				7C5C3C082C5AE09800BDD86A /* ProfileInfoTVC.swift in Sources */,
 				7C17B7AD2C5E66E20066892C /* HomeRouting.swift in Sources */,
 				9C38C87B2C60323D00C8AC0A /* TransferViewModel.swift in Sources */,
+				7C595BB02C60BBE700193843 /* ProfileInfoModel.swift in Sources */,
 				9C38C86F2C5FF4D200C8AC0A /* TransactionRouting.swift in Sources */,
+				7C595BAA2C60AAE400193843 /* SignUpUserDataEntryViewModel.swift in Sources */,
 				9CC7067B2C5E6262007F0E6A /* InternetConnectionErrorVC.swift in Sources */,
 				9CC7067D2C5E6262007F0E6A /* ServerErrorVC.swift in Sources */,
 				9C38C8692C5FEC0200C8AC0A /* HomeViewModel.swift in Sources */,
+				7C595BAC2C60BAFB00193843 /* ProfileInfoViewModel.swift in Sources */,
 				9CC706982C5E6343007F0E6A /* NotificationTableViewCell.swift in Sources */,
 				7C5E4D182C5F842D002433B9 /* SelectCurrencyModel.swift in Sources */,
 				7C561AF82C5AAC7400DEAC2E /* EditProfileVC.swift in Sources */,
@@ -1025,6 +1040,7 @@
 				9CC706822C5E62A2007F0E6A /* TransactionCellModel.swift in Sources */,
 				9C38C8922C605AC900C8AC0A /* TransferSelectCurruncyVC.swift in Sources */,
 				7C60E72C2C5A4209009E06C6 /* AuthenticationRouting.swift in Sources */,
+				7C595BB22C60BD3900193843 /* GetProfileInfoAPIManager.swift in Sources */,
 				7C5C3C002C5AD5CC00BDD86A /* CellsNames.swift in Sources */,
 				7C5DFC102C5A5FE300C25AED /* AddCardRouting.swift in Sources */,
 				9C38C88C2C6050EE00C8AC0A /* HomeModel.swift in Sources */,

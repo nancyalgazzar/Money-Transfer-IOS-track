@@ -7,5 +7,5 @@
 
 import Foundation
 protocol DisplayErrorMessageProtocol{
-    func displayErrorMessage(title:String, message:String)
+    var showError: (( String, String) -> Void)? {get set}
 }

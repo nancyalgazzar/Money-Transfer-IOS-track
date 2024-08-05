@@ -24,9 +24,14 @@ struct ProfileConstData{
     
 }
 struct ProfileInfoConstData{
+    static  let fullName = "Full Name"
+    static let email = "Email"
+    static let birthdate = "Date Of Birth"
+    static  let country = "Country"
+    static let bankAccount = "Bank Account"
     private  let names = ["Full Name", "Email", "Date Of Birth", "Country","Bank Account"]
-     func getNamesCount() -> Int {return names.count}
-     func getEntryOfIndex(_ index: Int)->String{return names[index]}
+    func getNamesCount() -> Int {return names.count}
+    func getEntryOfIndex(_ index: Int)->String{return names[index]}
 }
 struct ProfileGeneralConstData{
     let generalProfileConst = [ProfileCellModel(iconImage: "user 1", title: "Personal information", subTitle: "Your information", vcName: ProfileInfoTVC()), ProfileCellModel(iconImage: "Setting 1", title: "Setting", subTitle: "Change your settings", vcName: SettingsTVC())

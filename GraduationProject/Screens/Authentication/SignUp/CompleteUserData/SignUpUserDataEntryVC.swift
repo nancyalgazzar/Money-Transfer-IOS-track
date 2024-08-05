@@ -25,9 +25,8 @@ class SignUpUserDataEntryVC: UIViewController {
     }
     
     @IBAction func continueBtn(_ sender: UIButton) {
-        AddCardRouting.goToSelectCurrency(VC: self)
+        HomeRouting.goToHome(VC: self)
     }
-    
 }
 //MARK: gesture recognizer of BirthDay
 extension SignUpUserDataEntryVC{
@@ -77,7 +76,7 @@ extension SignUpUserDataEntryVC: UIGestureRecognizerDelegate{
         datePicker.locale = .current
         datePicker.datePickerMode = .date
         datePicker.maximumDate = .now
-        datePicker.preferredDatePickerStyle  = .wheels
+        datePicker.preferredDatePickerStyle  = .compact
         datePicker.addTarget(self, action: #selector(pickedDate(datePicker:)), for: .valueChanged)
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
@@ -88,8 +87,8 @@ extension SignUpUserDataEntryVC: UIGestureRecognizerDelegate{
     }
     @objc private func pickedDate(datePicker: UIDatePicker){
         let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .none
+        formatter.dateFormat = "dd/MM/yyyy"
+        formatter.locale = Locale(identifier: "en_US_POSIX")
         
         birthDayPicker.text = formatter.string(from: datePicker.date)
         

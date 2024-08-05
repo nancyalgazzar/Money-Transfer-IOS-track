@@ -17,6 +17,7 @@ class ProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initTableView()
+        tableView.backgroundColor = .clear
         navigationItem.title = "Profile"
         avatarLabel.layer.cornerRadius = avatarLabel.frame.size.height / 2
         avatarLabel.clipsToBounds = true

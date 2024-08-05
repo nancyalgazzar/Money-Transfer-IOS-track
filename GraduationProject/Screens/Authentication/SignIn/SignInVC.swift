@@ -8,10 +8,7 @@
 import UIKit
 
 
-protocol SignInProtocol: DisplayErrorMessageProtocol,ChangePasswordVisibility{
-    func getEmailValue()->String?
-    func getPasswordValue()->String?
-}
+
 
 class SignInVC: UIViewController {
 
@@ -20,8 +17,8 @@ class SignInVC: UIViewController {
     var signInModelProtocol: SignInModelProtocol!
     override func viewDidLoad() {
         super.viewDidLoad()
-        signInModelProtocol = SignInViewModel(signInProtocol: self)
-
+        signInModelProtocol = SignInViewModel()
+        bindViewModel()
         passwordTextField.handler = signInModelProtocol.setPasswordVisibilityHander()
 //        navigationItem.hidesBackButton = true
 //        let backButton = UIButton()
@@ -36,34 +33,28 @@ class SignInVC: UIViewController {
         AuthenticationRouting.goToSignUp(VC: self)
     }
     @IBAction func signInBtn(_ sender: UIButton) {
-        signInModelProtocol.checkSignValidation()
-        navigationItem.hidesBackButton = true
-        HomeRouting.goToHome(VC: self)
+        signInModelProtocol.checkSignValidation(email: emailTextField.text, password: passwordTextField.text)
     }
     
 
 }
-extension SignInVC: SignInProtocol{
-    
-   
-    func showPassword(){
-        self.passwordTextField.rightImage = UIImage(named: "Open-eye")
-        self.passwordTextField.isSecureTextEntry = false
-
-    }
-    func hidePassword() {
-        
-        self.passwordTextField.rightImage = UIImage(named: "close-eye")
-        self.passwordTextField.isSecureTextEntry = true
-    }
-    func getEmailValue() -> String? {
-        return emailTextField.text
-    }
-    func getPasswordValue() -> String? {
-        return passwordTextField.text
-    }
-    func displayErrorMessage(title: String, message: String) {
-        alertMessage(title: title, message: message)
+extension SignInVC{
+    private func bindViewModel(){
+        signInModelProtocol.hidePassword = {
+            self.passwordTextField.rightImage = UIImage(named: "close-eye")
+            self.passwordTextField.isSecureTextEntry = true
+        }
+        signInModelProtocol.showError = { title, message in
+            self.alertMessage(title: title, message: message)
+        }
+        signInModelProtocol.showPassword = {
+            self.passwordTextField.rightImage = UIImage(named: "Open-eye")
+            self.passwordTextField.isSecureTextEntry = false
+        }
+        signInModelProtocol.goToHome = {
+            self.navigationItem.hidesBackButton = true
+            HomeRouting.goToHome(VC: self)
+        }
     }
 }
 

@@ -7,31 +7,36 @@
 
 import Foundation
 
-protocol SignInModelProtocol: SetPasswordVisibilityHander{
-    func checkSignValidation()
+protocol SignInModelProtocol: SetPasswordVisibilityHander, DisplayErrorMessageProtocol{
+    func checkSignValidation(email: String?, password: String?)
+    var goToHome:  (()->())? {get set}
+
 }
 
 class SignInViewModel:SignInModelProtocol{
-    let signInProtocol: SignInProtocol
     let dataValidator: ValidateUserData
+    var showError: ((String, String)->Void)?
+    var showPassword: (()->Void)?
+    var goToHome:  (()->())?
+    var hidePassword: (()->Void)?
     var isVisible = false
-    init(signInProtocol: SignInProtocol ){
-        self.signInProtocol = signInProtocol
+    init( ){
         dataValidator = ValidateUserData()
     }
-    func checkSignValidation(){
-        guard isEmailValid() && isPasswordValid() else {
-            signInProtocol.displayErrorMessage(title: "Error", message: "Email or password is invalid")
+    func checkSignValidation(email: String?, password: String?){
+        guard isEmailValid(email) && isPasswordValid(password) else {
+            showError?("Error","Email or password is invalid")
             return
         }
+        goToHome?()
     }
     func setPasswordVisibilityHander() -> (()->()) {
       return {
             self.isVisible = !self.isVisible
             if self.isVisible {
-                self.signInProtocol.showPassword()
+                self.showPassword?()
             }else {
-                self.signInProtocol.hidePassword()
+                self.hidePassword?()
             }
             
         }
@@ -39,16 +44,14 @@ class SignInViewModel:SignInModelProtocol{
 }
 
 extension SignInViewModel{
-    private func isEmailValid() -> Bool {
-        guard let email = signInProtocol.getEmailValue(), dataValidator.isFieldEmpty(fieldData: email), dataValidator.isEmailFormatValid(email: email)else {
-            
+    private func isEmailValid(_ email: String?) -> Bool {
+        guard let email = email, dataValidator.isFieldEmpty(fieldData: email), dataValidator.isEmailFormatValid(email: email)else {
             return true
         }
-        
         return true
     }
-    private func isPasswordValid()->Bool{
-        guard let password = signInProtocol.getPasswordValue(), dataValidator.isFieldEmpty(fieldData: password), dataValidator.isPasswordLengthValid(password: password), dataValidator.doesPasswordContainsSmallLetter(password: password), dataValidator.isPasswordContainsCapitalLetter(password: password) else{
+    private func isPasswordValid(_ password: String?)->Bool{
+        guard let password = password, dataValidator.isFieldEmpty(fieldData: password), dataValidator.isPasswordLengthValid(password: password), dataValidator.doesPasswordContainsSmallLetter(password: password), dataValidator.isPasswordContainsCapitalLetter(password: password) else{
             return false
         }
         return true

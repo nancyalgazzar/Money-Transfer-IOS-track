@@ -6,10 +6,10 @@
 //
 
 import Foundation
-protocol ChangePasswordVisibility{
-    func showPassword()
-    func hidePassword()
-}
+
 protocol SetPasswordVisibilityHander{
     func setPasswordVisibilityHander() -> (()->())
+    var showPassword: (()->Void)? {get set}
+    var hidePassword: (()->Void)? {get set}
+
 }

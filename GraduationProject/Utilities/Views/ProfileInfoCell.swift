@@ -22,8 +22,8 @@ class ProfileInfoCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    func configCell(name: String, value: String){
-        fieldValueLabel.text = value
+    func configCell(name: String, value: String?){
+        fieldValueLabel.text = value ?? ""
         fieldNameLabel.text = name
     }
 }
