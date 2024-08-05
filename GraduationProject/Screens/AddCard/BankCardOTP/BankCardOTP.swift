@@ -26,6 +26,7 @@ class BankCardOTP: UIViewController {
     }
 
     @IBAction func submitRefillBtn(_ sender: UIButton) {
+        AddCardRouting.goToSuccessConnect(VC: self)
     }
     @IBAction func resendOTPBtn(_ sender: UIButton) {
     }

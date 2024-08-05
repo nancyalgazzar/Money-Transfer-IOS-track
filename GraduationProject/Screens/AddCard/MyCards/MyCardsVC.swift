@@ -20,6 +20,9 @@ class MyCardsVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func addNewAccountBtn(_ sender: CustomButton) {
+        AddCardRouting.goToSelectCurrency(VC: self)
+    }
     
 }
 extension MyCardsVC: UITableViewDelegate,UITableViewDataSource{

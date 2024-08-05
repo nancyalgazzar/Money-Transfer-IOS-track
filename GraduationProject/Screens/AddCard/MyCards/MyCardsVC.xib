@@ -20,34 +20,65 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" style="insetGrouped" separatorStyle="singleLineEtched" rowHeight="72" estimatedRowHeight="80" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WV0-oF-VFr">
-                    <rect key="frame" x="-4" y="44" width="422" height="615"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </tableView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZf-Mo-dZz" customClass="CustomButton" customModule="GraduationProject" customModuleProvider="target">
-                    <rect key="frame" x="20" y="758" width="374" height="61"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Add New Account">
-                        <backgroundConfiguration key="background"/>
-                        <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </buttonConfiguration>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#521220"/>
-                    </userDefinedRuntimeAttributes>
-                </button>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jo5-jc-PLf">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3j-Tu-PiW">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZf-Mo-dZz" customClass="CustomButton" customModule="GraduationProject" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="684" width="374" height="61"/>
+                                    <color key="backgroundColor" red="0.32156862745098036" green="0.070588235294117646" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Add New Account">
+                                        <backgroundConfiguration key="background"/>
+                                        <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="hexBackgroundColor" value="#521220"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="addNewAccountBtn:" destination="-1" eventType="touchUpInside" id="KK2-8C-Xq6"/>
+                                    </connections>
+                                </button>
+                                <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" style="insetGrouped" separatorStyle="singleLineEtched" rowHeight="72" estimatedRowHeight="80" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="WV0-oF-VFr">
+                                    <rect key="frame" x="0.0" y="39" width="414" height="615"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="yZf-Mo-dZz" firstAttribute="top" secondItem="WV0-oF-VFr" secondAttribute="bottom" constant="30" id="6CV-1f-IZC"/>
+                                <constraint firstItem="WV0-oF-VFr" firstAttribute="centerX" secondItem="D3j-Tu-PiW" secondAttribute="centerX" id="IFP-uN-MaK"/>
+                                <constraint firstItem="WV0-oF-VFr" firstAttribute="height" secondItem="D3j-Tu-PiW" secondAttribute="height" multiplier="0.751834" id="P11-04-KUz"/>
+                                <constraint firstItem="WV0-oF-VFr" firstAttribute="width" secondItem="D3j-Tu-PiW" secondAttribute="width" id="baB-WU-dYO"/>
+                                <constraint firstItem="yZf-Mo-dZz" firstAttribute="centerX" secondItem="WV0-oF-VFr" secondAttribute="centerX" id="d82-Hw-B08"/>
+                                <constraint firstItem="yZf-Mo-dZz" firstAttribute="width" secondItem="WV0-oF-VFr" secondAttribute="width" multiplier="0.903382" id="pno-zn-2Dh"/>
+                                <constraint firstItem="WV0-oF-VFr" firstAttribute="top" secondItem="D3j-Tu-PiW" secondAttribute="top" constant="39" id="rtO-hW-fXP"/>
+                                <constraint firstItem="yZf-Mo-dZz" firstAttribute="height" secondItem="WV0-oF-VFr" secondAttribute="height" multiplier="0.099187" id="va7-wH-5Vv"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="D3j-Tu-PiW" firstAttribute="top" secondItem="jo5-jc-PLf" secondAttribute="top" id="Amq-iB-zlL"/>
+                        <constraint firstItem="D3j-Tu-PiW" firstAttribute="height" secondItem="jo5-jc-PLf" secondAttribute="height" priority="250" id="DBp-Os-CMX"/>
+                        <constraint firstItem="D3j-Tu-PiW" firstAttribute="width" secondItem="jo5-jc-PLf" secondAttribute="width" id="SfI-Wz-GKb"/>
+                        <constraint firstItem="D3j-Tu-PiW" firstAttribute="leading" secondItem="jo5-jc-PLf" secondAttribute="leading" id="Spr-jB-wbi"/>
+                        <constraint firstAttribute="trailing" secondItem="D3j-Tu-PiW" secondAttribute="trailing" id="a16-b3-Fl0"/>
+                        <constraint firstAttribute="bottom" secondItem="D3j-Tu-PiW" secondAttribute="bottom" id="yKh-RZ-uqC"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="PMT-42-qpV"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="SD3-gN-ZBv"/>
+                </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="yZf-Mo-dZz" firstAttribute="height" secondItem="WV0-oF-VFr" secondAttribute="height" multiplier="0.099187" id="0Jl-BJ-BI6"/>
-                <constraint firstItem="yZf-Mo-dZz" firstAttribute="centerX" secondItem="WV0-oF-VFr" secondAttribute="centerX" id="6cQ-lo-Fcj"/>
-                <constraint firstItem="yZf-Mo-dZz" firstAttribute="top" secondItem="WV0-oF-VFr" secondAttribute="bottom" constant="99" id="AO8-gV-cNK"/>
-                <constraint firstItem="yZf-Mo-dZz" firstAttribute="width" secondItem="WV0-oF-VFr" secondAttribute="width" multiplier="0.886256" id="Ijs-jf-CxT"/>
-                <constraint firstItem="WV0-oF-VFr" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="JL8-kd-mQI"/>
-                <constraint firstItem="WV0-oF-VFr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="O0J-s1-TYB"/>
-                <constraint firstItem="WV0-oF-VFr" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1.01932" id="etJ-B1-A5Q"/>
-                <constraint firstItem="WV0-oF-VFr" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.686384" id="lcg-mE-O89"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jo5-jc-PLf" secondAttribute="trailing" id="akg-SF-tyz"/>
+                <constraint firstItem="jo5-jc-PLf" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="dbF-pg-KEW"/>
+                <constraint firstItem="jo5-jc-PLf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ngJ-nw-3ot"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="jo5-jc-PLf" secondAttribute="top" id="teK-80-blg"/>
             </constraints>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="color" keyPath="topColor">

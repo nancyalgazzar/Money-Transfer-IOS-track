@@ -9,5 +9,5 @@ target 'GraduationProject' do
   pod 'FittedSheets'
   pod 'Alamofire', '~> 5.7.1'
   pod 'SDWebImage', :modular_headers => true
-  pod 'IQKeyboardManagerSwift'
+  pod 'IQKeyboardManagerSwift', '6.5.7'
 end

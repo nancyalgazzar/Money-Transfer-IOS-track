@@ -1,7 +1,7 @@
 //
 //  IQNSArray+Sort.swift
-//  https://github.com/hackiftekhar/IQKeyboardManager
-//  Copyright (c) 2013-24 Iftekhar Qurashi.
+// https://github.com/hackiftekhar/IQKeyboardManager
+// Copyright (c) 2013-20 Iftekhar Qurashi.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -21,19 +21,18 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+// import Foundation - UIKit contains Foundation
 import UIKit
 
 /**
 UIView.subviews sorting category.
 */
-@available(iOSApplicationExtension, unavailable)
-@MainActor
 internal extension Array where Element: UIView {
 
     /**
     Returns the array by sorting the UIView's by their tag property.
     */
-    func sortedByTag() -> [Element] {
+    func sortedArrayByTag() -> [Element] {
 
         return sorted(by: { (obj1: Element, obj2: Element) -> Bool in
 
@@ -44,7 +43,7 @@ internal extension Array where Element: UIView {
     /**
     Returns the array by sorting the UIView's by their tag property.
     */
-    func sortedByPosition() -> [Element] {
+    func sortedArrayByPosition() -> [Element] {
 
         return sorted(by: { (obj1: Element, obj2: Element) -> Bool in
             if obj1.frame.minY != obj2.frame.minY {
