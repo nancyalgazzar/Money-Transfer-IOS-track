@@ -20,6 +20,8 @@
 		7C555BDB2C59971300BDCAC2 /* SignUpUserDataEntryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C555BD92C59971300BDCAC2 /* SignUpUserDataEntryVC.xib */; };
 		7C55C9172C6169E100DB93E0 /* UserModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55C9162C6169E100DB93E0 /* UserModelManager.swift */; };
 		7C55C9192C616CDA00DB93E0 /* SignUpAPIManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55C9182C616CDA00DB93E0 /* SignUpAPIManger.swift */; };
+		7C55C91B2C6176F300DB93E0 /* LogOutAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55C91A2C6176F300DB93E0 /* LogOutAPIManager.swift */; };
+		7C55C91D2C6177F300DB93E0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55C91C2C6177F300DB93E0 /* ProfileViewModel.swift */; };
 		7C561AE22C5A742900DEAC2E /* ConnectingProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C561AE02C5A742900DEAC2E /* ConnectingProgressVC.swift */; };
 		7C561AE32C5A742900DEAC2E /* ConnectingProgressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C561AE12C5A742900DEAC2E /* ConnectingProgressVC.xib */; };
 		7C561AE52C5A745C00DEAC2E /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C561AE42C5A745C00DEAC2E /* CircularProgressView.swift */; };
@@ -162,6 +164,8 @@
 		7C555BD92C59971300BDCAC2 /* SignUpUserDataEntryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpUserDataEntryVC.xib; sourceTree = "<group>"; };
 		7C55C9162C6169E100DB93E0 /* UserModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelManager.swift; sourceTree = "<group>"; };
 		7C55C9182C616CDA00DB93E0 /* SignUpAPIManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAPIManger.swift; sourceTree = "<group>"; };
+		7C55C91A2C6176F300DB93E0 /* LogOutAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutAPIManager.swift; sourceTree = "<group>"; };
+		7C55C91C2C6177F300DB93E0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		7C561AE02C5A742900DEAC2E /* ConnectingProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingProgressVC.swift; sourceTree = "<group>"; };
 		7C561AE12C5A742900DEAC2E /* ConnectingProgressVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnectingProgressVC.xib; sourceTree = "<group>"; };
 		7C561AE42C5A745C00DEAC2E /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
@@ -452,6 +456,7 @@
 			children = (
 				7C5C3C0B2C5AE65F00BDD86A /* ProfileVC.swift */,
 				7C5C3C0C2C5AE65F00BDD86A /* ProfileVC.xib */,
+				7C55C91C2C6177F300DB93E0 /* ProfileViewModel.swift */,
 			);
 			path = ProfileVC;
 			sourceTree = "<group>";
@@ -640,6 +645,7 @@
 				7C5DB8772C60FE4600AEAFFC /* EditProfileAPIManager.swift */,
 				7C5DB87D2C610FAE00AEAFFC /* SignInAPIManager.swift */,
 				7C55C9182C616CDA00DB93E0 /* SignUpAPIManger.swift */,
+				7C55C91A2C6176F300DB93E0 /* LogOutAPIManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -1034,6 +1040,7 @@
 				9CC7067D2C5E6262007F0E6A /* ServerErrorVC.swift in Sources */,
 				9C38C8692C5FEC0200C8AC0A /* HomeViewModel.swift in Sources */,
 				7C595BAC2C60BAFB00193843 /* ProfileInfoViewModel.swift in Sources */,
+				7C55C91B2C6176F300DB93E0 /* LogOutAPIManager.swift in Sources */,
 				9CC706982C5E6343007F0E6A /* NotificationTableViewCell.swift in Sources */,
 				7C5E4D182C5F842D002433B9 /* SelectCurrencyModel.swift in Sources */,
 				7C561AF82C5AAC7400DEAC2E /* EditProfileVC.swift in Sources */,
@@ -1070,6 +1077,7 @@
 				7C56CD062C5A1EEA00C29FFD /* RoundedImage.swift in Sources */,
 				7C5E4D122C5F69D5002433B9 /* GetCountriesAPIManager.swift in Sources */,
 				7C5E3B222C5E25C700677A06 /* DisplayErrorMessageProtocol.swift in Sources */,
+				7C55C91D2C6177F300DB93E0 /* ProfileViewModel.swift in Sources */,
 				7C561AE22C5A742900DEAC2E /* ConnectingProgressVC.swift in Sources */,
 				9CC7068E2C5E6319007F0E6A /* TapBarVC.swift in Sources */,
 				9C38C8792C6031C100C8AC0A /* TransferVC + Dismiss Keyboard.swift in Sources */,

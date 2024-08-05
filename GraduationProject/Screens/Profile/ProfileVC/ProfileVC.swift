@@ -13,9 +13,13 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var avatarLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
 
+    @IBOutlet weak var logOutBtn: UIButton!
     @IBOutlet weak var tableView: UITableView!
+    var profileViewModel: ProfileViewModelProtocol!
     override func viewDidLoad() {
         super.viewDidLoad()
+        profileViewModel = ProfileViewModel()
+        bindViewModel()
         initTableView()
         tableView.backgroundColor = .clear
         navigationItem.title = "Profile"
@@ -23,9 +27,17 @@ class ProfileVC: UIViewController {
         avatarLabel.clipsToBounds = true
         avatarLabel.text = "AD"
         tableView.register(UINib(nibName: CellsNames.profileCell, bundle: nil ), forCellReuseIdentifier: CellsNames.profileCell)
-        // Do any additional setup after loading the view.
+        setButton()
     }
-
+    func setButton(){
+        let image =  UIImage(named: "logout 1")
+        logOutBtn.setImage(image, for: .normal)
+        logOutBtn.semanticContentAttribute = .forceLeftToRight
+        logOutBtn.contentHorizontalAlignment = .left
+    }
+    @IBAction func logOutBttnAction(_ sender: UIButton) {
+        profileViewModel.logOut()
+    }
 }
 extension ProfileVC: UITableViewDelegate,UITableViewDataSource {
     private func initTableView(){
@@ -51,4 +63,12 @@ extension ProfileVC: UITableViewDelegate,UITableViewDataSource {
      func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
+}
+extension ProfileVC {
+    func bindViewModel(){
+        profileViewModel.showError = {title, message in
+            self.alertMessage(title: title, message: message)
+        }
+    }
+    
 }
