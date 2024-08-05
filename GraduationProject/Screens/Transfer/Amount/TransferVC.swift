@@ -34,6 +34,7 @@ class TransferVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         configView()
+        transferViewModel.makeTransfer(senderAccountId: 1, recipientAccountId: 3, amount: 100.0, currency: "USD", status: "PENDING", description: "Payment for services")
     }
     
     private func configView() {

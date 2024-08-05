@@ -120,6 +120,8 @@
 		9C38C8932C605AC900C8AC0A /* TransferSelectCurruncyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C38C8912C605AC900C8AC0A /* TransferSelectCurruncyVC.xib */; };
 		9C38C89D2C61331300C8AC0A /* GetChangeRateAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C89C2C61331300C8AC0A /* GetChangeRateAPIManager.swift */; };
 		9C38C89F2C61337400C8AC0A /* ChangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C89E2C61337400C8AC0A /* ChangeRate.swift */; };
+		9C38C8A12C6185F200C8AC0A /* TransferAPiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8A02C6185F200C8AC0A /* TransferAPiManager.swift */; };
+		9C38C8A32C61875800C8AC0A /* TransferResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8A22C61875800C8AC0A /* TransferResponse.swift */; };
 		9CC706612C5E61FC007F0E6A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC7065E2C5E61FC007F0E6A /* HomeVC.swift */; };
 		9CC706622C5E61FC007F0E6A /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC7065F2C5E61FC007F0E6A /* HomeVC.xib */; };
 		9CC706662C5E623B007F0E6A /* TransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC706632C5E623B007F0E6A /* TransferVC.swift */; };
@@ -267,6 +269,8 @@
 		9C38C8912C605AC900C8AC0A /* TransferSelectCurruncyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferSelectCurruncyVC.xib; sourceTree = "<group>"; };
 		9C38C89C2C61331300C8AC0A /* GetChangeRateAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetChangeRateAPIManager.swift; sourceTree = "<group>"; };
 		9C38C89E2C61337400C8AC0A /* ChangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeRate.swift; sourceTree = "<group>"; };
+		9C38C8A02C6185F200C8AC0A /* TransferAPiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferAPiManager.swift; sourceTree = "<group>"; };
+		9C38C8A22C61875800C8AC0A /* TransferResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferResponse.swift; sourceTree = "<group>"; };
 		9CC7065E2C5E61FC007F0E6A /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		9CC7065F2C5E61FC007F0E6A /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		9CC706632C5E623B007F0E6A /* TransferVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferVC.swift; sourceTree = "<group>"; };
@@ -425,6 +429,7 @@
 				9CC7067F2C5E62A2007F0E6A /* DummyTransactionData.swift */,
 				9CC706802C5E62A2007F0E6A /* TransactionCellModel.swift */,
 				9C38C89E2C61337400C8AC0A /* ChangeRate.swift */,
+				9C38C8A22C61875800C8AC0A /* TransferResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -644,6 +649,7 @@
 				9C38C89C2C61331300C8AC0A /* GetChangeRateAPIManager.swift */,
 				7C5DB8772C60FE4600AEAFFC /* EditProfileAPIManager.swift */,
 				7C5DB87D2C610FAE00AEAFFC /* SignInAPIManager.swift */,
+				9C38C8A02C6185F200C8AC0A /* TransferAPiManager.swift */,
 				7C55C9182C616CDA00DB93E0 /* SignUpAPIManger.swift */,
 				7C55C91A2C6176F300DB93E0 /* LogOutAPIManager.swift */,
 			);
@@ -1028,6 +1034,7 @@
 				7C5DB87C2C60FEA800AEAFFC /* EditProfileModel.swift in Sources */,
 				7C88C3C62C5CFA2F00BE6622 /* String+Trim.swift in Sources */,
 				9CC706612C5E61FC007F0E6A /* HomeVC.swift in Sources */,
+				9C38C8A32C61875800C8AC0A /* TransferResponse.swift in Sources */,
 				7C88C3C92C5CFA2F00BE6622 /* UserDefaults+contains.swift in Sources */,
 				7C5C3C082C5AE09800BDD86A /* ProfileInfoTVC.swift in Sources */,
 				7C17B7AD2C5E66E20066892C /* HomeRouting.swift in Sources */,
@@ -1105,6 +1112,7 @@
 				9CC7066F2C5E6243007F0E6A /* TransactionVC.swift in Sources */,
 				9CC7069A2C5E6343007F0E6A /* LastTransactionTableViewCell.swift in Sources */,
 				7C5DB8782C60FE4600AEAFFC /* EditProfileAPIManager.swift in Sources */,
+				9C38C8A12C6185F200C8AC0A /* TransferAPiManager.swift in Sources */,
 				7C60E7272C5A3F15009E06C6 /* CountryViewCell.swift in Sources */,
 				7C88C3B62C5CC93900BE6622 /* NotificationCell.swift in Sources */,
 				7C5E4D1A2C5F84D9002433B9 /* GetCurrenciesAPIManager.swift in Sources */,

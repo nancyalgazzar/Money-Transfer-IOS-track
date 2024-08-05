@@ -42,4 +42,21 @@ class TransferViewModel {
             TransferViewModel.currencyChangeRate = exchangeRate
         }
     }
+    
+    func makeTransfer(senderAccountId: Int, recipientAccountId: Int, amount: Double, currency: String, status: String, description: String) {
+        TransferAPIManager.makeTransfer(senderAccountId: senderAccountId, recipientAccountId: recipientAccountId, amount: amount, currency: currency, status: status, description: description) { error, response in
+            if let error = error {
+                print("Failed to make transfer: \(error.localizedDescription)")
+                return
+            }
+            
+            if let response = response, response.success {
+                print("Transfer successful: \(response.message ?? "")")
+            } else {
+                print("Transfer failed")
+            }
+        }
+    }
+
+
 }
