@@ -56,4 +56,5 @@ class SelectCurrencyViewModel: SelectCurrencyViewModelProtocol {
             showError?("Sorry","you must select Currency")
         }
     }
+    
 }
