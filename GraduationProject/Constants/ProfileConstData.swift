@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 struct ProfileConstData{
-    private  let settingsList = [ProfileCellModel(iconImage: "password-outline 1", title: "Change password", subTitle: "Change Password", vcName: ChangeSettingVC()), ProfileCellModel(iconImage: "edit 1", title: "Edit Profile", subTitle: "Change your information", vcName: EditProfileVC())]
+    private  let settingsList = [ProfileCellModel(iconImage: "password-outline 1", title: "Change password", subTitle: "Change Password", vcName: ChangePasswordVC()), ProfileCellModel(iconImage: "edit 1", title: "Edit Profile", subTitle: "Change your information", vcName: EditProfileVC())]
     
       func getSettingsList() -> [ProfileCellModel]{
         return settingsList
