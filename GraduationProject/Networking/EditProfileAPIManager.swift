@@ -29,7 +29,7 @@ class EditProfileAPIManager{
             }
         
         } catch  {
-            
+            completion(nil, false)
         }
 
     }

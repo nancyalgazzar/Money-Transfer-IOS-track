@@ -61,6 +61,8 @@
 		7C5DB8782C60FE4600AEAFFC /* EditProfileAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DB8772C60FE4600AEAFFC /* EditProfileAPIManager.swift */; };
 		7C5DB87A2C60FE8600AEAFFC /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DB8792C60FE8600AEAFFC /* EditProfileViewModel.swift */; };
 		7C5DB87C2C60FEA800AEAFFC /* EditProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DB87B2C60FEA800AEAFFC /* EditProfileModel.swift */; };
+		7C5DB87E2C610FAE00AEAFFC /* SignInAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DB87D2C610FAE00AEAFFC /* SignInAPIManager.swift */; };
+		7C5DB8812C6111C200AEAFFC /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DB8802C6111C200AEAFFC /* UserDefaultsManager.swift */; };
 		7C5DFC092C5A572100C25AED /* SelectCurrencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DFC072C5A572100C25AED /* SelectCurrencyVC.swift */; };
 		7C5DFC0A2C5A572100C25AED /* SelectCurrencyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C5DFC082C5A572100C25AED /* SelectCurrencyVC.xib */; };
 		7C5DFC102C5A5FE300C25AED /* AddCardRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DFC0F2C5A5FE300C25AED /* AddCardRouting.swift */; };
@@ -199,6 +201,8 @@
 		7C5DB8772C60FE4600AEAFFC /* EditProfileAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileAPIManager.swift; sourceTree = "<group>"; };
 		7C5DB8792C60FE8600AEAFFC /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		7C5DB87B2C60FEA800AEAFFC /* EditProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileModel.swift; sourceTree = "<group>"; };
+		7C5DB87D2C610FAE00AEAFFC /* SignInAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInAPIManager.swift; sourceTree = "<group>"; };
+		7C5DB8802C6111C200AEAFFC /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		7C5DFC072C5A572100C25AED /* SelectCurrencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyVC.swift; sourceTree = "<group>"; };
 		7C5DFC082C5A572100C25AED /* SelectCurrencyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectCurrencyVC.xib; sourceTree = "<group>"; };
 		7C5DFC0F2C5A5FE300C25AED /* AddCardRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardRouting.swift; sourceTree = "<group>"; };
@@ -464,6 +468,7 @@
 		7C5D7E532C592B3300D60725 /* GraduationProject */ = {
 			isa = PBXGroup;
 			children = (
+				7C5DB87F2C6111AE00AEAFFC /* Managers */,
 				7C60E72A2C5A41F1009E06C6 /* Routing */,
 				7C60E7292C5A3FCB009E06C6 /* StoryBoard */,
 				7C5E4D102C5F69BB002433B9 /* Networking */,
@@ -515,6 +520,14 @@
 				7C5D7E622C592B3400D60725 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C5DB87F2C6111AE00AEAFFC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7C5DB8802C6111C200AEAFFC /* UserDefaultsManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		7C5DFC062C5A4C9100C25AED /* AddCard */ = {
@@ -614,6 +627,7 @@
 				7C595BB12C60BD3900193843 /* GetProfileInfoAPIManager.swift */,
 				7C595BB32C60E98200193843 /* ChangePasswordAPIManager.swift */,
 				7C5DB8772C60FE4600AEAFFC /* EditProfileAPIManager.swift */,
+				7C5DB87D2C610FAE00AEAFFC /* SignInAPIManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -1026,6 +1040,7 @@
 				7C5DFC092C5A572100C25AED /* SelectCurrencyVC.swift in Sources */,
 				7C555BD32C59835500BDCAC2 /* CustomButton.swift in Sources */,
 				7C561AE92C5A8ABF00DEAC2E /* BankCardOTP.swift in Sources */,
+				7C5DB87E2C610FAE00AEAFFC /* SignInAPIManager.swift in Sources */,
 				9C38C8852C603F9200C8AC0A /* NotificationsVC + TableView.swift in Sources */,
 				7C561AE52C5A745C00DEAC2E /* CircularProgressView.swift in Sources */,
 				7C88C3C72C5CFA2F00BE6622 /* VC+AlertMessage.swift in Sources */,
@@ -1034,6 +1049,7 @@
 				7C595BB42C60E98200193843 /* ChangePasswordAPIManager.swift in Sources */,
 				9C38C8672C5FE75000C8AC0A /* HomeVC + TableView.swift in Sources */,
 				7C5DB8762C60F5AD00AEAFFC /* ChangePasswordViewModel.swift in Sources */,
+				7C5DB8812C6111C200AEAFFC /* UserDefaultsManager.swift in Sources */,
 				7C5D7E552C592B3300D60725 /* AppDelegate.swift in Sources */,
 				9C38C8732C5FF58F00C8AC0A /* AccountRouting.swift in Sources */,
 				7C56CD062C5A1EEA00C29FFD /* RoundedImage.swift in Sources */,

@@ -27,10 +27,7 @@ class EditProfileViewModel: EditProfileViewModelProtocol{
                 }
             })
         }
-        
     }
-    
-    
 }
 extension EditProfileViewModel {
     private func createModel(fullName: String?, email: String?, country: String?, birthdate: String?)->EditProfileModel? {
