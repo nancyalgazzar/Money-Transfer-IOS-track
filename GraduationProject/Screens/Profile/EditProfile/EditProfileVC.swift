@@ -81,8 +81,8 @@ extension EditProfileVC: UIGestureRecognizerDelegate{
     }
     @objc private func pickedDate(datePicker: UIDatePicker){
         let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .none
+        formatter.dateFormat = "dd/MM/yyyy"
+        formatter.locale = Locale(identifier: "en_US_POSIX")
         
         datePickerTF.text = formatter.string(from: datePicker.date)
         

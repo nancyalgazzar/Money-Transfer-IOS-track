@@ -11,7 +11,7 @@ class GetCountriesAPIManager{
     
     static func getCountries(completion: @escaping (_ error: Error?, _ countries: [CountryModel]?)->Void){
         AF.request("https://restcountries.com/v3.1/all", method: .get).response{ response in
-            debugPrint(response)
+//            debugPrint(response)
             guard response.error == nil else {
                 debugPrint(response.error ?? "error response")
                 completion(response.error,nil)
@@ -29,7 +29,7 @@ class GetCountriesAPIManager{
 //                    print(country.flags.png)
 //                }
             } catch let error {
-                print(error.localizedDescription)
+//                print(error.localizedDescription)
                 completion(error, nil)
             }
         }

@@ -10,8 +10,8 @@ import Alamofire
 class ChangePasswordAPIManager {
     static func changePassword(oldPassword: String, newPassword: String,completion: @escaping (_ error: Error?, _ success: Bool)->Void){
         let headers:HTTPHeaders = [
-            "token": "",
-            "content-type": "application/json"
+            "Authorization": "Bearer ..",
+            "Content-Type": "application/json"
         ]
         let body = [
             "oldPassword": oldPassword,
