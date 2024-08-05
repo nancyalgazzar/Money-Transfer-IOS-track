@@ -6,10 +6,16 @@
 //
 
 import Foundation
-protocol ChangePasswordViewModelProtocol: DisplayErrorMessageProtocol {
+protocol ChangePasswordViewModelProtocol: DisplayErrorMessageProtocol, SetPasswordVisibilityHander {
     func changePassword(oldPassword: String?, newPassword: String?,completion: @escaping ()->())
 }
 class ChangePasswordViewModel: ChangePasswordViewModelProtocol{
+   
+    var isVisible = false
+    var showPassword: (() -> Void)?
+    
+    var hidePassword: (() -> Void)?
+    
     var showError: ((String, String) -> Void)?
     let dataValidator = ValidateUserData()
     func changePassword(oldPassword: String?, newPassword: String?,completion: @escaping ()->()){
@@ -17,14 +23,26 @@ class ChangePasswordViewModel: ChangePasswordViewModelProtocol{
         if isNewPasswordValid(password: newPassword) && isOldPasswordValid(password: oldPassword){
             
               ChangePasswordAPIManager.changePassword(oldPassword: oldPassword!, newPassword: newPassword!, completion: {
-                   error, status in
+                   error, message in
                    if let error = error {
                        self.showError?("Sorry", error.localizedDescription)
                    }
-                   if status {
+                  if let message = message {
+                      self.showError?("", message)
                       completion()
                    }
               })
+        }
+    }
+    func setPasswordVisibilityHander() -> (()->()) {
+      return {
+            self.isVisible = !self.isVisible
+            if self.isVisible {
+                self.showPassword?()
+            }else {
+                self.hidePassword?()
+            }
+            
         }
     }
 }

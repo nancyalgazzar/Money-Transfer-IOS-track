@@ -16,6 +16,7 @@ class ChangePasswordVC: UIViewController {
         super.viewDidLoad()
         changePasswordViewModel = ChangePasswordViewModel()
         bindViewModel()
+        oldPasswordTF.handler = changePasswordViewModel.setPasswordVisibilityHander()
         navigationItem.hidesBackButton = false
         navigationItem.title = "Change Password"
     }
@@ -30,6 +31,15 @@ class ChangePasswordVC: UIViewController {
 }
 extension ChangePasswordVC {
     func bindViewModel(){
+        changePasswordViewModel.hidePassword = {
+            self.oldPasswordTF.rightImage = UIImage(named: "close-eye")
+            self.oldPasswordTF.isSecureTextEntry = true
+        }
+       
+        changePasswordViewModel.showPassword = {
+            self.oldPasswordTF.rightImage = UIImage(named: "Open-eye")
+            self.oldPasswordTF.isSecureTextEntry = false
+        }
         changePasswordViewModel.showError = { title, message in
             self.alertMessage(title: title, message: message)
         }
