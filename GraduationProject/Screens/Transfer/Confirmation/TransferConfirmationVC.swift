@@ -17,6 +17,8 @@ class TransferConfirmationVC: UIViewController {
     @IBOutlet weak var previousBtnView: UIButton!
     @IBOutlet weak var transferImage: UIImageView!
     
+    let transferViewModel = TransferViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configView()
@@ -29,6 +31,10 @@ class TransferConfirmationVC: UIViewController {
         previousBtnView.layer.borderWidth = 3
         previousBtnView.layer.borderColor = #colorLiteral(red: 0.6062087417, green: 0.1836366951, blue: 0.2688316107, alpha: 1)
         previousBtnView.layer.cornerRadius = 8
+        
+        reciverNameTextLabel.text = TransferViewModel.reciverName
+        amountTextLabel.text = String(TransferViewModel.sendAmount)
+        totalAmountTextLabel.text = String(TransferViewModel.getsAmount)
         
     }
     

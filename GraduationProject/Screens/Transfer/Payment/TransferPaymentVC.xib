@@ -14,6 +14,8 @@
             <connections>
                 <outlet property="confirmBtnView" destination="iF7-Mb-Feo" id="pLF-DQ-YEL"/>
                 <outlet property="favouriteBtnView" destination="DCH-1B-4OE" id="5eH-Qa-zjR"/>
+                <outlet property="reciverNameTextLabel" destination="YsA-lX-Qhj" id="WUa-kw-BT0"/>
+                <outlet property="totalAmountTextLabel" destination="HPz-qs-iSs" id="z5P-28-Amc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -219,6 +221,9 @@
                                     <color key="tintColor" red="0.51607205379999999" green="0.1176470588" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="filled" title="Confirm"/>
+                                    <connections>
+                                        <action selector="confirmBtnPressed:" destination="-1" eventType="touchUpInside" id="zLL-6a-MM4"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCH-1B-4OE">
                                     <rect key="frame" x="29" y="694.66666666666663" width="335" height="38.333333333333371"/>

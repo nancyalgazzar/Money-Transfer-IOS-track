@@ -40,7 +40,7 @@ class TransferVC: UIViewController {
         setupTextfilleds()
         setupNavigationBar()
         continueBtnView.tintColor = #colorLiteral(red: 0.6062087417, green: 0.1836366951, blue: 0.2688316107, alpha: 1)
-        changeRateLabel.text = "1 USD = \(transferViewModel.currencyChangeRate ?? 48.422) EGP"
+        changeRateLabel.text = "1 USD = \(TransferViewModel.currencyChangeRate ?? 48.422) EGP"
         sendAmountTextFilled.text = ""
         getsAmountTextFilled.text = ""
     }
@@ -61,6 +61,7 @@ class TransferVC: UIViewController {
     
     @IBAction func continueBtnPressed(_ sender: UIButton) {
         if transferValidation() {
+            self.setData()
             TransferRouting.goToTransferConfirmation(VC: self)
         }
     }
@@ -99,5 +100,10 @@ extension TransferVC {
         }
         
         return true
+    }
+    
+    func setData() {
+        TransferViewModel.reciverName = recepentNameTextFilled.text
+        TransferViewModel.reciverAccount = recepentAccountTextFilled.text
     }
 }

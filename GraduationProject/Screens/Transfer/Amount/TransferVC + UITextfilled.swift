@@ -22,10 +22,10 @@ extension TransferVC : UITextFieldDelegate{
 
         if textField.tag == 1 {
             transferViewModel.calculateGettingAmount(sendAmount: amount)
-            getsAmountTextFilled.text = String(format: "%.2f", transferViewModel.getsAmount)
+            getsAmountTextFilled.text = String(format: "%.2f", TransferViewModel.getsAmount)
         } else if textField.tag == 2 {
             transferViewModel.calculateSendingAmount(getAmount: amount)
-            sendAmountTextFilled.text = String(format: "%.2f", transferViewModel.sendAmount)
+            sendAmountTextFilled.text = String(format: "%.2f", TransferViewModel.sendAmount)
         }
         
         return true

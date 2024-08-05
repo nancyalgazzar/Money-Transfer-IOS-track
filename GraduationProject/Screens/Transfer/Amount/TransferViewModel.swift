@@ -9,17 +9,22 @@ import Foundation
 
 class TransferViewModel {
     
-    var sendCurreuncy: Currency!
-    var currencyChangeRate: Double!
-    var getsAmount: Double = 0.0
-    var sendAmount: Double = 0.0
+    static var sendCurreuncy: Currency!
+    static var getCurruncy: Currency!
+    static var reciverName: String!
+    static var reciverAccount: String!
+    static var currencyChangeRate: Double!
+    static var getsAmount: Double = 0.0
+    static var sendAmount: Double = 0.0
     
     func calculateSendingAmount(getAmount: Double) {
-        self.sendAmount = getAmount * (1 / currencyChangeRate)
+        TransferViewModel.getsAmount = getAmount
+        TransferViewModel.sendAmount = getAmount * (1 / TransferViewModel.currencyChangeRate)
     }
     
     func calculateGettingAmount(sendAmount: Double) {
-        self.getsAmount = sendAmount * currencyChangeRate
+        TransferViewModel.sendAmount = sendAmount
+        TransferViewModel.getsAmount = sendAmount * TransferViewModel.currencyChangeRate
     }
     
     func fetchExchangeRate(from baseCurrency: String, to targetCurrency: String) {
@@ -34,7 +39,7 @@ class TransferViewModel {
                 return
             }
             
-            self.currencyChangeRate = exchangeRate
+            TransferViewModel.currencyChangeRate = exchangeRate
         }
     }
 }
