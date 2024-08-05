@@ -8,7 +8,8 @@
 import Foundation
 
 class TransferViewModel {
-        
+    
+    var sendCurreuncy
     var currencyChangeRate: Double!
     var getsAmount: Double = 0.0
     var sendAmount: Double = 0.0

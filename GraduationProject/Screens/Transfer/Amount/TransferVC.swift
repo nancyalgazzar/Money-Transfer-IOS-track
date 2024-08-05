@@ -29,6 +29,7 @@ class TransferVC: UIViewController {
         super.viewDidLoad()
         setupDismissKeyBoard()
         setupTextfilleds()
+        fetchCurrencies()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -99,4 +100,31 @@ extension TransferVC {
         
         return true
     }
+}
+
+
+extension TransferVC {
+    func fetchCurrencies() {
+            GetChangeRateAPIManager.getCurrencies { error, changeRate in
+                if let error = error {
+                    print("Failed to fetch currencies: \(error.localizedDescription)")
+                    return
+                }
+                
+                guard let changeRate = changeRate else {
+                    print("No data returned")
+                    return
+                }
+                
+                // Process the data
+                self.processChangeRate(changeRate: changeRate)
+            }
+        }
+        
+        func processChangeRate(changeRate: ChangeRate) {
+            print("Base Code: \(changeRate.baseCode)")
+            for (currency, rate) in changeRate.conversionRates {
+                print("\(currency): \(rate)")
+            }
+        }
 }

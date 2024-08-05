@@ -107,6 +107,8 @@
 		9C38C88E2C6052E700C8AC0A /* TransferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C88D2C6052E700C8AC0A /* TransferModel.swift */; };
 		9C38C8922C605AC900C8AC0A /* TransferSelectCurruncyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8902C605AC900C8AC0A /* TransferSelectCurruncyVC.swift */; };
 		9C38C8932C605AC900C8AC0A /* TransferSelectCurruncyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C38C8912C605AC900C8AC0A /* TransferSelectCurruncyVC.xib */; };
+		9C38C8972C6103D600C8AC0A /* GetChangeRateAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8962C6103D600C8AC0A /* GetChangeRateAPIManager.swift */; };
+		9C38C8992C61048600C8AC0A /* ChangeRateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8982C61048600C8AC0A /* ChangeRateModel.swift */; };
 		9CC706612C5E61FC007F0E6A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC7065E2C5E61FC007F0E6A /* HomeVC.swift */; };
 		9CC706622C5E61FC007F0E6A /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC7065F2C5E61FC007F0E6A /* HomeVC.xib */; };
 		9CC706662C5E623B007F0E6A /* TransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC706632C5E623B007F0E6A /* TransferVC.swift */; };
@@ -241,6 +243,8 @@
 		9C38C88D2C6052E700C8AC0A /* TransferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferModel.swift; sourceTree = "<group>"; };
 		9C38C8902C605AC900C8AC0A /* TransferSelectCurruncyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferSelectCurruncyVC.swift; sourceTree = "<group>"; };
 		9C38C8912C605AC900C8AC0A /* TransferSelectCurruncyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransferSelectCurruncyVC.xib; sourceTree = "<group>"; };
+		9C38C8962C6103D600C8AC0A /* GetChangeRateAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetChangeRateAPIManager.swift; sourceTree = "<group>"; };
+		9C38C8982C61048600C8AC0A /* ChangeRateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeRateModel.swift; sourceTree = "<group>"; };
 		9CC7065E2C5E61FC007F0E6A /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		9CC7065F2C5E61FC007F0E6A /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		9CC706632C5E623B007F0E6A /* TransferVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferVC.swift; sourceTree = "<group>"; };
@@ -395,6 +399,7 @@
 			children = (
 				9CC7067F2C5E62A2007F0E6A /* DummyTransactionData.swift */,
 				9CC706802C5E62A2007F0E6A /* TransactionCellModel.swift */,
+				9C38C8982C61048600C8AC0A /* ChangeRateModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -599,6 +604,7 @@
 				7C5E4D112C5F69D5002433B9 /* GetCountriesAPIManager.swift */,
 				7C5E4D192C5F84D9002433B9 /* GetCurrenciesAPIManager.swift */,
 				7C595BB12C60BD3900193843 /* GetProfileInfoAPIManager.swift */,
+				9C38C8962C6103D600C8AC0A /* GetChangeRateAPIManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -964,6 +970,7 @@
 				7C56CCFE2C5A1D7100C29FFD /* CountriesTVC.swift in Sources */,
 				9CC706842C5E62B8007F0E6A /* UIViewController + roundedCorners + toCircle.swift in Sources */,
 				7C88C3D32C5D050700BE6622 /* SignUpViewModel.swift in Sources */,
+				9C38C8992C61048600C8AC0A /* ChangeRateModel.swift in Sources */,
 				9C38C8832C603EB600C8AC0A /* ErrorRouting.swift in Sources */,
 				7C555BDA2C59971300BDCAC2 /* SignUpUserDataEntryVC.swift in Sources */,
 				7C5C3BF92C5ACAF100BDD86A /* ProfileCellModel.swift in Sources */,
@@ -1008,6 +1015,7 @@
 				7C5E3B1B2C5E0F4300677A06 /* ProfileRouting.swift in Sources */,
 				7C5DFC092C5A572100C25AED /* SelectCurrencyVC.swift in Sources */,
 				7C555BD32C59835500BDCAC2 /* CustomButton.swift in Sources */,
+				9C38C8972C6103D600C8AC0A /* GetChangeRateAPIManager.swift in Sources */,
 				7C561AE92C5A8ABF00DEAC2E /* BankCardOTP.swift in Sources */,
 				9C38C8852C603F9200C8AC0A /* NotificationsVC + TableView.swift in Sources */,
 				7C561AE52C5A745C00DEAC2E /* CircularProgressView.swift in Sources */,
