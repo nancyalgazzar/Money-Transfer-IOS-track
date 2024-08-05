@@ -12,6 +12,8 @@
             <connections>
                 <outlet property="countryPickerTF" destination="e4O-N0-9S4" id="g7g-Xz-8KZ"/>
                 <outlet property="datePickerTF" destination="vMG-s5-nB1" id="91c-by-ZrJ"/>
+                <outlet property="emailTF" destination="Qlu-cV-io0" id="j2p-0d-isZ"/>
+                <outlet property="fullNameTF" destination="7ER-zK-mbg" id="qeJ-aI-bmi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -36,6 +38,9 @@
                                         <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
                                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </buttonConfiguration>
+                                    <connections>
+                                        <action selector="editProfileBtn:" destination="-1" eventType="touchUpInside" id="FNG-zS-ken"/>
+                                    </connections>
                                 </button>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="smP-dm-n7a">
                                     <rect key="frame" x="41.5" y="79" width="331" height="430"/>

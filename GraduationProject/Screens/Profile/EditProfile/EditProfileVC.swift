@@ -9,11 +9,16 @@ import UIKit
 import FittedSheets
 class EditProfileVC: UIViewController {
 
+    @IBOutlet weak var emailTF: CustomTextField!
+    @IBOutlet weak var fullNameTF: CustomTextField!
     @IBOutlet weak var datePickerTF: CustomTextField!
     @IBOutlet weak var countryPickerTF: CustomTextField!
     var datePicker: UIDatePicker!
+    var editProfileViewModel: EditProfileViewModelProtocol!
     override func viewDidLoad() {
         super.viewDidLoad()
+        editProfileViewModel = EditProfileViewModel()
+        bindViewModel()
         initDatePicker()
         setTextFieldDelegates()
         setGestureForDatePicking()
@@ -21,6 +26,9 @@ class EditProfileVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func editProfileBtn(_ sender: UIButton) {
+        editProfileViewModel.EditProfile(fullName: fullNameTF.text, email: emailTF.text, country: countryPickerTF.text, birthdate: datePickerTF.text)
+    }
 }
 //MARK: gesture recognizer of BirthDay
 extension EditProfileVC{
@@ -81,8 +89,8 @@ extension EditProfileVC: UIGestureRecognizerDelegate{
     }
     @objc private func pickedDate(datePicker: UIDatePicker){
         let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .none
+        formatter.dateFormat = "dd/MM/yyyy"
+        formatter.locale = Locale(identifier: "en_US_POSIX")
         
         datePickerTF.text = formatter.string(from: datePicker.date)
         
@@ -100,5 +108,12 @@ extension EditProfileVC: UITextFieldDelegate {
     }
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         return false
+    }
+}
+extension EditProfileVC{
+    func bindViewModel(){
+        editProfileViewModel.showError = { title, message in
+            self.alertMessage(title: title, message: message)
+        }
     }
 }

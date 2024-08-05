@@ -53,6 +53,23 @@ extension SignUpViewModel{
 
             return false
         }
+        if !didUserEnterFirstAndLastName(name: name){
+            return false
+        }
+        return true
+    }
+    private func didUserEnterFirstAndLastName(name:String)->Bool{
+        
+        if name.contains(" "){
+            let names = name.trimmed.split(separator: " ")
+            if names.count < 2 {
+                showError?("Sorry", "please enter your first and last name")
+                return false
+            } else if names.count>2{
+                showError?("Sorry", "please enter only your first and last name")
+                return false
+            }
+        }
         return true
     }
     private func isEmailFieldValid(email: String?) -> Bool {

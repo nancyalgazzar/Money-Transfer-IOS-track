@@ -7,12 +7,14 @@
 
 import Foundation
 
-protocol ProfileInfoViewModelProtocol{
+protocol ProfileInfoViewModelProtocol: DisplayErrorMessageProtocol{
     func fetchData(completion:@escaping()->())
     func getProfileInfoCount()->Int
     func getProfileDataAtIndex(_ index: Int)->(String, String?)
 }
 class ProfileInfoViewModel:ProfileInfoViewModelProtocol {
+    var showError: ((String, String) -> Void)?
+    
     var infoData: [(String, String?)] = []
     
     func fetchData( completion:@escaping()->()) {
@@ -21,6 +23,7 @@ class ProfileInfoViewModel:ProfileInfoViewModelProtocol {
 //
 //            if let error = error {
 //                print(error.localizedDescription)
+//        self.showError?("sorry", error.localizedDescription)
 //            }
 //            if let profileInfo = profileInfo {
 //                self.formateData(profileData: profileInfo)

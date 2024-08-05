@@ -28,7 +28,15 @@ class SignInViewModel:SignInModelProtocol{
             showError?("Error","Email or password is invalid")
             return
         }
-        goToHome?()
+        SignInAPIManager.signIn(email: email!, password: password!, completion: {error, status in
+            if let error = error {
+                self.showError?("Error", error.localizedDescription)
+            }
+            if status {
+                //save token
+                self.goToHome?()
+            }
+        })
     }
     func setPasswordVisibilityHander() -> (()->()) {
       return {
