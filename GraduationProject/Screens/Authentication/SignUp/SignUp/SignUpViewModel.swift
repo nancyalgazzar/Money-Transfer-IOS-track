@@ -26,7 +26,12 @@ class SignUpViewModel:SignUpViewModelProtocol{
         if isNameFieldValid(name: name) &&
             isEmailFieldValid(email: email) &&
             isPasswordFieldValid(password: password){
-                 goToSignUpGetData?()
+            guard let name = name , let email = email, let password = password else {
+                return
+            }
+            let names = name.trimmed.split(separator: " ")
+            UserModelManager.createUser(firstName: String(names[0]), lastName: String(names[1]), password: password, email: email)
+            goToSignUpGetData?()
         }
     }
     func setPasswordVisibilityHander() -> (()->()) {
@@ -59,18 +64,18 @@ extension SignUpViewModel{
         return true
     }
     private func didUserEnterFirstAndLastName(name:String)->Bool{
-        
-        if name.contains(" "){
-            let names = name.trimmed.split(separator: " ")
-            if names.count < 2 {
-                showError?("Sorry", "please enter your first and last name")
-                return false
-            } else if names.count>2{
-                showError?("Sorry", "please enter only your first and last name")
-                return false
-            }
+        guard name.contains(" ") else{
+            showError?("Sorry", "please enter your first and last name")
+            return false
         }
-        return true
+     
+        let names = name.trimmed.split(separator: " ")
+        if names.count > 2 {
+            showError?("Sorry", "please enter only your first and last name")
+                return false
+        }else {
+                return true
+        }
     }
     private func isEmailFieldValid(email: String?) -> Bool {
         guard let email = email, dataValidator.isFieldEmpty(fieldData: email) else {

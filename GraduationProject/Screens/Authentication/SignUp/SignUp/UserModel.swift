@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct UserModel{
+struct UserModel:Codable{
     let firstName: String!
     let lastName: String!
     let password: String!
     let email: String!
-    let birthday: String!
-    let nationality: String!
-    let nationalID: String!
+    var birthday: String?
+    var nationality: String?
+    var nationalID: String?
 }
