@@ -28,12 +28,12 @@ class SignInViewModel:SignInModelProtocol{
             showError?("Error","Email or password is invalid")
             return
         }
-        SignInAPIManager.signIn(email: email!, password: password!, completion: {error, status in
+        SignInAPIManager.signIn(email: email!, password: password!, completion: {error, token in
             if let error = error {
                 self.showError?("Error", error.localizedDescription)
             }
-            if status {
-                //save token
+            if let token = token {
+                UserDefaultsManager.share().token = token
                 self.goToHome?()
             }
         })

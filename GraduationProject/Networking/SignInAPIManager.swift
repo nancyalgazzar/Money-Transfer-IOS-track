@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 class SignInAPIManager {
     
-    static func signIn(email: String, password:String, completion:@escaping(_ error: Error?,_ status: Bool)->()){
+    static func signIn(email: String, password:String, completion:@escaping(_ error: Error?,_ token: String?)->()){
         
         let headers: HTTPHeaders = [
             "Content-Type": "application/json"
@@ -17,24 +17,24 @@ class SignInAPIManager {
         let body = [
             "email": email,
             "password": password]
-        AF.request("", method: .post, parameters: body, encoder: URLEncodedFormParameterEncoder.default, headers: headers).response{ response in
+        print(password)
+        AF.request("https://e8c8-156-223-19-253.ngrok-free.app/api/login", method: .post, parameters: body, encoder: JSONParameterEncoder.default, headers: headers).response{ response in
             debugPrint(response)
             guard response.error == nil else {
                 debugPrint(response.error ?? "error response")
-                completion(response.error,false)
+                completion(response.error,nil)
                 return
             }
             switch response.result {
             case .success(let data):
-                do {
-                    let json = try JSONSerialization.jsonObject(with: data!, options: .fragmentsAllowed)
-                    debugPrint(json)
-                    completion(nil, true)
-                } catch {
-                    completion(nil, false)
-                }
+                do{
+                guard let data = data else{return}
+                let json = try JSONDecoder().decode(tokenDecode.self, from: data)
+                    print(json.token)
+                    completion(nil, json.token)
+                }catch{}
             case .failure(let error):
-                completion(error, false)
+                completion(error, nil)
             }
         }
     }
