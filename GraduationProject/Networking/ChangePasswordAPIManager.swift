@@ -8,7 +8,7 @@
 import Foundation
 import Alamofire
 class ChangePasswordAPIManager {
-    static func getCountries(oldPassword: String, newPassword: String,completion: @escaping (_ error: Error?, _ success: Bool)->Void){
+    static func changePassword(oldPassword: String, newPassword: String,completion: @escaping (_ error: Error?, _ success: Bool)->Void){
         let headers:HTTPHeaders = [
             "token": "",
             "content-type": "application/json"
@@ -23,7 +23,18 @@ class ChangePasswordAPIManager {
                 completion(response.error,false)
                 return
             }
-            completion(nil, true)
+            switch response.result {
+            case .success(let data):
+                do {
+                    let json = try JSONSerialization.jsonObject(with: data!, options: .fragmentsAllowed)
+                    debugPrint(json)
+                    completion(nil, true)
+                } catch {
+                    completion(nil, false)
+                }
+            case .failure(let error):
+                completion(error, false)
+            }
         }
     }
 }

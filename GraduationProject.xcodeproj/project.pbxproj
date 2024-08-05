@@ -57,6 +57,7 @@
 		7C5D7E612C592B3400D60725 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5D7E5F2C592B3400D60725 /* LaunchScreen.storyboard */; };
 		7C5D7E6E2C592F9E00D60725 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5D7E6C2C592F9E00D60725 /* SignInVC.swift */; };
 		7C5D7E6F2C592F9E00D60725 /* SignInVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C5D7E6D2C592F9E00D60725 /* SignInVC.xib */; };
+		7C5DB8762C60F5AD00AEAFFC /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DB8752C60F5AD00AEAFFC /* ChangePasswordViewModel.swift */; };
 		7C5DFC092C5A572100C25AED /* SelectCurrencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DFC072C5A572100C25AED /* SelectCurrencyVC.swift */; };
 		7C5DFC0A2C5A572100C25AED /* SelectCurrencyVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C5DFC082C5A572100C25AED /* SelectCurrencyVC.xib */; };
 		7C5DFC102C5A5FE300C25AED /* AddCardRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DFC0F2C5A5FE300C25AED /* AddCardRouting.swift */; };
@@ -191,6 +192,7 @@
 		7C5D7E622C592B3400D60725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C5D7E6C2C592F9E00D60725 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		7C5D7E6D2C592F9E00D60725 /* SignInVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInVC.xib; sourceTree = "<group>"; };
+		7C5DB8752C60F5AD00AEAFFC /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
 		7C5DFC072C5A572100C25AED /* SelectCurrencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyVC.swift; sourceTree = "<group>"; };
 		7C5DFC082C5A572100C25AED /* SelectCurrencyVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectCurrencyVC.xib; sourceTree = "<group>"; };
 		7C5DFC0F2C5A5FE300C25AED /* AddCardRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardRouting.swift; sourceTree = "<group>"; };
@@ -330,6 +332,7 @@
 			children = (
 				7C595BB52C60EEF100193843 /* ChangePasswordVC.swift */,
 				7C595BB62C60EEF100193843 /* ChangePasswordVC.xib */,
+				7C5DB8752C60F5AD00AEAFFC /* ChangePasswordViewModel.swift */,
 			);
 			path = ChangePassword;
 			sourceTree = "<group>";
@@ -1019,6 +1022,7 @@
 				7C5D7E6E2C592F9E00D60725 /* SignInVC.swift in Sources */,
 				7C595BB42C60E98200193843 /* ChangePasswordAPIManager.swift in Sources */,
 				9C38C8672C5FE75000C8AC0A /* HomeVC + TableView.swift in Sources */,
+				7C5DB8762C60F5AD00AEAFFC /* ChangePasswordViewModel.swift in Sources */,
 				7C5D7E552C592B3300D60725 /* AppDelegate.swift in Sources */,
 				9C38C8732C5FF58F00C8AC0A /* AccountRouting.swift in Sources */,
 				7C56CD062C5A1EEA00C29FFD /* RoundedImage.swift in Sources */,
