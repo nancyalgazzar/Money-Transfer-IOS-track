@@ -12,6 +12,7 @@ class ProfileInfoTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         profileInfoViewModel = ProfileInfoViewModel()
+        bindViewModel()
         formateTableView()
         profileInfoViewModel.fetchData(completion: {[weak self] in
 //            DispatchQueue.main.async {
@@ -56,5 +57,12 @@ extension ProfileInfoTVC {
         tableView.isUserInteractionEnabled = false
         navigationItem.title = "Profile information"
         tableView.register(UINib(nibName: CellsNames.profileInfoCell, bundle: nil), forCellReuseIdentifier: CellsNames.profileInfoCell)
+    }
+}
+extension ProfileInfoTVC{
+    func bindViewModel(){
+        profileInfoViewModel.showError = {title, message in
+            self.alertMessage(title: title, message: message)
+        }
     }
 }

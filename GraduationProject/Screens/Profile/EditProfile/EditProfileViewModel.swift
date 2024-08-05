@@ -7,23 +7,23 @@
 
 import Foundation
 protocol EditProfileViewModelProtocol:DisplayErrorMessageProtocol {
-    
+    func EditProfile(fullName: String?, email: String?, country: String?, birthdate: String?)
 }
 class EditProfileViewModel: EditProfileViewModelProtocol{
     var showError: ((String, String) -> Void)?
     
-    let dataValidator = ValidateUserData()
-    
-    func EditProfile(fullName: String?, email: String?, country: String?, birthdate: String?){
-        if let data = createModel(fullName: fullName, email: email, country: country, birthdate: birthdate){
-            
-            EditProfileAPIManager.editProfile(profileData: data, completion: {
-                error, status in
-                if let error = error {
-                    self.showError? ("Sorry", error.localizedDescription)
-                }
-                if status {
-                    ////
+       let dataValidator = ValidateUserData()
+       
+       func EditProfile(fullName: String?, email: String?, country: String?, birthdate: String?){
+           if let data = createModel(fullName: fullName, email: email, country: country, birthdate: birthdate){
+               
+               EditProfileAPIManager.editProfile(profileData: data, completion: {
+                   error, status in
+                   if let error = error {
+                       self.showError? ("Sorry", error.localizedDescription)
+                   }
+                   if status {
+                       ////
                 }
             })
         }
@@ -48,24 +48,21 @@ extension EditProfileViewModel {
 
             return false
         }
-        if !didUserEnterFirstAndLastName(name: name){
-            return false
-        }
-        return true
+        return didUserEnterFirstAndLastName(name: name)
     }
     private func didUserEnterFirstAndLastName(name:String)->Bool{
-        
-        if name.contains(" "){
-            let names = name.trimmed.split(separator: " ")
-            if names.count < 2 {
-                showError?("Sorry", "please enter your first and last name")
-                return false
-            } else if names.count>2{
-                showError?("Sorry", "please enter only your first and last name")
-                return false
-            }
+        guard name.contains(" ") else{
+            showError?("Sorry", "please enter your first and last name")
+            return false
         }
-        return true
+     
+        let names = name.trimmed.split(separator: " ")
+        if names.count > 2 {
+            showError?("Sorry", "please enter only your first and last name")
+                return false
+        }else {
+                return true
+        }
     }
     private func isEmailFieldValid(email: String?) -> Bool {
         guard let email = email, dataValidator.isFieldEmpty(fieldData: email) else {
