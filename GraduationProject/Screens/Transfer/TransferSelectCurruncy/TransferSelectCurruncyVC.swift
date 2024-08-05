@@ -9,9 +9,9 @@ import UIKit
 
 class TransferSelectCurruncyVC: UIViewController {
     
-    var selectCurrencyViewModelProtocol: SelectCurrencyViewModelProtocol!
     @IBOutlet weak var tableView: UITableView!
     
+    var selectCurrencyViewModelProtocol: SelectCurrencyViewModelProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,8 +78,7 @@ extension TransferSelectCurruncyVC: UITableViewDelegate,UITableViewDataSource {
         return indexPath
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        TransferViewModel.sendCurreuncy = selectCurrencyViewModelProtocol.getCurrencyAtIndex(indexPath.row)
-        debugPrint(TransferViewModel.sendCurreuncy.currencies?.keys ?? " llll")
+        TransferViewModel.setCurruncy(curruncy: selectCurrencyViewModelProtocol.getCurrencyAtIndex(indexPath.row))
     }
 }
 

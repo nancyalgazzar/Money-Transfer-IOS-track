@@ -23,8 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func setRootViewController() {
         window  = UIWindow(frame: UIScreen.main.bounds)
         IQKeyboardManager.shared.enable = true
-        let rootController = SignInVC()
-//        let rootController = TapBarVC()
+//        let rootController = SignInVC()
+        let rootController = TapBarVC()
         let navigationController = UINavigationController(rootViewController: rootController)
     
         window?.makeKeyAndVisible()

@@ -123,6 +123,7 @@
 		9C38C89F2C61337400C8AC0A /* ChangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C89E2C61337400C8AC0A /* ChangeRate.swift */; };
 		9C38C8A12C6185F200C8AC0A /* TransferAPiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8A02C6185F200C8AC0A /* TransferAPiManager.swift */; };
 		9C38C8A32C61875800C8AC0A /* TransferResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8A22C61875800C8AC0A /* TransferResponse.swift */; };
+		9C38C8A52C61933100C8AC0A /* TransactionsAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C38C8A42C61933100C8AC0A /* TransactionsAPIManager.swift */; };
 		9CC706612C5E61FC007F0E6A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC7065E2C5E61FC007F0E6A /* HomeVC.swift */; };
 		9CC706622C5E61FC007F0E6A /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC7065F2C5E61FC007F0E6A /* HomeVC.xib */; };
 		9CC706662C5E623B007F0E6A /* TransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC706632C5E623B007F0E6A /* TransferVC.swift */; };
@@ -273,6 +274,7 @@
 		9C38C89E2C61337400C8AC0A /* ChangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeRate.swift; sourceTree = "<group>"; };
 		9C38C8A02C6185F200C8AC0A /* TransferAPiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferAPiManager.swift; sourceTree = "<group>"; };
 		9C38C8A22C61875800C8AC0A /* TransferResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferResponse.swift; sourceTree = "<group>"; };
+		9C38C8A42C61933100C8AC0A /* TransactionsAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsAPIManager.swift; sourceTree = "<group>"; };
 		9CC7065E2C5E61FC007F0E6A /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		9CC7065F2C5E61FC007F0E6A /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		9CC706632C5E623B007F0E6A /* TransferVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferVC.swift; sourceTree = "<group>"; };
@@ -655,6 +657,7 @@
 				9C38C8A02C6185F200C8AC0A /* TransferAPiManager.swift */,
 				7C55C9182C616CDA00DB93E0 /* SignUpAPIManger.swift */,
 				7C55C91A2C6176F300DB93E0 /* LogOutAPIManager.swift */,
+				9C38C8A42C61933100C8AC0A /* TransactionsAPIManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -1070,6 +1073,7 @@
 				9CC7069C2C5E6343007F0E6A /* HomeRecentTransactionTableViewCell.swift in Sources */,
 				7C5E3B1B2C5E0F4300677A06 /* ProfileRouting.swift in Sources */,
 				7C5DFC092C5A572100C25AED /* SelectCurrencyVC.swift in Sources */,
+				9C38C8A52C61933100C8AC0A /* TransactionsAPIManager.swift in Sources */,
 				7C555BD32C59835500BDCAC2 /* CustomButton.swift in Sources */,
 				7C561AE92C5A8ABF00DEAC2E /* BankCardOTP.swift in Sources */,
 				7C5DB87E2C610FAE00AEAFFC /* SignInAPIManager.swift in Sources */,

@@ -6,13 +6,11 @@
 //
 
 import UIKit
+import SDWebImage
 
 class TransferVC: UIViewController {
     
     //MARK: - IB Outlets
-    @IBOutlet weak var stepOneView: StepView!
-    @IBOutlet weak var stepTwoView: UIView!
-    @IBOutlet weak var stepThreeView: UIView!
     @IBOutlet weak var changeRateFrameView: UIView!
     @IBOutlet weak var changeRateLabel: UILabel!
     @IBOutlet weak var sendAmountTextFilled: UITextField!
@@ -20,6 +18,11 @@ class TransferVC: UIViewController {
     @IBOutlet weak var recepentNameTextFilled: UITextField!
     @IBOutlet weak var recepentAccountTextFilled: UITextField!
     @IBOutlet weak var continueBtnView: UIButton!
+    @IBOutlet weak var sendCurrencyFlag: UIImageView!
+    @IBOutlet weak var sendCurruncyName: UILabel!
+    @IBOutlet weak var getCurrencyFlag: UIImageView!
+    @IBOutlet weak var getCurrencyName: UILabel!
+    
     
     //MARK: - View Model
     let transferViewModel = TransferViewModel()
@@ -34,7 +37,6 @@ class TransferVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         configView()
-        transferViewModel.makeTransfer(senderAccountId: 1, recipientAccountId: 3, amount: 100.0, currency: "USD", status: "PENDING", description: "Payment for services")
     }
     
     private func configView() {
@@ -53,10 +55,12 @@ class TransferVC: UIViewController {
     }
     
     @IBAction func sendCurrencyPressed(_ sender: UIButton) {
+        TransferViewModel.selectedCurruncy = 1
         TransferRouting.goToTransferSelectCurruncy(VC: self)
     }
     
     @IBAction func reciveCurruncyPressed(_ sender: UIButton) {
+        TransferViewModel.selectedCurruncy = 2
         TransferRouting.goToTransferSelectCurruncy(VC: self)
     }
     

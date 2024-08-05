@@ -15,10 +15,14 @@
                 <outlet property="changeRateFrameView" destination="HBG-BB-lmD" id="0u5-mh-kjv"/>
                 <outlet property="changeRateLabel" destination="8UX-EY-lPg" id="9Xd-82-XOF"/>
                 <outlet property="continueBtnView" destination="jNe-4c-yHb" id="6U2-g4-Qgv"/>
+                <outlet property="getCurrencyFlag" destination="TwS-GS-eOh" id="z1E-ap-PSf"/>
+                <outlet property="getCurrencyName" destination="7ZW-6u-1Q8" id="2fp-y4-cx4"/>
                 <outlet property="getsAmountTextFilled" destination="OUB-sU-bzw" id="QQy-AQ-dGK"/>
                 <outlet property="recepentAccountTextFilled" destination="PAe-jB-Rlw" id="p7M-3q-Nfp"/>
                 <outlet property="recepentNameTextFilled" destination="s26-cP-s2x" id="0E7-Bf-q7M"/>
                 <outlet property="sendAmountTextFilled" destination="F6b-D3-CDs" id="Cz3-Ux-8mu"/>
+                <outlet property="sendCurrencyFlag" destination="Rd7-AA-Ykb" id="gwu-fe-ODa"/>
+                <outlet property="sendCurruncyName" destination="qKe-wR-gJe" id="f30-hG-NPa"/>
                 <outlet property="view" destination="Bzq-iJ-awe" id="BWC-2q-HHg"/>
             </connections>
         </placeholder>

@@ -11,11 +11,20 @@ class TransferViewModel {
     
     static var sendCurreuncy: Currency!
     static var getCurruncy: Currency!
+    static var selectedCurruncy: Int!
     static var reciverName: String!
     static var reciverAccount: String!
     static var currencyChangeRate: Double!
     static var getsAmount: Double = 0.0
     static var sendAmount: Double = 0.0
+    
+    static func setCurruncy(curruncy: Currency) {
+        if selectedCurruncy == 1 {
+            TransferViewModel.sendCurreuncy = curruncy
+        } else if selectedCurruncy == 2 {
+            TransferViewModel.getCurruncy = curruncy
+        }
+    }
     
     func calculateSendingAmount(getAmount: Double) {
         TransferViewModel.getsAmount = getAmount
