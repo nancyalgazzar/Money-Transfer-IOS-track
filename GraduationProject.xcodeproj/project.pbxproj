@@ -22,6 +22,7 @@
 		7C55C9192C616CDA00DB93E0 /* SignUpAPIManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55C9182C616CDA00DB93E0 /* SignUpAPIManger.swift */; };
 		7C55C91B2C6176F300DB93E0 /* LogOutAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55C91A2C6176F300DB93E0 /* LogOutAPIManager.swift */; };
 		7C55C91D2C6177F300DB93E0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55C91C2C6177F300DB93E0 /* ProfileViewModel.swift */; };
+		7C55C91F2C618B2900DB93E0 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55C91E2C618B2900DB93E0 /* SignInModel.swift */; };
 		7C561AE22C5A742900DEAC2E /* ConnectingProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C561AE02C5A742900DEAC2E /* ConnectingProgressVC.swift */; };
 		7C561AE32C5A742900DEAC2E /* ConnectingProgressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C561AE12C5A742900DEAC2E /* ConnectingProgressVC.xib */; };
 		7C561AE52C5A745C00DEAC2E /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C561AE42C5A745C00DEAC2E /* CircularProgressView.swift */; };
@@ -166,6 +167,7 @@
 		7C55C9182C616CDA00DB93E0 /* SignUpAPIManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAPIManger.swift; sourceTree = "<group>"; };
 		7C55C91A2C6176F300DB93E0 /* LogOutAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutAPIManager.swift; sourceTree = "<group>"; };
 		7C55C91C2C6177F300DB93E0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		7C55C91E2C618B2900DB93E0 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
 		7C561AE02C5A742900DEAC2E /* ConnectingProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingProgressVC.swift; sourceTree = "<group>"; };
 		7C561AE12C5A742900DEAC2E /* ConnectingProgressVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConnectingProgressVC.xib; sourceTree = "<group>"; };
 		7C561AE42C5A745C00DEAC2E /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
@@ -523,6 +525,7 @@
 				7C5E3B1E2C5E1C5900677A06 /* SignInViewModel.swift */,
 				7C5D7E6C2C592F9E00D60725 /* SignInVC.swift */,
 				7C5D7E6D2C592F9E00D60725 /* SignInVC.xib */,
+				7C55C91E2C618B2900DB93E0 /* SignInModel.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -1113,6 +1116,7 @@
 				7C55C9192C616CDA00DB93E0 /* SignUpAPIManger.swift in Sources */,
 				9C38C8642C5EF42600C8AC0A /* TransferConfirmationVC.swift in Sources */,
 				9CC7068C2C5E6309007F0E6A /* StepView.swift in Sources */,
+				7C55C91F2C618B2900DB93E0 /* SignInModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
