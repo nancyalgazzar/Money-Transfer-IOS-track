@@ -10,12 +10,15 @@ import FittedSheets
 
 class SignUpUserDataEntryVC: UIViewController {
 
+    @IBOutlet weak var nationalIDTF: CustomTextField!
     @IBOutlet weak var birthDayPicker: CustomTextField!
     @IBOutlet weak var countrySelectOutlet: CustomTextField!
-    
+    var signUpUserDataEntry: SignUpUserDataEntryViewModelProtocol!
     var datePicker: UIDatePicker!
     override func viewDidLoad() {
         super.viewDidLoad()
+        signUpUserDataEntry = SignUpUserDataEntryViewModel()
+        bindViewModel()
         navigationItem.hidesBackButton = true
         initDatePicker()
         setTextFieldDelegates()
@@ -25,7 +28,7 @@ class SignUpUserDataEntryVC: UIViewController {
     }
     
     @IBAction func continueBtn(_ sender: UIButton) {
-        HomeRouting.goToHome(VC: self)
+        signUpUserDataEntry.checkDateAndCountryPicking(country: countrySelectOutlet.text, date: birthDayPicker.text, nationalID: nationalIDTF.text)
     }
 }
 //MARK: gesture recognizer of BirthDay
@@ -106,5 +109,15 @@ extension SignUpUserDataEntryVC: UITextFieldDelegate {
     }
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         return false
+    }
+}
+extension SignUpUserDataEntryVC{
+    func bindViewModel() {
+        signUpUserDataEntry.showError = {title, message in
+            self.alertMessage(title: title, message: message)
+        }
+        signUpUserDataEntry.goToHome = {
+            HomeRouting.goToHome(VC: self)
+        }
     }
 }
