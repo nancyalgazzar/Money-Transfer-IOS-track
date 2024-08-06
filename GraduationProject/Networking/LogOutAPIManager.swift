@@ -29,7 +29,8 @@ class LogOutAPIManager {
             case .success(let data):
                 if let code = response.response?.statusCode{
                     if code == 200{
-                       
+                        completion(nil, nil)
+
                     }else{
                         do {
                             if  let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any]{
