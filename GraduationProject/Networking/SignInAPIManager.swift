@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 class SignInAPIManager {
     
-    static func signIn(email: String, password:String, completion:@escaping(_ error: Error?,_ token: String?)->()){
+    static func signIn(email: String, password:String, completion:@escaping(_ error: Error?,_ token: String?,_ message:String?)->()){
         
         let headers: HTTPHeaders = [
             "Content-Type": "application/json"
@@ -22,19 +22,25 @@ class SignInAPIManager {
             debugPrint(response)
             guard response.error == nil else {
                 debugPrint(response.error ?? "error response")
-                completion(response.error,nil)
+                completion(response.error,nil, nil)
                 return
             }
             switch response.result {
             case .success(let data):
-                do{
-                guard let data = data else{return}
-                let json = try JSONDecoder().decode(tokenDecode.self, from: data)
-                    print(json.token)
-                    completion(nil, json.token)
-                }catch{}
+                if let code = response.response?.statusCode, code == 200{
+                    do{
+                    guard let data = data else{return}
+                    let json = try JSONDecoder().decode(tokenDecode.self, from: data)
+                        print(json.token)
+                        completion(nil, json.token,nil)
+                    }catch{}
+                }else {
+                    completion(nil, nil,"Unknown Error")
+
+                }
+               
             case .failure(let error):
-                completion(error, nil)
+                completion(error, nil,nil)
             }
         }
     }
