@@ -37,13 +37,14 @@ class TransferVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         configView()
+//        transferViewModel.makeTransfer(senderAccountId: 1, recipientAccountId: 3, amount: 100.0, currency: "USD", status: "PENDING", description: "Payment for services")
     }
     
     private func configView() {
         setupTextfilleds()
         setupNavigationBar()
         continueBtnView.tintColor = #colorLiteral(red: 0.6062087417, green: 0.1836366951, blue: 0.2688316107, alpha: 1)
-        changeRateLabel.text = "1 USD = \(TransferViewModel.currencyChangeRate ?? 48.422) EGP"
+        changeRateLabel.text = "1 USD = \(TransferViewModel.currencyChangeRate ?? 49.232) EGP"
         sendAmountTextFilled.text = ""
         getsAmountTextFilled.text = ""
     }
