@@ -11,6 +11,7 @@ import Alamofire
 class TransferAPIManager {
     static func makeTransfer(senderAccountId: Int, recipientAccountId: Int, amount: Double, currency: String, status: String, description: String, completion: @escaping (_ error: Error?, _ response: TransferResponse?)->Void) {
         let url = "https://e8c8-156-223-19-253.ngrok-free.app/api/transfer"
+        
         let parameters: [String: Any] = [
             "senderAccountId": senderAccountId,
             "recipientAccountId": recipientAccountId,
