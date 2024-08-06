@@ -15,12 +15,14 @@ class ProfileViewModel:ProfileViewModelProtocol {
     var goToSignIn: (()->())?
     func logOut(){
         LogOutAPIManager.logOut(completion: {
-            error, status in
+            error, message in
             if let error = error {
                 self.showError?("Sorry", error.localizedDescription)
-            }
-            if status {
-//                remove token
+            }else if let message = message {
+                self.showError?("Sorry", message)
+            }else{
+                UserDefaultsManager.share().token = ""
+                UserDefaultsManager.share().isLoggedIn = false
                 self.goToSignIn?()
             }
         })

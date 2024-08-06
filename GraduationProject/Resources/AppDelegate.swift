@@ -17,18 +17,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
        setRootViewController()
+        IQKeyboardManager.shared.enable = true
+
         customizeNavigationBar()
         return true
     }
+    func setLogInRoot(){
+        window  = UIWindow(frame: UIScreen.main.bounds)
+        let rootController = SignInVC()
+        let navigationController = UINavigationController(rootViewController: rootController)
+        window?.makeKeyAndVisible()
+        window?.rootViewController = navigationController
+    }
     private func setRootViewController() {
         window  = UIWindow(frame: UIScreen.main.bounds)
-        IQKeyboardManager.shared.enable = true
-//        let rootController = SignInVC()
-        let rootController = TapBarVC()
+        
+        let rootController = getRootVC()
+//        let rootController = TapBarVC()
         let navigationController = UINavigationController(rootViewController: rootController)
     
         window?.makeKeyAndVisible()
         window?.rootViewController = navigationController
+    }
+    private func getRootVC()->UIViewController{
+        guard let isLoggedIn = UserDefaultsManager.share().isLoggedIn else{
+            return SignUpVC()
+        }
+        if isLoggedIn {
+            return TapBarVC()
+        }
+        return SignInVC()
     }
     private func customizeNavigationBar() {
         let backButtonImage = UIImage(named: "black_arrow")?.withRenderingMode(.alwaysTemplate)
