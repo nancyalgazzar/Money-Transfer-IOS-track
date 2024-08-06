@@ -7,9 +7,7 @@
 
 import UIKit
 
-struct TransactionCellModel {
-    let cardTypeImage: UIImage
-    let transactionImage: UIImage
+struct TransactionCellModel: Decodable {
     let name: String
     let cardTypeName: String
     let lastFourNumbers: String

@@ -195,7 +195,6 @@
                                     </constraints>
                                 </imageView>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="iLR-U4-9wT" firstAttribute="centerX" secondItem="7HA-cc-SHT" secondAttribute="centerX" id="0wB-cu-hRV"/>
                                 <constraint firstAttribute="bottom" secondItem="SIh-o4-DXb" secondAttribute="bottom" constant="135" id="6Pn-2A-i0H"/>

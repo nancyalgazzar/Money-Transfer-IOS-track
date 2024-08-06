@@ -30,7 +30,6 @@ class HomeRecentTransactionTableViewCell: UITableViewCell {
     }
     
     func configureCell(_ transaction: TransactionCellModel) {
-        cardTypeImage.image = transaction.cardTypeImage
         nameTextLabel.text = transaction.name
         cardTypeTextLabel.text = transaction.cardTypeName
         lastFourNumbersTextLabel.text = transaction.lastFourNumbers
