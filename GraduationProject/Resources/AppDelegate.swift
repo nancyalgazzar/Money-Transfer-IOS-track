@@ -29,6 +29,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.rootViewController = navigationController
     }
+    func setSignUpRoot(){
+        window  = UIWindow(frame: UIScreen.main.bounds)
+        let rootController = SignUpVC()
+        let navigationController = UINavigationController(rootViewController: rootController)
+        window?.makeKeyAndVisible()
+        window?.rootViewController = navigationController
+    }
     private func setRootViewController() {
         window  = UIWindow(frame: UIScreen.main.bounds)
         

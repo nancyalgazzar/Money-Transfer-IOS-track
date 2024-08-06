@@ -22,7 +22,9 @@ class SignUpVC: UIViewController {
     }
 
     @IBAction func goToSignIn(_ sender: UIButton){
-        AuthenticationRouting.goToSignIn(VC: self)
+        guard let delegate = UIApplication.shared.delegate as? AppDelegate else { return}
+        delegate.setLogInRoot()
+        
     }
     @IBAction func signUpBtn(_ sender: UIButton) {
         signUpViewModelProtocol.validateUserData(name: nameTextField.text, email: emailTextField.text, password: passwordTextField.text)
