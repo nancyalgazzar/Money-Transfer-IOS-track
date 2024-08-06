@@ -32,8 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private func setRootViewController() {
         window  = UIWindow(frame: UIScreen.main.bounds)
         
-        let rootController = getRootVC()
-//        let rootController = TapBarVC()
+//        let rootController = getRootVC()
+        let rootController = TapBarVC()
         let navigationController = UINavigationController(rootViewController: rootController)
     
         window?.makeKeyAndVisible()
