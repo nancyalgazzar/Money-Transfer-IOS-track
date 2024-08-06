@@ -34,6 +34,7 @@ class SignInViewModel:SignInModelProtocol{
             }
             if let token = token {
                 UserDefaultsManager.share().token = token
+                UserDefaultsManager.share().isLoggedIn = true
                 self.goToHome?()
             }
         })

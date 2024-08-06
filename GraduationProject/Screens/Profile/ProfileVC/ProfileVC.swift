@@ -69,6 +69,10 @@ extension ProfileVC {
         profileViewModel.showError = {title, message in
             self.alertMessage(title: title, message: message)
         }
+        profileViewModel.goToSignIn = {
+            guard let delegate = UIApplication.shared.delegate as? AppDelegate else { return}
+            delegate.setLogInRoot()
+        }
     }
     
 }
